@@ -1,0 +1,17 @@
+<div class="col-md-12">
+<div class="theme-showcase" role="main">
+	<div class="page-header text-center">
+	
+		<h3>{$item.section_title} </h3>
+		<h5>{$item.section_subtitle}</h5>
+	</div>
+</div>
+</div>
+<div class="row">
+<form id="newsletterSectionForm{$item.key_section}{$colnum}"  class='newsletter-section-form' onsubmit="return false;">
+    <input type="email" class="validate[required,custom[email]]" name="data[email]" id="email" placeholder="Enter email" >
+	<button type="submit" id="newsletterSectionSubmit">Subscribe</button>
+	<img src="img/loading.gif" id="newsletterSectionLoading" style="display:none;">
+    <div id="subscribeSectionNotif"></div>
+</form>
+</div>

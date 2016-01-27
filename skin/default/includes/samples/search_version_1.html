@@ -1,0 +1,18 @@
+<!-- search_version_1_item_1 -->
+<div class="col-md-12">
+<div class="theme-showcase" role="main">
+	<div class="page-header text-center">
+	
+		<h3>{$item.section_title} </h3>
+		<h5>{$item.section_subtitle}</h5>
+	</div>
+</div>
+</div>
+<div class="row">
+<form id="subscribeSectionForm{$item.key_section}{$colnum}" onsubmit="return false;">
+    <input type="email" class="validate[required,custom[email]]" name="data[email]" id="email" placeholder="Enter email" >
+	<button type="submit" id="subscribeSubmit">Subscribe</button>
+	<img src="img/loading.gif" id="subscribeLoading" style="display:none;">
+    <div id="subscribeNotif"></div>
+</form>
+</div>

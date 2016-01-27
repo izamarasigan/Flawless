@@ -1,0 +1,24 @@
+<!-- blog_version_1 -->
+<div class="col-md-12">
+<div class="theme-showcase" role="main">
+	<div class="page-header text-center">
+	
+		<h3>{$item.section_title} </h3>
+		<h5>{$item.section_subtitle}</h5>
+	</div>
+</div>
+</div>
+<h4>Recent Blog Per Item</h4>
+<div class="row">
+	{foreach from=$_blog key=key item=item}
+	<div class="col-md-3">
+	<div>{$key}</div>
+	<div>{$item.image_title}</div>
+	<div>{$item.image_sub_title}</div>
+	<div>{$item.image_desc|strip_tags:true}</div>
+	<div>{if $item.image_src_thumb}<img src="{$item.image_src_thumb}" style="max-height: 150px; max-width: 150px;">{/if}</div>
+	<div>{if $item.image_src}<img src="{$item.image_src}" style="max-height: 150px; max-width: 150px;">{/if}</div>
+	<div><a href="{$item.image_link}/">{$item.image_link}</a></div>
+	</div>
+	{/foreach}
+</div>

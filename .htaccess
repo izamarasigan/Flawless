@@ -1,0 +1,32 @@
+Options -Indexes
+DirectoryIndex index.php
+
+ErrorDocument 403 /errors/error_403.html
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(index\.php|skin|images|styles|js|pword|robots\.txt)
+RewriteRule ^(.*)$ index.php?/$1 [L]
+
+# change rewriterule for temporary domain
+# RewriteRule ^(.*)$ /~northpl/index.php/$1 [L]
+
+
+RewriteRule ^css/(.*\.css) /combine.php?type=css&files=$1
+RewriteRule ^javascript/(.*\.js) /combine.php?type=javascript&files=$1
+
+Header unset Pragma
+FileETag None
+Header unset ETag
+ 
+# cache images/pdf docs for 1 year
+<FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif)$">
+  Header set Cache-Control "max-age=31536000, public"
+  Header unset Last-Modified
+</FilesMatch>
+ 
+# cache none
+<FilesMatch "\.(html|htm|xml|txt|xsl|js|css)$">
+  Header set Cache-Control "max-age=0, public, must-revalidate"
+</FilesMatch>

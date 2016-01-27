@@ -1,0 +1,36 @@
+<div id="header" class="sticky clearfix">
+	<!-- TOP NAV -->
+	<header id="topNav">
+		<div class="container">
+			<!-- Mobile Menu Button -->
+			<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse"> <i class="fa fa-bars"></i> </button>
+			<!-- Logo -->
+			<a class="logo pull-left" href="index.html"> <img src="assets/images/logo_dark.png" alt="" /> </a>
+			<!-- 
+				Top Nav 
+				
+				AVAILABLE CLASSES:
+				submenu-dark = dark sub menu
+			-->
+			<div class="navbar-collapse pull-right nav-main-collapse collapse">
+				<nav class="nav-main">
+					{function name=menu} 
+					{foreach from=$data item=items} 
+					{if $items.id_page eq $current || $items.id_parent eq $current}
+					<!-- BASIC NAV -->
+					<li class="{if $items.child}dropdown{/if}"> 
+						<a class="{if $items.child}dropdown-toggle{/if}" href="{$items.page_link}">{$items.title}</a> 
+						{if $items.child}
+							<ul class="dropdown-menu"> {menu data=$items.child current=$items.id_page} </ul> 
+						{/if} 
+					</li> 
+					{/if}
+					{/foreach} 
+					{/function}
+					<ul id="topMain" class="nav nav-pills nav-main"> {menu data=$navItems current=0} </ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- /Top Nav -->
+</div>

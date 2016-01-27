@@ -1,0 +1,22 @@
+<!-- testimonial_version_1_item_1 -->
+<div class="col-md-12">
+<div class="theme-showcase" role="main">
+	<div class="page-header text-center">
+	
+		<h3>{$item.section_title} </h3>
+		<h5>{$item.section_subtitle}</h5>
+	</div>
+</div>
+</div>
+<h4>Testimonials</h4>
+<div class="row">
+	{foreach from=$_testimonials key=key item=item}
+	<div class="col-md-3">
+	<div>{$key}</div>
+	<div>{$item.name}</div>
+	<div>{$item.email}</div>
+	<div>{$item.message}</div>
+	<div>{$item.date_add|date_format}</div>
+	</div>
+	{/foreach}
+</div>
