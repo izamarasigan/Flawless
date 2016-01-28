@@ -14,17 +14,9 @@
 			// Direct Server IP open Configuration
 			define('_BASE_URL_','http://'.$_SERVER['HTTP_HOST'].'/~flawless/');
 			define('_DB_HOST_','localhost');
-			define('_DB_USERNAME_','viidemo_flawless');
-			define('_DB_PASSWORD_','JdhEWaX=0@18');
-			define('_DB_DATABASE_','viidemo_flawless_db');
-		}
-		else if ( $_SERVER['HTTP_HOST']=='viiworksdemo.com' ){
-			// Staging Configuration
-			define('_BASE_URL_','http://'.$_SERVER['HTTP_HOST'].'/flawless/');
-			define('_DB_HOST_','localhost');
-			define('_DB_USERNAME_','viidemo_flawless');
-			define('_DB_PASSWORD_','JdhEWaX=0@18');
-			define('_DB_DATABASE_','viidemo_flawless_db');
+			define('_DB_USERNAME_','');
+			define('_DB_PASSWORD_','');
+			define('_DB_DATABASE_','');
 		}
 		else if ( $_SERVER['HTTP_HOST']=='flawless.viiworksdemo.com' ){
 			// Staging Configuration
@@ -38,9 +30,9 @@
 			// Change this to Live Configuration
 			define('_BASE_URL_','http://'.$_SERVER['HTTP_HOST'].'/');
 			define('_DB_HOST_','localhost');
-			define('_DB_USERNAME_','viidemo_flawless');
-			define('_DB_PASSWORD_','JdhEWaX=0@18');
-			define('_DB_DATABASE_','viidemo_flawless_db');
+			define('_DB_USERNAME_','');
+			define('_DB_PASSWORD_','');
+			define('_DB_DATABASE_','');
 		}
 	}
 	else {
