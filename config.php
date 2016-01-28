@@ -58,7 +58,7 @@
 	define('_CACHE_FOLDER_',APPPATH.'cache/');
 	define('_COLUMN_IDENTIFIER_','clmn_');
 	define('_WHERE_IDENTIFIER_','whr_');
-	define('_ADMIN_THEME_','aceadmin');;
+	define('_ADMIN_THEME_','aceadmin');
 	define('_DB_PREFIX_','vii_');
 	define('_PRODUCTION_', TRUE);
 	define('_URI_PROTOCOL_','REQUEST_URI');
