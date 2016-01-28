@@ -6,7 +6,7 @@
 	// $production = true;
 	// if ($_SERVER['HTTP_HOST']=='localhost' || $_SERVER['HTTP_HOST']=='10.10.1.2' || $_SERVER['HTTP_HOST']=='10.10.1.17' || $_SERVER['HTTP_HOST']=='flawless.local' || $_SERVER['HTTP_HOST']=='local.flawless.com') $production = false;
 	
-	// ob_start( 'ob_gzhandler' );
+	ob_start( 'ob_gzhandler' );
 	// define('_DEBUG_MODE_',TRUE);
 	// if ($production) {
 		// // Do modification on database on this part
