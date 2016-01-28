@@ -60,12 +60,6 @@
 		}
 	}
 	
-			define('_BASE_URL_','http://'.$_SERVER['HTTP_HOST'].'/');
-			define('_DB_HOST_','localhost');
-			define('_DB_USERNAME_','viidemo_flawless');
-			define('_DB_PASSWORD_','JdhEWaX=0@18');
-			define('_DB_DATABASE_','viidemo_flawless_db');
-	
 	define('_ADMIN_BASE_','administrator');
 	define('_SKIN_PATH_',FCPATH.'skin/');
 	define('_CACHE_FOLDER_',APPPATH.'cache/');
