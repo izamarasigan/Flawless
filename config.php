@@ -4,8 +4,6 @@
 	/** production true is for live, false for local editing **/
 	/** Configuration Modified by Jesther Bas 12/16/2015 **/
 	$production = true;
-	print_r($_SERVER['HTTP_HOST']);
-	exit(0);
 	if ($_SERVER['HTTP_HOST']=='localhost' || $_SERVER['HTTP_HOST']=='10.10.1.2' || $_SERVER['HTTP_HOST']=='10.10.1.17' || $_SERVER['HTTP_HOST']=='flawless.local' || $_SERVER['HTTP_HOST']=='local.flawless.com.ph') $production = false;
 	
 	ob_start( 'ob_gzhandler' );
