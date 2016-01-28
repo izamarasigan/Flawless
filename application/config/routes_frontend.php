@@ -43,9 +43,6 @@ $route["events"] = "events/index";
 $route["events/(.*)"] = "events/$1";
 
 $route["aaaaatitle"] = "pages/index";
-$route["rssfeed"] = "rssfeed/index";
-$route["rssfeed/(.*)"] = "rssfeed/$1";
-
 
 
 ?>
