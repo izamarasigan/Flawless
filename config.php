@@ -3,11 +3,16 @@
 
 	/** production true is for live, false for local editing **/
 	/** Configuration Modified by Jesther Bas 12/16/2015 **/
-	$production = true;
-	if ($_SERVER['HTTP_HOST']=='localhost' || $_SERVER['HTTP_HOST']=='10.10.1.2' || $_SERVER['HTTP_HOST']=='10.10.1.17' || $_SERVER['HTTP_HOST']=='flawless.local' || $_SERVER['HTTP_HOST']=='local.flawless.com') $production = false;
 	
-	ob_start( 'ob_gzhandler' );
-	define('_DEBUG_MODE_',TRUE);
+	/** IP BLOCK FOR LOCAL DEVELOPERS **/
+	$ip_local = array(
+		"localhost", "10.10.1.2", "10.10.1.12", "10.10.1.17", "10.10.1.5", "192.168.1.106", "127.0.0.1", "10.10.1.231"
+	);
+	
+	$production = true;
+	if( in_array($_SERVER['HTTP_HOST'], $ip_local) ) $production = false;
+	
+	// define('_DEBUG_MODE_',TRUE);
 	if ($production) {
 		// Do modification on database on this part
 		if ( $_SERVER['HTTP_HOST']=='69.175.35.82' ) {
@@ -36,9 +41,15 @@
 		}
 	}
 	else {
+		// Getting the URL Segments
+		$_SERVER['REQUEST_URI_PATH'] = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+		$segments = explode('/', $_SERVER['REQUEST_URI_PATH']);
+		
 		// This is for the Viiworks Office Local projects
-		if($_SERVER['HTTP_HOST']=='10.10.1.17' || $_SERVER['HTTP_HOST']=='localhost'){
-			define('_BASE_URL_', 'http://'.$_SERVER['HTTP_HOST'].'/flawless/');
+		if( in_array($_SERVER['HTTP_HOST'], $ip_local) ){
+			// define('_DB_HOST_', ($_SERVER['HTTP_HOST'] == 'localhost' ? 'localhost' : '10.10.1.2'));
+			define('_DB_HOST_', 'localhost');
+			define('_BASE_URL_', 'http://'.$_SERVER['HTTP_HOST'].'/'.$segments[1].'/');
 			define('_DB_HOST_','beta');
 			define('_DB_USERNAME_','root');
 			define('_DB_PASSWORD_','');

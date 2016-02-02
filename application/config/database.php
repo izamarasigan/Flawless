@@ -41,7 +41,7 @@
 $active_group = _ACTIVE_DB_;
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
+$db['default']['hostname'] = _DB_HOST_;
 $db['default']['username'] = _DB_USERNAME_;
 $db['default']['password'] = _DB_PASSWORD_;
 $db['default']['database'] = _DB_DATABASE_;
@@ -57,7 +57,7 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
-$db['live']['hostname'] = 'localhost';
+$db['live']['hostname'] = _DB_HOST_;
 $db['live']['username'] = _DB_USERNAME_;
 $db['live']['password'] = _DB_PASSWORD_;
 $db['live']['database'] = _DB_DATABASE_;
