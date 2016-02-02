@@ -1,50 +1,68 @@
-# Viiworks CMS
+# Steps for local setup
+## Step 1
 
-- Production Configuration below Please Read
+- Open folder: `My Computer`
+- Locate xampp htdocs ex. `C:\xampp\htdocs`
+- Create `NEW FOLDER`
+- Rename it -> `flawless`
 
+## Step 2
 
-## Usage Note
-### Production / Project
-* Download [Viiworks CMS v1.0.1](https://github.com/viiworks/Viiworks-CMS/archive/v1.0.1.zip) stable version or clone in to your machine
-* Do this when you clone the repository
- * then run the `git checkout tags/v1.0.1`
- * DO NOT PUSH TO THIS REPOSITORY IF FOR DIFFERENT PRODUCTION / PROJECT so please follow the instructions
- * change origin of the repository (if you don't have one, please ask [@jestherthejoker](https://github.com/jestherthejoker)) `git remote set-url origin https://github.com/USERNAME/OTHERREPOSITORY.git`
-* run the command `git init` using your git bash inside the production folder
-* Every success edit please run `git add --all` then `git commit -m "Edits Description for your Work to the Repo"`
-* to be continue: ask [@jestherthejoker](https://github.com/jestherthejoker) for more
+- Click `Windows Icon` and type `GIT BASH` in the search
+- Open this application
+- `Git Bash`
 
-### Development / Improvement
-* Install the framework
-* run the command `git reset --hard HEAD` to restore the deleted files like `installation` and `index.html`
-* after editing the skin for development
-  * transfer the `(/skin/vii_ChangeThisToProjectName)` files to `(/themes/vii_ChangeThisToProjectName)`
-* Pull everything using: `git pull`
-* Updates to the development whomever your branch is:
-  * Create your own branch for development see instruction below
-  * `git pull origin imyournewbranch` to get all the updates from this branch imyournewbranch is just a sample
-  * `git add --all` to add all the untracked files to be able to commit
-  * Note: Before commiting, make sure you're on the right branch `imyournewbranch`
-  * `git commit -m "Edits Description"` once you're really really really sure to your edits
-  * `git push origin imyournewbranch` to push all your committed edits to the repository so everyone is happy
+## Step 3
 
-#### Creating Branch for your new enhancement
-* master branch is for releasing purpose only
-* Create New branch for your feature
-* To create and checkout to the new branch for development: `git checkout -b imyournewbranch` then `git push origin imyournewbranch` "It's up to you for what kind of branch name would like :)"
-* Before commiting, pulling and pushing make sure you're on the right branch to commit/push/pull to avoid merging to master of an incomplete development
-* adding and commiting same way to master
-* to push updates `git push origin imyournewbranch`
-* to pull updates `git pull origin imyournewbranch`
+- Locate the folder path type this: `cd c:/xampp/htdocs/flawless`
+
+## Step 4
+
+- Create a local copy of file, type this: `git clone git@github.com:viiworks/flawless.git .`
+- Wait till the cloning is `done`
+
+## Step 5
+
+- Open a web browser application (Firefox, Chrome)
+- Locate database configuration, type this in the url: `localhost/phpmyadmin/import.php`
+- After entering on the page, click the `Browse`
+- To locate the database import file, type this or locate it from here: `C:\xampp\htdocs\ocamposfj\initial_databse`
+- Select this file `flawless_db`
+- Click the button `Open`
+- Scroll down and click the button `Go`
 
 
-### Releasing
-* Check first the imyournewbranch branch, do some testing. If success, to the following:
-* `git checkout master`
-* `git pull origin imyournewbranch` to merge the changes from this branch name
-* `git push` to community repository and make a release on Release Tab :)
 
+# Steps in updating of files 
+## Step 1
 
-`Note: Only @kirbylagunda, @viiworks and @jestherthejoker is the only authorized to create release versions`
+- Open this application
+- `Git Bash`
 
-Happy Git! :D :D :D Gotta Git Git
+## Step 2
+
+- Go to local saved project folder, type this: `cd c:/xampp/htdocs/flawless`
+
+## Step 3
+
+- Pulls all the files from server (git server files to local files), type this: `git pull`
+
+## Step 4
+
+- Start all updates, edits, bug fixing, enhancements or adjustments to the files that can be found here: `C:\xampp\htdocs\flawless\`
+
+## Step 5
+
+- Take note and finalize all the updates, edits, bug fixing, enhancements or adjustments made in local files
+
+## Step 6
+
+- Initiates the transfer of files (local files to git server files), `type this: add --all`
+
+## Step 7
+
+- Sends the updates to the git server, type this: `git push`
+
+## Step 8
+
+- Just to check if local files are up-to-date, type this: `git status`
