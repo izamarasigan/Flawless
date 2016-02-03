@@ -1,2 +1,6 @@
+body {font-family:'melbourneregular', Arial, sans-serif}
+h1, h2,h3,h4,h5 {font-family:'fertigo_proregular', georgia, serif}
 #topBar, #topBar a , #topBar ul.top-links>li>a {background-color:#ece5e0 ; color:#ff3998}
 #header {background-color:#ff3998; }
+.social-icons {fill:#ED3694}
+.social-icons:hover {}
