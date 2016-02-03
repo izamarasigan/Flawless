@@ -25,6 +25,7 @@ $route["products"] = "pages/index";
 $route["about"] = "pages/index";
 $route["flawlessbestsellers"] = "pages/index";
 $route["treatment"] = "pages/index";
+$route["homepagelifestyle"] = "pages/index";
 
 
 ?>
