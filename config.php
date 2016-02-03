@@ -6,7 +6,7 @@
 	
 	/** IP BLOCK FOR LOCAL DEVELOPERS **/
 	$ip_local = array(
-		"localhost", "10.10.1.2", "10.10.1.12", "10.10.1.17", "10.10.1.5", "192.168.1.106", "127.0.0.1", "10.10.1.231"
+		"localhost", "10.10.1.2", "10.10.1.12", "10.10.1.17", "10.10.1.5", "192.168.1.106", "127.0.0.1", "10.10.1.231", "10.10.1.4"
 	);
 	
 	$production = true;
@@ -47,8 +47,7 @@
 		
 		// This is for the Viiworks Office Local projects
 		if( in_array($_SERVER['HTTP_HOST'], $ip_local) ){
-			// define('_DB_HOST_', ($_SERVER['HTTP_HOST'] == 'localhost' ? 'localhost' : '10.10.1.2'));
-			define('_DB_HOST_', 'localhost');
+			define('_DB_HOST_', ($_SERVER['HTTP_HOST'] == 'localhost' ? 'localhost' : '10.10.1.4'));
 			define('_BASE_URL_', 'http://'.$_SERVER['HTTP_HOST'].'/'.$segments[1].'/');
 			define('_DB_HOST_','beta');
 			define('_DB_USERNAME_','root');
