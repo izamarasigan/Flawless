@@ -21,6 +21,26 @@ class Cms extends MX_Controller
 		$this->load->helper('string');
 		$this->load->model('core/paginate_model', 'paginate');
 	}
+
+	function syncTree()
+	{
+		$pages = $this->cms->getBarePages(false, true);
+		$final = array();
+		foreach($pages as $item){
+			if($item['id_page'] != ''){
+				$result = $this->cms->getTrees($item['id_page']);
+				if(!$result){
+					$final[] = $item;
+				}
+			}
+		}
+
+		foreach($final as $items){
+			$this->cms->addTrees($items);
+		}
+		exit;
+	}
+
 	function index()
 	{
 		$pages = $this->cms->getPages(false, true);

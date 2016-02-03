@@ -26,6 +26,58 @@ class Cms_model extends CI_Model
 	{
 		parent::__construct();
 	}
+
+	function getBarePages($id_page = false, $home = false)
+	{
+		$this->db->select('*');
+		$this->db->from('page');
+		$query = $this->db->get();
+		if ($query->num_rows() > 0) {
+			$result = $query->result_array();
+			$return = array();
+			foreach($result as $item) {
+				$item['json'] = htmlentities(json_encode($item) , ENT_QUOTES);
+				$return[] = $item;
+			}
+			if ($id_page) {
+				return $return[0];
+			}
+			return $return;
+		}
+		return false;
+	}
+
+	function getTrees($id_page)
+	{
+		$this->db->select('*');
+		$this->db->from('page_tree');
+		$this->db->where('id_page', $id_page);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0) {
+			$result = $query->result_array();
+			$return = array();
+			foreach($result as $item) {
+				$item['json'] = htmlentities(json_encode($item) , ENT_QUOTES);
+				$return[] = $item;
+			}
+			if ($id_page) {
+				return $return[0];
+			}
+			return $return;
+		}
+		return false;
+	}
+
+	function addTrees($tree){
+		$this->db->flush_cache();
+		$data['id_page'] = $tree['id_page'];
+		$data['id_parent'] = 0;
+		$data['depth'] = 1;
+		$data['isActive'] = 0;
+		$data['absolute_link'] = $tree['link_rewrite'];
+		$this->db->insert('page_tree', $data);
+	}
+
 	function getPages($id_page = false, $home = false)
 	{
 		$this->db->select('p.*,pt.*, p.class as module_name, p.function as function_name, m.id_module');

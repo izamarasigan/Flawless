@@ -49,3 +49,7 @@ CMS.showNotification = function(type, message = false) {
 	}
 	_toastr(notif_msg,"top-right",type,false);
 }
+
+
+/* ------ */
+

@@ -102,7 +102,7 @@ class Globals
 		$this->CI->template->assign('navItems', $this->_getNav());
 		$_cms_pages = $this->getPages();
 		foreach($_cms_pages as $item) {
-			$this->CI->template->assign('_page_' . $item['absolute_link'], $item['content']);
+			$this->CI->template->assign('_page_' . $item['absolute_link'], $item);
 		}
 		if ($this->CI->session->userdata('adminLogged')) {
 			$this->CI->template->assign('_admin', $this->CI->session->userdata('adminData'));
@@ -242,7 +242,7 @@ class Globals
 	}
 	function getPages()
 	{
-		$this->CI->db->select('id_page,title,content,image_src,caption,link_rewrite,absolute_link');
+		$this->CI->db->select('id_page,title,content,image_src,caption,link_rewrite,absolute_link,title_active,content_active,image_src_active,caption_active');
 		$this->CI->db->from('page p');
 		$this->CI->db->where('p.isAdmin', '0');
 		$query = $this->CI->db->get();
