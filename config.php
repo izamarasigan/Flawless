@@ -49,14 +49,6 @@
 		if( in_array($_SERVER['HTTP_HOST'], $ip_local) ){
 			define('_DB_HOST_', ($_SERVER['HTTP_HOST'] == 'localhost' ? 'localhost' : '10.10.1.4'));
 			define('_BASE_URL_', 'http://'.$_SERVER['HTTP_HOST'].'/'.$segments[1].'/');
-			define('_DB_HOST_','beta');
-			define('_DB_USERNAME_','root');
-			define('_DB_PASSWORD_','');
-			define('_DB_DATABASE_','flawless_db');
-		}
-		else if($_SERVER['HTTP_HOST']=='10.10.1.2'){
-			define('_BASE_URL_', 'http://'.$_SERVER['HTTP_HOST'].'/flawless_git/');
-			define('_DB_HOST_','beta');
 			define('_DB_USERNAME_','root');
 			define('_DB_PASSWORD_','');
 			define('_DB_DATABASE_','flawless_db');
