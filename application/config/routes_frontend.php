@@ -1,7 +1,6 @@
 <?php  if (!defined("BASEPATH")) exit("No direct script access allowed");
 
 $route["treatment/laserrfandothers/laserhairremoval"] = "pages/index";
-$route["treatment/microdermabrasion/nanopowerpeel"] = "pages/index";
 $route["products/beautykits/flawlesswhiteningkit"] = "pages/index";
 $route["products/beautykits"] = "pages/index";
 $route["products/individualproducts"] = "pages/index";
@@ -25,7 +24,7 @@ $route["products"] = "pages/index";
 $route["about"] = "pages/index";
 $route["flawlessbestsellers"] = "pages/index";
 $route["treatment"] = "pages/index";
-$route["homepagelifestyle"] = "pages/index";
+$route["nanopowerpeel"] = "pages/index";
 
 
 ?>
