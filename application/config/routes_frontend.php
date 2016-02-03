@@ -2,6 +2,7 @@
 
 $route["treatment/laserrfandothers/laserhairremoval"] = "pages/index";
 $route["products/beautykits/flawlesswhiteningkit"] = "pages/index";
+$route["treatment/laserrfandothers/shapesculptcream"] = "pages/index";
 $route["products/beautykits"] = "pages/index";
 $route["products/individualproducts"] = "pages/index";
 $route["treatment/laserrfandothers"] = "pages/index";

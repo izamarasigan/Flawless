@@ -10,4 +10,18 @@ footer, footer a {
 
 
 
-.main-bestsellers .header-title {color:#f73f69;margin-bottom:0px;font-weight:bold;}
+.main-bestsellers .header-title {color:#FF3998;margin-bottom:0px;font-weight:bold;}
+
+.main-bestsellers h3 {
+    font-size: 16px;
+    color: #FF3998;
+}
+
+.main-bestsellers a.find-more {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.main-bestsellers p {
+    font-size: 18px;
+}
