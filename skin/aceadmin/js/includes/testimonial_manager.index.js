@@ -1,65 +1,89 @@
 CMS.initPageUnbind = function() {
 	CMS.commonUnbind();
-	CMS.showHideFieldsU();
-	$('.showDeleteBtn').unbind();
-	$('.hideDeleteBtn').unbind();
-	$('.btnReply').unbind();
+	$('button.addReset').unbind();
 }
 CMS.initPage = function() {
+	var textedit = ['image_desc']; /* place the fields that needs to have text editor */
 	$('a.setFormValues').on('click', function() {
 		itemID = $(this).closest("td").attr('id');
 		itemID = itemID.replace("jdata", "")
-		var json = $('div#jd' + itemID).html();
+		var json = $('div#jd' + itemID).text();
 		var data = $.parseJSON(json);
-		var dateString = data.date_add;
-		var reggie = /(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})/;
-		var dateArray = reggie.exec(dateString);
-		var dateObject = new Date(
-			(+dateArray[1]), (+dateArray[2]) - 1, // Careful, month starts at 0!
-			(+dateArray[3]), (+dateArray[4]), (+dateArray[5]), (+dateArray[6]));
-		dateString = dateObject.toLocaleDateString() + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + dateObject.toLocaleTimeString();
-		$('div#testimonialDate').html(dateString);
-		$('div#testimonialName').html(data.name);
-		$('div#testimonialMessage').html(data.message);
-		$('div#testimonialEmail').html(data.email);
-		$('div#testimonialPhone').html(data.phone);
-		$('input#inputName').val(data.name);
-		$('input#inputEmail').val(data.email);
-		if ($('input#inputSubject').val() != '') $('input#inputSubject').val('');
-		if ($('textarea#inputMessage').val() != '') $('textarea#inputMessage').val('');
+		$('[name="where[id_blog_item]"]').val(data.id_blog_item);
+		
+		$('#image_src').val(data.image_src);
+		$('#image_title').val(data.image_title);
+		$('#image_sub_title').val(data.image_sub_title);
+		$('#image_author').val(data.image_author);
+		$('#image_desc').val(data.image_desc);
+		$('#date').val(data.date);
+		$('#image_meta_title').val(data.image_meta_title);
+		$('#image_meta_description').val(data.image_meta_description);
+		$('#image_meta_keywords').val(data.image_meta_keywords);
+		if (data.status == 1) {
+			$('input#status').prop('checked', true);
+		} else {
+			$('input#status').prop('checked', false);
+		}
 		if (!$(this).hasClass('editItem')) {
 			$('div#formActions').addClass('hid');
+			$('.content_display').destroy();
+			$.each(textedit, function(index, value) {
+				$('#' + value).summernote();
+			});
+			$('div.note-editable').attr('contenteditable', 'false');
+		} else {
+			$('.content_display').destroy();
+			CMS.runSummernote(textedit);
+			$('div.note-editable').attr('contenteditable', 'true');
 		}
+		$('#image_src').imgupload('refresh');
 		CMS.showWidge();
 	});
-	$('.showDeleteBtn').on('click', function() {
-		if (!$('button#btnDelete').is(":visible")) {
-			$('button#btnDelete').removeClass('hid');
-		}
+	CMS.runSummernote(textedit);
+	$('button#dtAddRow').on('click', function() {
+		$('.content_display').val('');
+		$('.content_display').code('');
+		$('.content_display').destroy();
+		CMS.runSummernote(textedit);
+		$('div.note-editable').attr('contenteditable', 'true');
+		$('#image_src').val('');
+		$('#image_src').imgupload('refresh');
 	});
-	$('.hideDeleteBtn').on('click', function() {
-		if ($('button#btnDelete').is(":visible")) {
-			$('button#btnDelete').addClass('hid');
-		}
+	$('#btnEditForm').click(function() {
+		$('.content_display').destroy();
+		CMS.runSummernote(textedit);
+		$('div.note-editable').attr('contenteditable', 'true');
+	});
+	$('#submit').on('click', function() {
+		$.each(textedit, function(index, value) { /* check if submit button is clicked */
+			$('#' + value).val($('#' + value).code());
+		});
+	});
+	$('#date').datepicker({
+		format: "MM dd, yyyy",
+		autoclose: true
+	})
+	$('input.imgupload').each(function() {
+		$(this).imgupload();
 	});
 	var details = new Array();
 	details[0] = "genericForm"; //active form id
-	details[1] = thisURL + thisModule + "/process/add-module/"; //this won't be used
-	details[2] = 'Module was successfully created.'; //this won't be used
-	details[3] = thisURL + thisModule + "/process/reply/"; //post url for replying to testimonial item
-	details[4] = 'Reply was successfully sent.'; //success message for edit
+	details[1] = thisURL + thisModule + "/process/add-item/"; //post url for add
+	details[2] = 'Testimonial item was successfully created.'; //success message for add
+	details[3] = thisURL + thisModule + "/process/edit-item/"; //post url for edit
+	details[4] = 'Testimonial item was successfully updated.'; //success message for edit
 	details[5] = thisURL + thisModule + "/process/delete-item/"; //post url for delete
-	details[6] = 'Item was successfully deleted.'; //success message for delete
-	details[7] = 'id_testimonial'; //name of id for delete
+	details[6] = 'Testimonial item was successfully deleted.'; //success message for delete
+	details[7] = 'id_blog_item'; //name of id for delete
 	details[8] = 'DT_Generic'; //active dataTable id
 	CMS.common(details); //include the active data table (for delete function)
-	CMS.showHideFields();
 }
 
 function changeStatus() {
 	if (enableModule) enableModule = 1;
 	else enableModule = 0;
-	var keyAndVal = "data%5Bwhr_id_testimonial%5D=" + itemID + "&data%5Bclmn_status%5D=" + enableModule;
+	var keyAndVal = "data%5Bwhr_id_blog_item%5D=" + itemID + "&data%5Bclmn_status%5D=" + enableModule;
 	$.post(thisURL + thisModule + "/process/change-status", keyAndVal, function(data) {
 		setTimeout(function() {
 			$('img#sgLoader').addClass('hid');
@@ -130,7 +154,7 @@ $('.selected-items').change(function() {
 	showActions();
 });
 $("#dtDeleteRows").on(ace.click_event, function() {
-	bootbox.confirm("Are you sure to update this item/s?", function(result) {
+	bootbox.confirm("Are you sure to update this items/?", function(result) {
 		if (result) {
 			var vals = $('.selected-items:checkbox:checked').map(function() {
 				return this.value;
