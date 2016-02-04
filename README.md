@@ -44,13 +44,13 @@
 - If you get rejected by the server because by the server and requesting to commit your files, this because of the same file is being pulled from the server Go to `Step 6` immediately
 - If you saw `Developer101@officePC /c/xampp/htdocs/flawless (master|MERGING)` on your command line git bash, please check the CONFLICT listed or do `git status` to check
 - These CONFLICT files should be fixed, this CONFLICT is marked in a file with clear line breaks (after editing the conflict, go to `Step 6`):
-
+```
     <<<<<<<<<< HEAD:mergetest
-	This is my third line
-	========
-	This is a fourth line I am adding
-	>>>>>>>>>> 875sd7f805ds76g5d87f6g5d897fg59d8fg:mergetest
-
+    This is my third line
+    ========
+    This is a fourth line I am adding
+    >>>>>>>>>> 875sd7f805ds76g5d87f6g5d897fg59d8fg:mergetest
+```
 - No Error? Go to Step 4
 
 ## Step 4
