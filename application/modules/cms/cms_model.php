@@ -783,7 +783,7 @@ class Cms_model extends CI_Model
 	}
 	function _updateLayout()
 	{
-		$this->db->Å¦lush_cache();
+		$this->db->flush_cache();
 		$layout = $this->input->post('layout');
 		$layout_array = explode('_', $layout);
 		$data['columns'] = end($layout_array);

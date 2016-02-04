@@ -1,63 +1,199 @@
-<!---------- RAW ALL RECENT BLOGS LISTS GROUP BY YEAR AND MONTH ---------->
-<!-- {foreach from=$recent_news key=key item=item}
-	<div>{$key}</div>
-	{if $year neq $item.year}{assign var="year" value=$item.year} ====={$item.year}===== {/if}
-	{if $month neq $item.month}{assign var="month" value=$item.month} =={$item.month}== {/if}
-	<div><a href="{$item.image_link}">{$item.image_title|ucwords}</a></div>
-	{if $key eq 4}{break}{/if} 
-{/foreach} -->
-<!---------- EEEEEEEEEND RAW ALL RECENT BLOGS LISTS GROUP BY YEAR AND MONTH ---------->
+<div class="row media marin-top-10 margin-bottom-50">
 
-<!---------- RAW ALL BLOGS CATEGORIES AVAILABLE ---------->
-{if $category_list}
-	{foreach from=$category_list key=key item=item}
-		<div>{$item.category_title}</div>
-		<div>{$item.category_caption}</div>
-		<div>{$item.category_desc}</div>
-		<div><a  href="{$item.catagory_link}">{$item.image_title|ucwords}</a></div>
-		<div>{if $item.category_image_src}<img src="{$item.category_image_src}" style="max-height: 150px; max-width: 150px;"/>{/if}</div>
-	{/foreach}
-{/if}
-<!---------- EEEEEEEEEND RAW ALL BLOGS CATEGORIES AVAILABLE ---------->
+            <!-- LEFT -->
+            <div class="col-md-3 col-sm-3">
 
-<!---------- DETAILS OF BLOGS CATEGORY SELECTED ---------->
-{if $category}
+                <!-- INLINE SEARCH -->
+                <div class="inline-search clearfix margin-bottom-30">
+                    <form id="searchForm" action="{$base_url}search" class="widget_search">
+                        <input type="search" placeholder="Start Searching..." name="search" class="serch-input">
+                        <button type="submit" id="searchBtn">
+                            <i class="fa fa-search"></i><img src="img/loading.gif" class="loadingGif" style="display:none;">
+                        </button>
+                        <div id="subNotif"></div>
+                    </form>
+                </div>
+                <!-- /INLINE SEARCH -->
+
+ 
+
+                <!-- JUSTIFIED TAB -->
+                <div class="tabs nomargin-top hidden-xs margin-bottom-60">
+
+                    <!-- tabs -->
+                    <ul class="nav nav-tabs nav-bottom-border nav-justified">
+                        <li class="active">
+                            <a href="#tab_1" data-toggle="tab">
+											Recent
+										</a>
+                        </li>
+                    </ul> 
+
+                    <!-- tabs content -->
+                    <div class="tab-content margin-bottom-60 margin-top-30">
+                        <!-- RECENT -->
+                        <div id="tab_1" class="tab-pane  active">
+                            {foreach from=$recent_news key=key item=item}
+                            <div class="row tab-post">
+                                <!-- post -->
+                                <div class="col-md-5 thumbnail">
+                                    <a href="{$item.image_link}">
+                                        <img src="{$item.image_src_thumb}" class="recent-news-image img-responsive" alt="" />
+                                    </a>
+                                </div>
+                                <div class="col-md-7">
+                                    <a href="{$item.image_link}" class="tab-post-link montserrat-font">{$item.image_title|ucwords}</a>
+                                    <small>{if $year neq $item.year}{assign var="year" value=$item.year} {$item.year} {/if} {if $month neq $item.month}{assign var="month" value=$item.month} {$item.month} {/if}</small>
+                                </div>
+                            </div>
+                            <!-- /post -->
+							
+                            {if $key eq 4}{break}{/if} {/foreach}
+
+
+                        </div>
+						
+										<div class="text-center margin-top-20">
+												<a href="{$base_url}news"> <i class="fa fa-arrow-circle-down "></i> View More news</a>
+											</div>
+						
+						
+                    </div>
+
+                </div>
+                <!-- JUSTIFIED TAB -->
+				
+				<hr/>
+				
+				<div class="side-nav margin-bottom-60 margin-top-30">
+
+								 <ul class="nav nav-tabs nav-bottom-border nav-justified">
+									<li class="active">
+										<a data-toggle="tab" href="#tab_1">
+														Categories
+													</a>
+									</li>
+								</ul>
+								<br>
+								<ul class="list-group list-group-bordered list-group-noicon uppercase">
+								{foreach from=$category_list key=key item=item}
+									<li class="list-group-item"><a href="{$item.catagory_link}"><span class="size-15 text-muted pull-right">({$item.total_items})</span> {$item.category_title}</a></li>
+								{/foreach}
+								</ul>
+								
+		
+								
+								
+								
+								<!-- /side navigation -->
+
+							
+							</div>
+				<br/><br/>
+
+            </div>
+			
+    <!-- news Entries Column -->
+    <div class="col-md-9 col-sm-9">
+	
+	
+	
+	{if $category}
 		<div>{$category.category_title}</div>
 		<div>{$category.category_caption}</div>
 		<div>{$category.category_desc}</div>
 		<div><a  href="{$category.catagory_link}">{$category.image_title|ucwords}</a></div>
 		<div>{if $category.category_image_src}<img src="{$category.category_image_src}" style="max-height: 150px; max-width: 150px;"/>{/if}</div>
 {/if}
-***************************************************************
-<!---------- EEEEEEEEEND DETAILS OF BLOGS CATEGORY SELECTED ---------->
+	
+	
+	
+	
+	
+        <!-- First news Post -->
+<div class="news-post-item news-post-item-inverse" style="border-bottom: none!important;"><!-- .news-post-item-inverse = image right side [left on RTL] -->
 
-<!---------- RAW ALL BLOGS LISTS BASED FROM SELECTED CATEGORY ---------->
 {if $news}
 	{foreach from=$news key=key item=item}
-		<div>{$key}</div>
-		<div>{$item.id_news_item}</div>
-		<div>{$item.image_sub_title}</div>
-		<div><a  href="{$item.image_link}">{$item.image_title|ucwords}</a></div>
-		<div>{if $item.image_src_thumb}<img src="{$item.image_src_thumb}" style="max-height: 150px; max-width: 150px;"/>{/if}</div>
-		<div>{$item.date|date_format}</div>
-		<div>{$item.image_desc|strip_tags:true|truncate:1000}</div>
-		=======================================================
-	{/foreach}
-{/if}
-<!---------- EEEEEEEEEND RAW ALL BLOGS LISTS BASED FROM SELECTED CATEGORY ---------->
 
-<!---------- RAW PAGINATION ---------->
-{if $news}
-<ul class="pagination">
-	{if $int_page gt 1}<li><a href="{$base_url}{$thisModule}/category_page/{$int_page - 1}/{$category.id_news_category}/{$category.category_link_rewrite}" rel="prev">Prev</a></li>{/if}
-		{for $page=1 to $num_pages}
-			{if $int_page eq $page}
-				<li><span class="current">{$page}</span></li>
-			{else}
-				<li><a href="{$base_url}{$thisModule}/category_page/{$page}/{$category.id_news_category}/{$category.category_link_rewrite}">{$page}</a></li>
-			{/if}
-		{/for}
-	{if $int_page lt $num_pages}<li><a href="{$base_url}{$thisModule}/category_page/{$int_page + 1}/{$category.id_news_category}/{$category.category_link_rewrite}" rel="next">Next</a></li>{/if}
-</ul>
-{/if}
-<!---------- EEEEEEEEEND RAW PAGINATION ---------->
+								<!-- IMAGE -->
+								<figure class="news-item-small-image margin-bottom-20">
+									<a href="{$item.image_link}">
+										<img class="img-responsive" src="{$item.image_src_thumb}" alt="{$item.image_title}" >
+									</a>
+								</figure>
+
+								<div class="news-item-small-content">
+
+									<h2><a href="{$item.image_link}">{$item.image_title|ucwords}</a></h2>
+
+									<ul class="news-post-info list-inline">
+										<li>
+											
+												<i class="fa fa-clock-o"></i> 
+												<span class="font-lato"> {$item.date|date_format} </span>
+										
+										</li>
+										<li>
+												<i class="fa fa-user"></i> 
+												<span class="font-lato"> by: {$item.image_author} </span>
+										</li>
+									</ul>
+
+									<p> {$item.image_desc|strip_tags:true|truncate:400}</p>
+
+									<a class="btn btn-reveal btn-default" href="{$item.image_link}">
+										<i class="fa fa-plus"></i>
+										<span>Read More</span>
+									</a>
+								
+								</div>
+								
+								<div class="clearfix"></div>
+							<hr/>
+								
+{/foreach} {/if}
+
+                <!-- PAGINATION -->
+                <div class="text-left">
+                    {if $news}
+                    <ul class="pagination nomargin">
+                        {if $int_page gt 1}
+                        <li><a href="{$base_url}{$thisModule}/category_page/{$int_page - 1}/{$category.id_news_category}/{$category.category_link_rewrite}" rel="prev">&laquo;</a></li>{/if} 
+						{for $page=1 to $num_pages}
+							{if $int_page eq $page}
+                        <li class="active"><a>{$page}</a></li>
+                        {else}
+                        <li><a href="{$base_url}{$thisModule}/category_page/{$page}/{$category.id_news_category}/{$category.category_link_rewrite}">{$page}</a></li>
+                        {/if} {/for} {if $int_page lt $num_pages}
+                        <li><a href="{$base_url}{$thisModule}/category_page/{$int_page + 1}/{$category.id_news_category}/{$category.category_link_rewrite}" rel="next">&raquo;</a></li>{/if}
+                    </ul>
+                    {/if}
+                </div>
+				
+				
+				
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+                <!-- /PAGINATION -->
+
+							</div>
+							
+							
+
+
+    </div>
+
+</div>

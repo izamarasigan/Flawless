@@ -17,9 +17,6 @@ $route["faqs/(.*)"] = "faqs/$1";
 $route["news"] = "news/index";
 $route["news/(.*)"] = "news/$1";
 
-$route["contactus"] = "contactus/index";
-$route["contactus/(.*)"] = "contactus/$1";
-
 $route["testimonial"] = "testimonial/index";
 $route["testimonial/(.*)"] = "testimonial/$1";
 
@@ -84,6 +81,10 @@ $route["nanorf"] = "pages/index";
 $route["refine "] = "pages/index";
 $route[""] = "pages/index";
 $route["footerlinks"] = "pages/index";
+$route["contact"] = "contactus/index";
+$route["contact/(.*)"] = "contactus/$1";
+
+$route["bookanappointment"] = "pages/index";
 
 
 ?>

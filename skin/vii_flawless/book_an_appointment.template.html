@@ -22,7 +22,7 @@
 		<meta property="og:title" content="{$_meta_title}" />
 		<meta property="og:url" content="{$base_url}" />
 		<meta property="og:description" content="{$_meta_description}" />
-		<meta property="og:image" content="{if $_banner}{$_banner.0.image_src}{/if}" />
+		<meta property="og:image" content="{$_meta_image}" />
 		<meta property="og:type" content="website" />
 
 		<!-- mobile settings -->
@@ -33,26 +33,24 @@
 		<div id="wrapper">
 			<!-- HEADER -->
 			{include file="$_theme/include/header.html"}
-<!-- SLIDER -->
-			<div class="slider" id="slider_include" >{include file="$_theme/include/slider.html"}</div>
-			<!-- SECTION -->
-			<div class="section" id="main_section_include">{include file="$_theme/include/main_section.html"}</div>
 			
-				
-		
+
+			<div class="others" id="others_include" >{include file="$_theme/include/book-an-appointment.html"}</div>
+			
 			<!-- OTHERS -->
 			<div class="others" id="others_include" >{include file="$_theme/include/others.html"}</div>
 		</div>
+		
 		
 		<!------------------------------ Footer ------------------------------>
 			<footer id="footer-include">{include file="$_theme/include/footer.html"}</footer>
 		<!------------------------------ END ------------------------------>
 		
 		<!-- STYLES -->
-		{include file="$_theme/include/main_styles.html"}
+		{include file="$_theme/include/inner_styles.html"}
 		
 		<!-- JS -->
-		{include file="$_theme/include/main_js.html"}
+		{include file="$_theme/include/inner_js.html"}
 
 	</body>
 </html>
