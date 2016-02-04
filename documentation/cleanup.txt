@@ -5,3 +5,6 @@ DATABASE
 DELETE:
 clinic_location
 branch_store
+
+Files
+Delete app/skin modules with "backup"
