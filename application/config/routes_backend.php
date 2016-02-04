@@ -48,6 +48,9 @@ $route["administrator/promo_manager/(.*)"] = "promo_manager/$1";
 $route["administrator/events_manager"] = "events_manager";
 $route["administrator/events_manager/(.*)"] = "events_manager/$1";
 
+$route["administrator/branch_manager"] = "branch_manager";
+$route["administrator/branch_manager/(.*)"] = "branch_manager/$1";
+
 
 
 ?>

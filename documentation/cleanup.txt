@@ -1,0 +1,7 @@
+For cleanup
+
+DATABASE
+
+DELETE:
+clinic_location
+branch_store
