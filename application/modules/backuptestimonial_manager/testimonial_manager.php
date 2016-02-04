@@ -21,40 +21,29 @@ class Testimonial_manager extends MX_Controller
 	}
 	function index()
 	{
-		$blog = $this->testimonial_manager->_getItems();
-		$this->template->assign('blog', $blog);
-		$this->template->assign('images_path', base_url() . 'upload/images/testimonial/');
+		$this->template->assign('testimonial', $this->testimonial_manager->_getItems());
 	}
-	
+	function category()
+	{
+		$category_list = $this->testimonial_manager->_getCategoryList();
+		$category_list_select = $this->testimonial_manager->_getCategoryList(1, 1);
+		if ($category_list) {
+			$this->template->assign('category_list', $category_list);
+			$this->template->assign('category_list_select', $category_list_select);
+		}
+	}
 	function process()
 	{
 		$action = $this->uri->segment(4);
 		switch ($action) {
-		case 'add-item':
-			$result = $this->testimonial_manager->_addItem();
-			break;
-
-		case 'edit-item':
-			$result = $this->testimonial_manager->_editItem();
-			break;
-
 		case 'delete-item':
 			$result = $this->testimonial_manager->_deleteItem();
 			break;
-			
+		
 		case 'multiple-item-action':
 			$result = $this->testimonial_manager->_multipleActionItem();
 			break;
-
-		case 'upload-cms-image':
-			$result = $this->testimonial_manager->_uploadCMSImage();
-			break;
-
-		case 'upload-image':
-			$type = $this->input->get('type');
-			$result = $this->testimonial_manager->_uploadImage($type);
-			break;
-
+			
 		case 'change-status':
 			$result = $this->testimonial_manager->_changeStatus();
 			break;
