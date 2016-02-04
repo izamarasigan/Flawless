@@ -20,7 +20,7 @@
 - Open a web browser application (Firefox, Chrome)
 - Locate database configuration, type this in the url: `localhost/phpmyadmin/server_import.php`
 - After entering on the page, click the `Browse`
-- To locate the database import file, type this or locate it from here: `C:\xampp\htdocs\ocamposfj\initial_databse`
+- To locate the database import file, type this or locate it from here: `C:\xampp\htdocs\flawless\initial_databse`
 - If there's folder named with a date format please select the latest date
 - Select the file `flawless_db`
 - Click the button `Open`
