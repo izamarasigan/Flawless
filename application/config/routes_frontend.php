@@ -106,6 +106,8 @@ $route["treatment"] = "pages/index";
 $route["products"] = "pages/index";
 $route["about"] = "pages/index";
 $route["flawlessbestsellers"] = "pages/index";
+$route["bookanappointment"] = "pages/index";
+$route["contact"] = "pages/index";
 
 
 ?>
