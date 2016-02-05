@@ -12,13 +12,9 @@
 </div> -->
 
 
-
-
-
-			
-			{if $_page.image_src}
+	<!-- 	{if $_page.image_src}
 			<section class="heading-title parallax parallax-2" style="background-image: url({$_page.image_src})">
-				<div class="overlay dark-2"><!-- dark overlay [1 to 9 opacity] --></div>
+				<div class="overlay dark-2"></div>
 				
 
 				
@@ -28,6 +24,30 @@
 
 					<h2 >{$_page_title}</h2>
 					<span class="size-18 weight-300">{$_page.caption}</span>
+
+				</div>
+			</section>
+ -->
+
+			
+			{if $_page.image_src}
+			<section class="page-header-area heading-title parallax parallax-2 margin-bottom-30">
+
+				
+
+				
+			{/if}
+
+				<div class="container">
+				
+					<div class="col-md-3 inner-img-banner">
+					<img src="{$_page.image_src}" class="img-responsive pull-right"/>
+					</div>
+					
+					<div class="col-md-9 inner-content-banner">
+					<h2 >{$_page_title}</h2>
+					<span class="size-18 weight-300">{$_page.caption}</span>
+					</div>
 
 				</div>
 			</section>

@@ -289,6 +289,13 @@ a:hover {color: #F757A7!important;}
     font-weight: bold;
 }
 
+.inner-img-banner img {width:150px!important;}
+
+.page-header-area .inner-content-banner h2 {
+    font-size: 40px;
+    color: #ED3C95!important;
+}
+
 section.dark .pagination > li.active>a, .pagination > li.active>a {
     border-color: #ED3C95!important;
     background-color: #ED3C95!important;
@@ -297,3 +304,89 @@ section.dark .pagination > li.active>a, .pagination > li.active>a {
 section.dark .pagination > li.active>a:hover, .pagination > li.active>a:hover { opacity:.8!important;}
 
 .flawless-lifestyle.row>div img.img-responsive, .main-bestsellers.row>div img.img-responsive {border: 1px solid #E6E5E5;}
+
+.services-item h2 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #ED3C95;
+	margin-bottom:10px;
+}
+
+
+
+.services-item .carousel-caption {text-shadow: none;}
+
+.services-item p {
+    margin-bottom: 0px;
+    color: #666;
+    font-size: 15px;
+    font-weight: bold;
+	max-height: 70px;
+}
+
+.services-item a {
+
+    font-weight: bold;
+    font-size: 15px;
+    color: #FF3998;
+}
+
+.services-item .carousel-caption {
+    margin: 20px 10px;
+    right: 5%!important;
+    left: 5%;
+    text-align: left;
+    top: 0%;
+    bottom: 0%;
+    background: rgba(255,255,255,.5);
+    padding: 15px!important;
+}
+
+
+.page-header-area h2, .page-header-area p, .page-header-area span {color: #666!important;}
+
+
+.page-header-area p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.page-header-area {
+    border-bottom: 1px solid #ECE5E0!important;
+}
+
+.about-template .tp-bullets, .about-template .tparrows.round, .about-template .tp-leftarrow.round, .about-template .tp-bannertimer {
+    display: none;
+}
+
+.about-template .tp-caption {
+    text-shadow: none;
+    color: #ED3C95!important;
+    font-family: 'fertigo_proregular', georgia, serif;
+    font-size: 40px!important;
+	margin-top: -50px!important;
+}
+
+.about-template .tp-caption.sub-caption-2.lfl.start, .about-template .tp-caption.sub-caption-2.lfl.start p {
+    font-size: 75px!important;
+    margin-top: -90px!important;
+    line-height: 75px!important;
+}
+
+.about-template .tp-caption.about-content-1.lfl.start{font-size:20px!important;color: #666!important;margin-top: 15px!important;}
+
+.about-template .about-content-1 div {display:inline;}
+
+.about-template .about-title {font-weight:bold;}
+
+.news-item-small-image.margin-bottom-20 {
+    float: left;
+    width: 350px;
+}
+
+.media hr { background: #ECE5E0!important;}
+
+
+
+
