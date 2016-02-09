@@ -100,6 +100,7 @@ class Globals
 		$this->CI->template->assign('_style', $this->getConfigStyle());
 		$this->CI->template->assign('thisModule', $this->module);
 		$this->CI->template->assign('navItems', $this->_getNav());
+		
 		$_cms_pages = $this->getPages();
 		foreach($_cms_pages as $item) {
 			$this->CI->template->assign('_page_' . $item['absolute_link'], $item);
@@ -306,6 +307,8 @@ class Globals
 				$this->CI->template->assign('_meta_description', strlen($curr_page['meta_description']) ? $curr_page['meta_description'] : $this->getConfig('META_DESCRIPTION'));
 				$this->CI->template->assign('_meta_image', strlen($curr_page['meta_image']) ? $curr_page['meta_image'] : $this->upload_images . 'banner/' . $this->getConfig('META_IMAGE'));
 			}
+			//print_r($this->_getChildren($curr_page['id_page']));exit;
+			$this->CI->template->assign('_children', $this->_getChildren($curr_page['id_page']));
 			$this->CI->template->assign('_content', 'default' . '/modules/pages/_content.html');
 			$this->CI->template->assign('_page', $curr_page);
 			$this->CI->template->assign('_module', $this->module);
@@ -387,6 +390,42 @@ class Globals
 		}
 		return true;
 	}
+
+	function _getChildren($id)
+	{	
+		//print_r($id);exit;
+		$this->CI->db->select('pt.id_page, pt.depth, pt.absolute_link, pt.id_parent, p.class, p.image_src, p.content, p.link_rewrite, p.title, p.redirect,m.link_rewrite,m.isActive,m.isAdmin');
+		$this->CI->db->from('page_tree pt');
+		$this->CI->db->join('page p', 'pt.id_page = p.id_page');
+		$this->CI->db->join('module m', 'p.link_rewrite = m.link_rewrite AND m.isActive = 1 AND m.isAdmin = 0', 'left');
+		$this->CI->db->where('pt.id_parent', $id);
+		$this->CI->db->order_by('p.sort_order ASC,pt.depth DESC');
+		$query = $this->CI->db->get();
+		$result_array = $query->result_array();
+		$temp_array = array();
+		$max_depth = 0;
+		foreach($result_array as $key => $nav_item) {
+			if ($nav_item['class'] != 'pages') {
+				$nav_item['page_link'] = base_url() . $nav_item['link_rewrite'];
+			}
+			else {
+				if ($nav_item['absolute_link']) {
+					/* $pages = 'pages/'; */
+				}
+				$nav_item['page_link'] = base_url() . $pages . $nav_item['absolute_link'];
+			}
+			$result_array[$key] = $nav_item;
+			
+		}
+		
+		if ($query->num_rows() != 0) {
+			return $result_array;
+		}
+		else {
+			return false;
+		}
+	}
+
 	function _getNav()
 	{
 		$this->CI->db->select('pt.id_page, pt.depth, pt.absolute_link, pt.id_parent, p.class, p.link_rewrite, p.title, p.redirect,m.link_rewrite,m.isActive,m.isAdmin');
