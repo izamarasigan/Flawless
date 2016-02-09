@@ -55,6 +55,7 @@
 			</a>
 		</li>
 		{/if}
+
 		{if $bcBlogItems}
 		<!-- <li id = "bcBlogItems">
 			<a href="{$admin_base}blog_manager">
@@ -63,7 +64,6 @@
 			</a>
 		</li> -->
 		{if $_admin.id_admin_group eq 1}
-		{/if}
 		<li id="bcBlog">
 			<a href="javascript:;" class="dropdown-toggle">	
 				<i class="menu-icon fa fa-comments-o"></i>		
@@ -318,6 +318,14 @@
 			<a href="{$admin_base}testimonial_manager">
 				<i class="menu-icon fa fa-quote-left"></i>
 				<span class="menu-text"> Testimonial Manager </span>
+			</a>
+		</li>
+		{/if}
+		{if $bcBranches}
+		<li id = "bcBranches">
+			<a href="{$admin_base}branch_manager">
+				<i class="menu-icon fa fa-map-marker"></i>
+				<span class="menu-text"> Branch Manager </span>
 			</a>
 		</li>
 		{/if}

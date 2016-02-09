@@ -13,6 +13,7 @@ CMS.initPage = function() {
 		
 		$('#image_src').val(data.image_src);
 		$('#image_title').val(data.image_title);
+		$('#sort').val(data.sort);
 		$('#image_sub_title').val(data.image_sub_title);
 		$('#image_author').val(data.image_author);
 		$('#image_desc').val(data.image_desc);
