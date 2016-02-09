@@ -56,14 +56,15 @@
 		</li>
 		{/if}
 		{if $bcBlogItems}
-		<li id = "bcBlogItems">
+		<!-- <li id = "bcBlogItems">
 			<a href="{$admin_base}blog_manager">
 				<i class="menu-icon fa fa-comments-o"></i>
 				<span class="menu-text"> Blog Manager </span>
 			</a>
-		</li>
+		</li> -->
 		{if $_admin.id_admin_group eq 1}
-		<!-- <li id="bcBlog">
+		{/if}
+		<li id="bcBlog">
 			<a href="javascript:;" class="dropdown-toggle">	
 				<i class="menu-icon fa fa-comments-o"></i>		
 				<span class="menu-text"> Blog Manager </span>		
@@ -83,8 +84,7 @@
 				</a>
 				</li>
 			</ul>
-		</li> -->
-		{/if}
+		</li>
 		{/if}
 		{if $bcCMS}		
 		<li id = "bcCMS">

@@ -68,17 +68,12 @@ $route["testimonial"] = "testimonial/index";
 $route["testimonial/(.*)"] = "testimonial/$1";
 
 $route["products"] = "pages/index";
-$route["about"] = "news/index";
-$route["about/(.*)"] = "news/$1";
-
+$route["about"] = "pages/index";
 $route["flawlessbestsellers"] = "pages/index";
 $route["treatment"] = "pages/index";
 $route["nanopowerpeel"] = "pages/index";
 $route["news"] = "news/index";
 $route["news/(.*)"] = "news/$1";
-
-$route["treatment"] = "news/index";
-$route["treatment/(.*)"] = "news/$1";
 
 $route["bookanappointment"] = "pages/index";
 $route["contactus"] = "contactus/index";
@@ -87,9 +82,6 @@ $route["contactus/(.*)"] = "contactus/$1";
 $route["expertiseyoucantrust"] = "pages/index";
 $route["certifedtested"] = "pages/index";
 $route["footerlinks"] = "pages/index";
-$route["treatment"] = "news/index";
-$route["treatment/(.*)"] = "news/$1";
-
 
 
 ?>

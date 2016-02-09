@@ -1,20 +1,53 @@
 <div id="topBar">
 	<div class="container">
 	<!-- right -->
-		<ul class="top-links list-inline pull-right">					
-			<li  class="bg-hover"><a tabindex="-1" href="#">ABOUT US</a></li>
-			<li class="divider"></li>
-								<li  class="bg-hover"><a tabindex="-1" href="#">SEARCH</a></li>
-								<li  class="bg-hover"><a tabindex="-1" href="#">VIEW BASKET</a></li>
-								<li class="bg-hover"><a tabindex="-1" href="#">LOGIN/JOIN</a></li>
-								<li class="divider"></li>
-								<li><a tabindex="-1" href="#" class="bg-grey">BOOK AN APPOINTMENT</a></li>
+		<ul class="top-links list-inline pull-right">			
+		
+								<li  class="bg-hover"><a tabindex="-1" href="{$base_url}about">ABOUT US</a></li>
+
+								<li  class="bg-hover"><a data-toggle="modal" data-target=".top-search">SEARCH</a></li>							
+								<li><a tabindex="-1" href="{$base_url}bookanappointment" class="bg-grey">BOOK AN APPOINTMENT</a></li>
 								
 								
 								
 							
-					</ul>
-					
+		</ul>
+		
+						
+				<!-- Small Modal >-->
+
+
+				<div class="modal fade top-search" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-sm">
+						<div class="modal-content">
+
+							<!-- header modal -->
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="mySmallModalLabel"><i class="fa fa-search"></i> Search</h4>
+							</div>
+
+							<!-- body modal -->
+							<div class="modal-body">
+
+                    <div class="search-box">
+                        <form id="searchForm" action="{$base_url}search" method="get">
+                            <div class="input-group">
+                                <input type="text" name="search" placeholder="Search" class="form-control" />
+                                <span class="input-group-btn">
+												<button class="btn btn-primary" id="searchBtn" type="submit">Search</button>
+											</span>
+                            </div>
+                        </form>
+                    </div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<!-- ---------------------- -->		
+			
 					<!-- left -->
 					<ul class="top-links list-inline">
 						<li ><a href="#">				
