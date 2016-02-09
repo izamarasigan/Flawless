@@ -45,8 +45,6 @@ $route["treatment/microdermabrasion/zerodegreefinish"] = "pages/index";
 $route["treatment/microdermabrasion/platinumpeel"] = "pages/index";
 $route["treatment/microdermabrasion/nanopowerpeel "] = "pages/index";
 $route["treatment/microdermabrasion/powerfacial "] = "pages/index";
-$route["treatment/ultratreatment/ultraacne"] = "pages/index";
-$route["treatment/ultratreatment/ultrarejuvenation"] = "pages/index";
 $route["treatment/ultratreatment/ultralift"] = "pages/index";
 $route["products/beautykits"] = "pages/index";
 $route["products/individualproducts"] = "pages/index";
@@ -75,6 +73,8 @@ $route["nanopowerpeel"] = "pages/index";
 $route["news"] = "news/index";
 $route["news/(.*)"] = "news/$1";
 
+$route["ultraacne"] = "pages/index";
+$route["ultrarejuvenation"] = "pages/index";
 $route["bookanappointment"] = "pages/index";
 $route["contactus"] = "contactus/index";
 $route["contactus/(.*)"] = "contactus/$1";

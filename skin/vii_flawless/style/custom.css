@@ -8,8 +8,9 @@ footer, footer a {
   margin-bottom: -27px !important;
 }
 
-.btn.btn-primary {
+.btn.btn-primary, .btn-primary {
     background: #ED3C95!important;
+	    border-color: #ED3C95!important;
 }
 
 h4#mySmallModalLabel {

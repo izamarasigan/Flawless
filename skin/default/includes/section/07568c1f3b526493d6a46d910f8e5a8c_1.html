@@ -16,7 +16,7 @@
 		<span>
 			<a href="{$item.image_link}/"><img src="{$item.image_src}" class="img-responsive"></a>
 			<h3 class="margin-top-10 margin-bottom-10">{$item.image_title}</h3>
-			<p class="feature-desc margin-bottom-10">{$item.image_desc|strip_tags:true}</p>
+			<p class="feature-desc margin-bottom-10">{$item.image_desc|truncate:200}</p>
 			
 			<a href="{$item.image_link}/" class="find-more">FIND OUT MORE &gt;</a>
 		</span>

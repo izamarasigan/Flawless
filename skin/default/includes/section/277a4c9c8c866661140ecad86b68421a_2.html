@@ -1,0 +1,55 @@
+
+<div class="container">
+<div class="row footer-callout">
+
+{if $item.pages.0}
+  <div class="col-sm-6">
+		  
+		  <div class="col-sm-3">
+		  <img src="{$item.pages.0.image_src}" class="img-responsive">
+		  </div> 
+		  
+		  
+		  <div class="col-sm-9">
+		  <h3  class="margin-top-10 margin-bottom-10">{$item.pages.0.title}</h3>
+			<p class="margin-bottom-10">{$item.pages.0.caption|truncate:200}</p>
+			<p class="margin-bottom-10">{$item.pages.0.content}</p>
+		  
+		  </div>
+  
+  
+  </div>
+{/if}
+{if $item.pages.1}
+  <div class="col-sm-6">
+		  
+		  <div class="col-sm-3">
+		 <img src="{$item.pages.1.image_src}" class="img-responsive">
+		  </div> 
+		  
+		  
+		  <div class="col-sm-9">
+		  <h3  class="margin-top-10 margin-bottom-10">{$item.pages.1.title}</h3>
+			<p class="margin-bottom-10">{$item.pages.1.caption|truncate:200}</p>
+			<p class="margin-bottom-10">{$item.pages.1.content}</p>
+		  
+		  </div>
+  
+  
+  </div>
+{/if}
+
+</div>
+<br/>
+
+</div>
+
+
+
+
+
+
+
+
+
+ 
