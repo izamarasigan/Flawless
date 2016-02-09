@@ -70,6 +70,7 @@ $route["testimonial/(.*)"] = "testimonial/$1";
 $route["products"] = "pages/index";
 $route["about"] = "pages/index";
 $route["flawlessbestsellers"] = "pages/index";
+
 $route["treatment"] = "pages/index";
 $route["nanopowerpeel"] = "pages/index";
 $route["media"] = "news/index";
@@ -84,6 +85,7 @@ $route["expertiseyoucantrust"] = "pages/index";
 $route["certifedtested"] = "pages/index";
 $route["footerlinks"] = "pages/index";
 $route["services"] = "pages/index";
+
 
 
 ?>
