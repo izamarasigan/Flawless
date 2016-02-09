@@ -46,22 +46,7 @@
 		</div>
 
 
-		<div class="services-item margin-top-20 margin-bottom-50">
-
-		 <!-- ------- -->
-		{if $_page}
-		{foreach from=$_children key=key item=item}
-		<div class="col-md-4 margin-bottom-30"> 
-			<img class="img-responsive" src="upload/images/banner/{$item.image_src}" alt="">
-			<div class="carousel-caption">
-				<h2>{$item.title}</h2>
-				<p>{$item.content|truncate:200}</p>
-				<a href="{$item.page_link}" class="find-more">VIEW ALL &gt;</a>
-			</div>
-		</div>
-		{/foreach}
-		{/if}
-        </div>
+		
 		
 		<!------------------------------ Footer ------------------------------>
 			<footer id="footer-include">{include file="$_theme/include/footer.html"}</footer>
