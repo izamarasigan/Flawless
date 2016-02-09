@@ -1,37 +1,6 @@
 
-<!-- <div class="row">
-	<div class="col-md-3">
-		{if $_page.id_page}<div>{$_page.id_page}</div>{/if}
-		{if $_page.title}<div>{$_page.title}</div>{/if} -->
-		<!-- {if $_page.link_rewrite}<div>{$_page.link_rewrite}</div>{/if}    -->    <!-- WITH SPECIAL CHARACTERS -->
-		<!-- {if $_page.absolute_link}<div>{$_page.absolute_link}</div>{/if}  -->     <!-- WITHOUT SPECIAL CHARACTERS -->
-<!-- 		{if $_page.content}<div>{$_page.content}</div>{/if}
-		{if $_page.caption}<div>{$_page.caption}</div>{/if}
-		{if $_page.image_src}<div><img src="{$_page.image_src}" style="max-height: 150px; max-width: 150px;"/></div>{/if}
-	</div>
-</div> -->
-
-
-	<!-- 	{if $_page.image_src}
-			<section class="heading-title parallax parallax-2" style="background-image: url({$_page.image_src})">
-				<div class="overlay dark-2"></div>
-				
-
-				
-			{/if}
-
-				<div class="container">
-
-					<h2 >{$_page_title}</h2>
-					<span class="size-18 weight-300">{$_page.caption}</span>
-
-				</div>
-			</section>
- -->
-
-			
-			{if $_page.image_src}
-			<section class="page-header-area heading-title parallax parallax-2 margin-bottom-30">
+		<!--	{if $_page.image_src}
+			<section class="heading-title" style="background-image: url({$_page.image_src})">
 
 				
 
@@ -39,16 +8,71 @@
 			{/if}
 
 				<div class="container">
-				
-					<div class="col-md-3 inner-img-banner">
-					<img src="{$_page.image_src}" class="img-responsive pull-right"/>
-					</div>
+
 					
-					<div class="col-md-9 inner-content-banner">
+					<div class="col-md-12">
 					<h2 >{$_page_title}</h2>
 					<span class="size-18 weight-300">{$_page.caption}</span>
 					</div>
+				</div>	
 
-				</div>
-			</section>
 			
+			</section> -->
+			
+				<!-- REVOLUTION SLIDER -->
+					<div class="version-template">
+					<div class="slider fullwidthbanner-container roundedcorners margin-bottom-50">
+
+						<div class="fullwidthbanner" data-height="520" data-shadow="3" data-navigationStyle="">
+							<ul class="hide">
+
+								<!-- SLIDE  -->
+
+								<!-- Always check the JS SCRIPT used in MAIN_JS.JS to make the slider work properly -->
+								<!-- Not all sliders has the same javascript used -->
+								<li data-transition="fade" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" >
+									<img src="assets/images/1x1.png" data-lazyload="{$_page.image_src}" alt="" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" />
+
+									<div class="tp-caption about-title lfb start" 
+										data-x="left" data-hoffset="70"
+										data-y="96" 
+										data-speed="300" 
+										data-start="1200" 
+										data-easing="easeOutExpo" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-elementdelay="0.1" 
+										data-endelementdelay="0.1" 
+										data-endspeed="300">
+											{$_page_title}
+									</div>
+
+									<div class="tp-caption sub-caption-2 lfl start" 
+										data-x="left" data-hoffset="70"
+										data-y="195" 
+										data-speed="300" 
+										data-start="1500" 
+										data-easing="easeOutExpo" 
+										data-splitin="none" 
+										data-splitout="none" 
+										data-elementdelay="0.1" 
+										data-endelementdelay="0.1" 
+										data-endspeed="300" >
+											{$_page.caption}
+									</div>
+									
+
+
+								</li>
+						
+
+	
+
+							</ul>
+
+				
+						</div>
+					</div>
+					</div>
+
+

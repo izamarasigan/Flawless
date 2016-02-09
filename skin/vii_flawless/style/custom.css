@@ -293,7 +293,7 @@ a:hover {color: #F757A7!important;}
 
 .page-header-area .inner-content-banner h2 {
     font-size: 40px;
-    color: #ED3C95!important;
+    color: #ED3C95;
 }
 
 section.dark .pagination > li.active>a, .pagination > li.active>a {
@@ -344,7 +344,7 @@ section.dark .pagination > li.active>a:hover, .pagination > li.active>a:hover { 
 }
 
 
-.page-header-area h2, .page-header-area p, .page-header-area span {color: #666!important;}
+.page-header-area h2, .page-header-area p, .page-header-area span {color: #666;}
 
 
 .page-header-area p {
@@ -356,11 +356,11 @@ section.dark .pagination > li.active>a:hover, .pagination > li.active>a:hover { 
     border-bottom: 1px solid #ECE5E0!important;
 }
 
-.about-template .tp-bullets, .about-template .tparrows.round, .about-template .tp-leftarrow.round, .about-template .tp-bannertimer {
+.version-template .tp-bullets, .version-template .tparrows.round, .version-template .tp-leftarrow.round, .version-template .tp-bannertimer {
     display: none;
 }
 
-.about-template .tp-caption {
+.version-template .tp-caption {
     text-shadow: none;
     color: #ED3C95!important;
     font-family: 'fertigo_proregular', georgia, serif;
@@ -368,17 +368,23 @@ section.dark .pagination > li.active>a:hover, .pagination > li.active>a:hover { 
 	margin-top: -50px!important;
 }
 
-.about-template .tp-caption.sub-caption-2.lfl.start, .about-template .tp-caption.sub-caption-2.lfl.start p {
-    font-size: 75px!important;
+.version-template .tp-caption.sub-caption-2.lfl.start{
+    font-size: 70px!important;
     margin-top: -90px!important;
     line-height: 75px!important;
 }
 
-.about-template .tp-caption.about-content-1.lfl.start{font-size:20px!important;color: #666!important;margin-top: 15px!important;}
+.version-template .tp-caption.about-content-1.lfl.start, .about-content-1 {
+    font-size: 20px;
+    color: #666!important;
+    margin-top: 15px!important;
+    line-height: 30px!important;
+    display: inline-block;
+}
 
-.about-template .about-content-1 div {display:inline;}
+.version-template .about-content-1 div {display:inline;}
 
-.about-template .about-title {font-weight:bold;}
+.version-template .about-title {font-weight:bold;}
 
 .news-item-small-image.margin-bottom-20 {
     float: left;
