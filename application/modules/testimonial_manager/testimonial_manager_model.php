@@ -29,7 +29,7 @@ class Testimonial_manager_model extends CI_Model
 	{
 		$this->db->select('*');
 		$this->db->from('testimonial_internal');
-		$this->db->order_by('date DESC');
+		$this->db->order_by('sort ASC');
 		$query = $this->db->get();
 		if ($query->num_rows() > 0) {
 			$result = $query->result_array();
