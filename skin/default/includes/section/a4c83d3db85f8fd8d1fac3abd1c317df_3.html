@@ -1,0 +1,54 @@
+
+<div class="container">
+<div class="row main-bestsellers">
+	<center>
+	<p class="size-25 header-title margin-bottom-10">{$item.section_title}</p>
+	<p class="size-16  header-title margin-bottom-20">{$item.section_subtitle} </p>
+	<br/>
+	</center>
+{if $item.pages.0}
+	<div class="col-md-4 margin-bottom-30">
+		<span>
+			<a href="{$item.pages.0.page_link}"><img src="{$item.pages.0.image_src}" class="img-responsive"></a>
+			<h3 class="margin-top-10 margin-bottom-10">{$item.pages.0.title}</h3>
+			<p class="feature-desc margin-bottom-10">{$item.pages.0.caption|truncate:150}</p>
+			
+			<a href="{$item.image.0.image_link" class="find-more">FIND OUT MORE &gt;</a>
+		</span>
+	</div>
+{/if}
+{if $item.pages.1}
+	<div class="col-md-4 margin-bottom-30">
+		<span>
+			<a href="{$item.pages.1.page_link}"><img src="{$item.pages.1.image_src}" class="img-responsive"></a>
+			<h3  class="margin-top-10 margin-bottom-10">{$item.pages.1.title}</h3>
+			<p class="feature-desc margin-bottom-10">{$item.pages.1.caption|truncate:150}</p>
+			
+			<a href="{$item.pages.1.page_link}" class="find-more">FIND OUT MORE &gt;</a>
+			
+			
+		</span>
+	</div>
+{/if}
+{if $item.pages.2}
+	<div class="col-md-4 margin-bottom-30">
+		<span>
+			<a href="{$item.pages.2.page_link}"><img src="{$item.pages.2.image_src}" class="img-responsive"></a>
+			<h3  class="margin-top-10 margin-bottom-10">{$item.pages.2.title}</h3>
+			<p class="feature-desc margin-bottom-10">{$item.pages.2.caption|truncate:150}</p>
+			
+			<a href="{$item.pages.2.page_link}" class="find-more">FIND OUT MORE &gt;</a>
+		</span>
+	</div>
+{/if}
+</div>
+<br/>
+
+<div class="line-br margin-bottom-30" style=" background: url(assets/images/line-br.png);"></div>
+
+</div>
+
+
+
+
+ 

@@ -42,7 +42,7 @@
 			{include file="$_theme/include/page-data-v2.html"}
 			
 			<!-- MODULE/PAGE CONTENT -->
-			<div class="content container" id="content_include">{if $_content}{include file=$_content}{/if}{if $_template}{include file=$_template}{/if}</div>
+			<div class="content container" id="content_include">{include file="$_theme/include/child_section.html"}</div>
 			
 			<!-- OTHERS -->
 			<div class="others" id="others_include" >{include file="$_theme/include/others.html"}</div>

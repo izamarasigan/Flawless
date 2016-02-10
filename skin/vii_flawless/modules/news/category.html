@@ -99,11 +99,12 @@
 	
 	
 	{if $category}
-		<div>{$category.category_title}</div>
-		<div>{$category.category_caption}</div>
+		<div><h2>{$category.category_title}</h2></div>
+		<hr class="margin-top-10 margin-bottom-0"/>
+		<!-- <div>{$category.category_caption}</div>
 		<div>{$category.category_desc}</div>
 		<div><a  href="{$category.catagory_link}">{$category.image_title|ucwords}</a></div>
-		<div>{if $category.category_image_src}<img src="{$category.category_image_src}" style="max-height: 150px; max-width: 150px;"/>{/if}</div>
+		<div>{if $category.category_image_src}<img src="{$category.category_image_src}" style="max-height: 150px; max-width: 150px;"/>{/if}</div> -->
 {/if}
 	
 	
@@ -118,14 +119,17 @@
 
 								<!-- IMAGE -->
 								<figure class="news-item-small-image margin-bottom-20">
+									<div class="img-cont">
 									<a href="{$item.image_link}">
-										<img class="img-responsive" src="{$item.image_src_thumb}" alt="{$item.image_title}" >
+										<img class="img-responsive thumbnail" src="{$item.image_src_thumb}" alt="{$item.image_title}" >
 									</a>
+									</div>
 								</figure>
 
 								<div class="news-item-small-content">
 
-									<h2><a href="{$item.image_link}">{$item.image_title|ucwords}</a></h2>
+									<h2>
+									<a href="{$item.image_link}">{$item.image_title|ucwords}</a></h2>
 
 									<ul class="news-post-info list-inline">
 										<li>

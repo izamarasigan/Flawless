@@ -4,6 +4,8 @@ section.slider {
 }
 }
 
+h1, h2, h3, h4, h5, h6 {color: #ED3C95;}
+
 footer, footer a {
   margin-bottom: -27px !important;
 }
@@ -338,10 +340,11 @@ section.dark .pagination > li.active>a:hover, .pagination > li.active>a:hover { 
 }
 
 .services-item a {
-
     font-weight: bold;
     font-size: 15px;
     color: #FF3998;
+    position: absolute;
+    bottom: 10px;
 }
 
 .services-item .carousel-caption {
@@ -406,5 +409,37 @@ section.dark .pagination > li.active>a:hover, .pagination > li.active>a:hover { 
 .media hr { background: #ECE5E0!important;}
 
 
+.img-cont {
+    display: block;
+    height: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 60% 0 0;
+    position: relative;
+    width: 100%;
+}
 
+.img-cont img {
+    bottom: 0 !important;
+    display: block !important;
+    left: 0 !important;
+    margin: auto !important;
+    max-height: 100% !important;
+    max-width: 100%!important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+}
 
+.media  .img-cont img {
+    bottom: 0 !important;
+    display: block !important;
+    left: 0 !important;
+    margin: auto !important;
+    max-height: 100% !important;
+    max-width: 90%!important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+}

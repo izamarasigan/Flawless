@@ -1,0 +1,45 @@
+
+<div class="container">
+<div class="row flawless-lifestyle">
+	<center>
+	<p class="size-25 header-title margin-bottom-10">{$item.section_title}</p>
+	<p class="size-16  header-title margin-bottom-20">{$item.section_subtitle} </p>
+	<br/>
+	</center>
+
+	
+<!-- news_version_1 -->
+
+	{foreach from=$_news key=key item=item}
+	
+	<div class="col-md-4 margin-bottom-30">
+		<span>
+			<span class="img-cont">
+			<a href="{$item.image_link}/"><img src="{$item.image_src}" class="img-responsive"></a>
+			</span>
+			<h3 class="margin-top-10 margin-bottom-10">{$item.image_title|truncate:50}</h3>
+			<p class="feature-desc margin-bottom-10">{$item.image_desc|truncate:150}</p>
+			
+			<a href="{$item.image_link}/" class="find-more">FIND OUT MORE &gt;</a>
+		</span>
+	</div>	
+	
+
+	    {if $key eq 2}{break}{/if} {/foreach}
+
+	
+	
+</div>
+<br>
+
+<center><strong><a href="{$base_url}news"> VIEW MORE <i class="fa fa-chevron-down"></i></a></strong></center>
+<br/>
+
+<div class="line-br margin-bottom-30" style=" background: url(assets/images/line-br.png);"></div>
+
+</div>
+
+
+
+
+ 
