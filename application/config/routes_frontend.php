@@ -86,6 +86,9 @@ $route["footerlinks"] = "pages/index";
 $route["treatment"] = "pages/index";
 $route["expertiseyoucantrust"] = "pages/index";
 $route["certifedtested"] = "pages/index";
+$route["blog"] = "blog/index";
+$route["blog/(.*)"] = "blog/$1";
+
 $route["contactus"] = "contactus/index";
 $route["contactus/(.*)"] = "contactus/$1";
 
