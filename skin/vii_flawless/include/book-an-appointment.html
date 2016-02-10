@@ -1,240 +1,173 @@
-
-    <div class="container book-appointment margin-bottom-50">
-
-        <div class="row">
-
-			<div class="margin-top-50">
-						
-						<div>
-							<span class="pull-right size-18 weight-300 margin-top-10">{$_page.caption}</span>
-							<h2>{$_page_title}<h2 >
-						</div>
-			</div>
-			
-
-			{if $_page.image_src}
-			<img src="{$_page.image_src}" class="img-responsive margin-bottom-20"/>
-				
-			{else}
-				<img src="{$_page.image_src}" class="img-responsive margin-bottom-20 hidden"/> <!-- -- hidden code for FF image curropted issue - -->
-					
-			{/if}			
-			
-			<span class="size-18 weight-300 margin-top-10">{$_page.content}</span>
-			
-			
-			<ul class="nav nav-tabs nav-top-border">
-				<li class="active"><a href="#new" data-toggle="tab">New Customer</a></li>
-				
-				<li class="hidden"><a href="#existing" data-toggle="tab">Existing  Customer</a></li>
-			
-			</ul>
-
-			<div class="tab-content">
-			
-			
-			
-				<div class="tab-pane fade in active" id="new"><br/>
-				
-				
-					<!-- --------- -->
-					
-					<div class="form-group has-feedback">
-					
-						<label class="col-xs-3 control-label">YOUR NAME (REQUIRED)</label>
-						
-						<div class="col-xs-9">
-						
-							<input type="text" class="form-control" name="test" data-fv-field="test"><i class="form-control-feedback" data-fv-icon-for="fullName" style="display: none;"></i>
-							
-							<!-- -- notification -->
-							<small class="help-block" data-fv-validator="notEmpty" data-fv-for="test" data-fv-result="NOT_VALIDATED" style="display: none;">The full name is required</small></div>
-							
-					</div>
-					<div class="clearfix"></div>
-					
-					<!-- --------- -->
-					
-					<div class="form-group has-feedback">
-					
-						<label class="col-xs-3 control-label">YOUR EMAIL (REQUIRED)</label>
-						
-						<div class="col-xs-9">
-						
-							<input type="text" class="form-control" name="test" data-fv-field="test"><i class="form-control-feedback" data-fv-icon-for="fullName" style="display: none;"></i>
-							
-							<!-- -- notification -->
-							<small class="help-block" data-fv-validator="notEmpty" data-fv-for="test" data-fv-result="NOT_VALIDATED" style="display: none;">The full name is required</small></div>
-							
-					</div>
-					<div class="clearfix"></div>
-					
-					<!-- --------- -->
-					
-					<div class="form-group has-feedback">
-					
-						<label class="col-xs-3 control-label">YOUR CONTACT NO. (REQUIRED)</label>
-						
-						<div class="col-xs-9">
-						
-							<input type="text" class="form-control" name="test" data-fv-field="test"><i class="form-control-feedback" data-fv-icon-for="fullName" style="display: none;"></i>
-							
-							<!-- -- notification -->
-							<small class="help-block" data-fv-validator="notEmpty" data-fv-for="test" data-fv-result="NOT_VALIDATED" style="display: none;">The full name is required</small></div>
-							
-					</div>
-					<div class="clearfix"></div>
-					
-					
-					<hr class="margin-bottom-50">
-					
-					<!-- --------- -->
-					
-					<div class="form-group has-feedback">
-					
-						<label class="col-xs-3 control-label">CHOICE OF TREATMENT/S</label>
-						
-					<div class="col-xs-9">
-						
-							<select class="form-control select2">
-								<option value="">FACIAL</option>
-
-							</select>
-							
-					</div>
-					
-					</div>
-					<div class="clearfix"></div>
-					
-					<!-- --------- -->
-					
-					<div class="form-group has-feedback">
-					
-						<label class="col-xs-3 control-label">DATE OF APPOINTMENT</label>
-						
-					<div class="col-xs-9">
-						
-								<!-- date picker -->
-								<input type="text" class="form-control datepicker hidden" data-format="yyyy-mm-dd">
-
-								<!-- range picker -->
-								<input type="text" class="form-control rangepicker" value="2015-01-01 - 2016-12-31" data-format="yyyy-mm-dd" data-from="2015-01-01" data-to="2016-12-31" data-lang="en" data-RTL="false">
-							
-					</div>
-					
-					</div>
-					<div class="clearfix"></div>
-					
-					<!-- --------- -->
-					
-					<div class="form-group has-feedback">
-					
-						<label class="col-xs-3 control-label">TIME OF APPOINTMENT</label>
-						
-					<div class="col-xs-9">
-						
-								<!-- date timepicker -->
-								<input type="text" class="form-control timepicker" value="11 : 55 : PM">
-							
-					</div>
-					
-					</div>
-					<div class="clearfix"></div>
-					
-					<!-- --------- -->
-					
-					<div class="form-group has-feedback">
-					
-						<label class="col-xs-3 control-label">CLINIC LOCATION</label>
-						
-					<div class="col-xs-9">
-						
-							<select class="form-control select2">
-								<option value="">SM STA. MESA</option>
-
-							</select>
-							
-					</div>
-					
-					</div>
-					<div class="clearfix"></div>
-					
-					<hr class="margin-bottom-50">
-					
-					<!-- -------------------- -->
-					
-					<div class="form-group has-feedback">
-					
-						<label class="col-xs-3 control-label">MEDICAL INFORMATION (OPTIONAL)</label>
-						
-					<div class="col-xs-9">
-						
-								<div class="fancy-form">
-									<textarea rows="5" class="form-control word-count" data-maxlength="200" data-info="textarea-words-info" placeholder=" " style="padding-top: 10px;"></textarea>
-
-									<i class="fa fa-comments"><!-- icon --></i>
-								</div>
-							
-					</div>
-					
-					</div>
-					<div class="clearfix"></div>
-					
-					<!-- -------------------- -->
-					
-					<div class="form-group has-feedback">
-					
-						<label class="col-xs-3 control-label">ANY ADDITIONAL COMMENTS  (OPTIONAL)</label>
-						
-					<div class="col-xs-9">
-						
-								<div class="fancy-form">
-									<textarea rows="5" class="form-control word-count" data-maxlength="200" data-info="textarea-words-info" placeholder=" "></textarea>
-
-									<i class="fa fa-comments"><!-- icon --></i>
-								</div>
-							
-					</div>
-					
-					</div>
-					
-					
-					<!-- -------------------- -->
-					
-					<div class="col-md-12 ">
-						<button type="submit" id="#" class="btn btn-primary center-block btn-lg"><strong>SUBMIT BOOKING</strong></button>											
-					</div>
-					
-					<!-- -------------------- -->
-
-				
-				<div class="clearfix"></div> 
-
-				</div>
-				
-				
-				
-				
-				<!-- -------------End------------------ -->
-				
-				<div class="tab-pane fade" id="existing">
-					<p>------</p>
-				
-				
-				
-				<div class="clearfix"></div> 
-				<br/>
-				</div>
-		
-			
-			</div>
+<div class="container book-appointment margin-bottom-50">
+	<div class="row">
+		<div class="margin-top-50">
+		<div>
+		<span class="pull-right size-18 weight-300 margin-top-10">{$_page.caption}</span>
+		<h2>{$_page_title}<h2 >
+		</div>
+	</div>
 
 
-		
-        </div>
+{if $_page.image_src}
+<img src="{$_page.image_src}" class="img-responsive margin-bottom-20"/>
+{else}
+<img src="{$_page.image_src}" class="img-responsive margin-bottom-20 hidden"/> <!-- -- hidden code for FF image curropted issue - -->
+{/if}			
+<span class="size-18 weight-300 margin-top-10">{$_page.content}</span>
 
-    </div>
 
-    <div class="copyright">
+<ul class="nav nav-tabs nav-top-border">
+<li class="active"><a href="#new" data-toggle="tab">New Customer</a></li>
+<li class="hidden"><a href="#existing" data-toggle="tab">Existing  Customer</a></li>
+</ul>
+<div class="tab-content">
 
-    </div>
+<form id='contactusForm' onsubmit="return false;" class="appointment-form" action="php/contact.php" method="post" enctype="multipart/form-data" onsubmit="return false;">
+
+<div class="tab-pane fade in active" id="new"><br/>
+
+<!-- --------- -->
+
+<div class="form-group has-feedback">
+<label class="col-xs-3 control-label">YOUR NAME (REQUIRED)</label>
+<div class="col-xs-9">
+<input required type="text" class="form-control" name="data[name]" data-fv-field="test"><i class="form-control-feedback" data-fv-icon-for="name" style="display: none;"></i>
+
+<!-- -- notification -->
+<small class="help-block" data-fv-validator="notEmpty" data-fv-for="test" data-fv-result="NOT_VALIDATED" style="display: none;">The full name is required</small></div>
+</div>
+
+<div class="clearfix"></div>
+
+<!-- --------- -->
+
+<div class="form-group has-feedback">
+<label class="col-xs-3 control-label">YOUR EMAIL (REQUIRED)</label>
+<div class="col-xs-9">
+<input required type="text" class="form-control" name="data[email]" data-fv-field="test"><i class="form-control-feedback" data-fv-icon-for="email" style="display: none;"></i>
+<!-- -- notification -->
+<small class="help-block" data-fv-validator="notEmpty" data-fv-for="test" data-fv-result="NOT_VALIDATED" style="display: none;">The full name is required</small></div>
+</div>
+<div class="clearfix"></div>
+
+<!-- --------- -->
+
+<div class="form-group has-feedback">
+
+<label class="col-xs-3 control-label">YOUR CONTACT NO. (REQUIRED)</label>
+
+<div class="col-xs-9">
+
+<input required type="text" class="form-control" name="data[phone]" data-fv-field="test"><i class="form-control-feedback" data-fv-icon-for="fullName" style="display: none;"></i>
+
+<!-- -- notification -->
+<small class="help-block" data-fv-validator="notEmpty" data-fv-for="test" data-fv-result="NOT_VALIDATED" style="display: none;">The full name is required</small></div>
+
+</div>
+
+<div class="clearfix"></div>
+<hr class="margin-bottom-50">
+<!-- --------- -->
+<div class="form-group has-feedback">
+<label class="col-xs-3 control-label">CHOICE OF TREATMENT/S</label>
+<div class="col-xs-9">
+<select required class="form-control select2" name="data[treatment]" >
+{foreach from=$TREATMENTS key=key item=item} 
+<option value="{$item.id_treatment}">{$item.treatment_name}</option>
+{/foreach}
+</select>
+
+</div>
+
+</div>
+<div class="clearfix"></div>
+<!-- --------- -->
+
+<!-- --------- -->
+
+<div class="form-group has-feedback">
+<label required class="col-xs-3 control-label" name="data[time_appointment]" >TIME OF APPOINTMENT</label>
+<div class="col-xs-9">
+<!-- date timepicker -->
+<input type="text" class="form-control timepicker" value="11 : 55 : PM">
+</div>
+
+</div>
+<div class="clearfix"></div>
+
+<!-- --------- -->
+
+<div class="form-group has-feedback">
+<label class="col-xs-3 control-label">CLINIC LOCATION</label>
+<div class="col-xs-9">
+<select required class="form-control select2" name="data[id_branch]">
+{foreach from=$BRANCHES key=key item=item} 
+<option value="{$item.id_branch_item}">{$item.branch_name}</option>
+{/foreach}
+</select>
+
+</div>
+
+</div>
+<div class="clearfix"></div>
+
+<hr class="margin-bottom-50">
+<!-- -------------------- -->
+<div class="form-group has-feedback">
+<label class="col-xs-3 control-label">MEDICAL INFORMATION (OPTIONAL)</label>
+<div class="col-xs-9">
+
+<div class="fancy-form">
+<textarea name="data[medical_info]" rows="5" class="form-control word-count" data-maxlength="200" data-info="textarea-words-info" placeholder=" " style="padding-top: 10px;"></textarea>
+<i class="fa fa-comments"><!-- icon --></i>
+</div>
+
+</div>
+
+</div>
+<div class="clearfix"></div>
+
+<!-- -------------------- -->
+<div class="form-group has-feedback">
+<label class="col-xs-3 control-label">ANY ADDITIONAL COMMENTS  (OPTIONAL)</label>
+<div class="col-xs-9">
+<div class="fancy-form">
+<textarea rows="5" name="data[comment]" class="form-control word-count" data-maxlength="200" data-info="textarea-words-info" placeholder=" "></textarea>
+
+<i class="fa fa-comment"><!-- icon --></i>
+</div>
+</div>
+</div>
+
+<!-- -------------------- -->
+
+<div class="col-md-12 ">
+<button type="submit" id="#" class="btn btn-primary center-block btn-lg"><strong>SUBMIT BOOKING</strong></button>											
+</div>
+
+<!-- -------------------- -->
+
+
+<div class="clearfix"></div> 
+</div>
+</form>
+
+
+<!-- -------------End------------------ -->
+
+<div class="tab-pane fade" id="existing">
+<p>------</p>
+
+<div class="clearfix"></div> 
+<br/>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="copyright">
+
+</div>

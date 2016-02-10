@@ -1,0 +1,65 @@
+USE SMARTY SYNTAX {literal}{/literal} - <!-- HERE'S A LINK PLEASE READ AND UNDERSTAND THE USE OF LITERAL http://www.smarty.net/docsv2/en/language.function.literal -->
+USE SMARTY SYNTAX {literal}{/literal} - <!-- HERE'S A LINK PLEASE READ AND UNDERSTAND THE USE OF LITERAL http://www.smarty.net/docsv2/en/language.function.literal -->
+
+TO CHECK YOUR EMAIL PLEASE TRY THIS:
+http://<BASE_URL>/contactus/check_template/?RECEIVER=<EMAIL>&TEMPLATE=<FILENAME>
+
+REPLACE THE FOLLOWING WITH YOUR DESIRED VALUES (including the <>):
+EX.
+<BASE_URL> = viiworks.com
+<EMAIL> = testviiworks@gmail.com
+<FILENAME> = contact-us-admin.html
+
+SAMPLE OUTPUT (this link below is just and example and to show what will be the output if you replace the <EMAIL/FILENAME> with your values):
+<!-- PLEASE DO NOT CLICK OR GO TO THIS LINK BECAUSE THIS IS JUST AN EXAMPLE -->
+http://viiworks.com/contactus/check_template/?RECEIVER=testviiworks@gmail.com&TEMPLATE=contact-us-admin.html
+*** THIS IS ONLY APPLICABLE IF THE FILES IS IN THE SERVER ALREADY
+*** THIS IS WILL NOT WORK IN LOCAL SETUP
+<!-- PLEASE DO NOT CLICK OR GO TO THIS LINK BECAUSE THIS IS JUST AN EXAMPLE -->
+ 
+<p>Dear Administrator,</p>
+<p>Please be advised that <strong>{$data.name}</strong> sent a Contact Us Message on {$data.date_add|date_format}.</p>
+<table border="1">
+    {if $data.name}
+    <tr>
+        <td><strong>Name:</strong>
+        </td>
+        <td>{$data.name}</td>
+    </tr>
+    {/if}
+    {if $data.email}
+    <tr>
+        <td><strong>Email:</strong>
+        </td>
+        <td>{$data.email}</td>
+    </tr>
+    {/if}
+    {if $data.phone}
+    <tr>
+        <td><strong>Phone:</strong>
+        </td>
+        <td>{$data.phone}</td>
+    </tr>
+    {/if}
+     {if $data.address}
+    <tr>
+        <td><strong>Address:</strong>
+        </td>
+        <td>{$data.address}</td>
+    </tr>
+    {/if}
+    {if $data.subject}
+    <tr>
+        <td><strong>Subject:</strong>
+        </td>
+        <td>{$data.subject}</td>
+    </tr>
+    {/if}
+    {if $data.message}
+    <tr>
+        <td><strong>Message:</strong>
+        </td>
+        <td>{$data.message|strip_tags}</td>
+    </tr>
+    {/if}
+</table>
