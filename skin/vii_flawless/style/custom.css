@@ -263,11 +263,15 @@ a:hover {color: #F757A7!important;}
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
     border-color: transparent transparent #DE72B1 }
 
-.book-appointment i.fa.fa-comments {
+.book-appointment i.fa.fa-comments, .fancy-form>i {
     color: #ED3C95;
     opacity: .5;
 }
 
+.subscribe-form i.icon-remove {
+    margin-top: 10px;
+    margin-right: 10px;
+}
 
 .media .nav-tabs.nav-bottom-border>li.active>a, .nav-tabs.nav-bottom-border>li.active>a:hover {
     border-bottom-color: #ED3C95  !important;
@@ -362,7 +366,7 @@ section.dark .pagination > li.active>a:hover, .pagination > li.active>a:hover { 
     text-align: left;
     top: 0%;
     bottom: 0%;
-    background: rgba(255,255,255,.5);
+    background: rgba(255,255,255,.3);
     padding: 15px!important;
 }
 
@@ -454,4 +458,54 @@ section.dark .pagination > li.active>a:hover, .pagination > li.active>a:hover { 
 
 .version-template .tp-bannershadow.tp-shadow3 {
     display: none;
+}
+
+/* -------- */
+
+
+#topBar .vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+#topBar .vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+}
+#topBar .modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+}
+#topBar  .modal-dialog {box-shadow: none;}
+
+.modal-backdrop {
+    background-color: #ED3C95;
+}
+
+#topBar .modal-header .close {
+    margin-top: -25px;
+}
+
+/* -------- */
+
+.table-responsive table .list-inline>li {
+    line-height: 25px;
+}
+
+.table-responsive table.table.table-vertical-middle {
+    border: 1px solid #DDDDDD;
+}
+
+.table-responsive thead {
+    background: #ED3C95;
+    color: #fff;
+	border: 1px solid #ED3C95;
+}
+
+.table-responsive .table>thead>tr>th {
+    border-bottom: none!important;
 }
