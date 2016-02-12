@@ -49,12 +49,12 @@ class Uploader_model extends CI_Model
 	}
 	function _uploadImage($temp_dir = false, $temp_thumb_dir = false, $max_width = false, $max_height = false, $type = false, $multiple = false)
 	{
-		if(!$max_width){
-			$max_width  = 1600;
-		}
-		if(!$max_height){
-			$max_height  = 1600;
-		}
+		// if(!$max_width){
+		// 	$max_width  = 1600;
+		// }
+		// if(!$max_height){
+		// 	$max_height  = 1600;
+		// }
 		if($type){
 			$item = $this->getConfig('IMAGE_DIMENSIONS');
 			$item = json_decode($item, true);
