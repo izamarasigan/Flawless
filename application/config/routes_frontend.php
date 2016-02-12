@@ -1,7 +1,8 @@
 <?php  if (!defined("BASEPATH")) exit("No direct script access allowed");
 
-$route["treatment/medicalinjectables/mesotherapy"] = "pages/index";
+
 $route["products/beautykits/flawlesswhiteningkit"] = "pages/index";
+
 $route["treatment/laserrfandothers/shapesculptcream"] = "pages/index";
 $route["treatment/laserrfandothers/smartpl"] = "pages/index";
 $route["treatment/laserrfandothers/advancedrf"] = "pages/index";
@@ -42,6 +43,7 @@ $route["treatment/medicalinjectables"] = "pages/index";
 $route["treatment/microdermabrasion"] = "pages/index";
 $route["treatment/ultratreatment"] = "pages/index";
 $route["treatment/medical"] = "pages/index";
+
 $route[""] = "pages/index";
 $route["error"] = "pages/error";
 $route["faqs"] = "faqs/index";
