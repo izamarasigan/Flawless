@@ -4,7 +4,7 @@ section.slider {
 }
 }
 
-h1, h2, h3, h4, h5, h6 {color: #ED3C95;}
+h1, h2, h3, h4, h5, h6 {color: #ED3C95;font-weight: 300;}
 
 footer, footer a {
   margin-bottom: -27px !important;
@@ -15,8 +15,16 @@ footer, footer a {
 	    border-color: #ED3C95!important;
 }
 
-h4#mySmallModalLabel {
+
+.heading-title.heading-arrow-bottom:after { border-top: 20px solid #ED3C95;}
+
+h4#mySmallModalLabel, h2 > span {
     color: #ED3C95;
+}
+
+.heading-title.heading-arrow-bottom {
+    color: #fff;
+    background-color: #ED3C95;
 }
 
 section.featured-grid div.row>div .ribbon:before, .modal-content {
@@ -442,4 +450,8 @@ section.dark .pagination > li.active>a:hover, .pagination > li.active>a:hover { 
     position: absolute !important;
     right: 0 !important;
     top: 0 !important;
+}
+
+.version-template .tp-bannershadow.tp-shadow3 {
+    display: none;
 }

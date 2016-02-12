@@ -22,7 +22,7 @@
 				<!-- REVOLUTION SLIDER -->
 				{if $_page.image_src}
 					<div class="version-template">
-					<div class="slider fullwidthbanner-container roundedcorners margin-bottom-10">
+					<div class="slider fullwidthbanner-container roundedcorners">
 
 						<div class="fullwidthbanner" data-height="520" data-shadow="3" data-navigationStyle="">
 							<ul class="hide">
@@ -33,37 +33,6 @@
 								<!-- Not all sliders has the same javascript used -->
 								<li data-transition="fade" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" >
 									<img src="assets/images/1x1.png" data-lazyload="{$_page.image_src}" alt="" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" />
-
-									<div class="tp-caption about-title lfb start" 
-										data-x="left" data-hoffset="70"
-										data-y="96" 
-										data-speed="300" 
-										data-start="1200" 
-										data-easing="easeOutExpo" 
-										data-splitin="none" 
-										data-splitout="none" 
-										data-elementdelay="0.1" 
-										data-endelementdelay="0.1" 
-										data-endspeed="300">
-											{$_page_title}
-									</div>
-
-									<div class="tp-caption sub-caption-2 lfl start" 
-										data-x="left" data-hoffset="70"
-										data-y="195" 
-										data-speed="300" 
-										data-start="1500" 
-										data-easing="easeOutExpo" 
-										data-splitin="none" 
-										data-splitout="none" 
-										data-elementdelay="0.1" 
-										data-endelementdelay="0.1" 
-										data-endspeed="300" >
-											{$_page.caption}
-									</div>
-									
-
-
 								</li>
 						
 
@@ -76,5 +45,15 @@
 					</div>
 					</div>
 					{/if}
-					<br/>
-
+					
+					
+					{if $_page_title}
+					<section class="heading-title heading-arrow-bottom margin-bottom-20 padding-bottom-10 padding-top-10">				
+							<div class="container">					
+								<div class="text-center">						
+								<h3>{$_page_title}</h3>						
+								<p>{$_page.caption}</p>					
+								</div>				
+							</div>
+						</section>
+					{/if}	
