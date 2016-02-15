@@ -31,6 +31,11 @@ CMS.initPage = function() {
 					} else {
 						$('input#caption_active').prop('checked', false);
 					}
+					if (dataJ.page.show_children == 1) {
+						$('input#show_children').prop('checked', true);
+					} else {
+						$('input#show_children').prop('checked', false);
+					}
 					if (dataJ.page.content_active == 1) {
 						$('input#content_active').prop('checked', true);
 					} else {

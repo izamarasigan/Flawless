@@ -79,6 +79,19 @@
 													<option value="0"> -- Select Parent Page -- </option> {page_recurse array=$tree option='dropdown'} </select>
 											</div>
 										</div>
+
+										<div class="form-group">
+											<label class="col-sm-2 control-label no-padding-right" for="inputBcMethod"> Show Children </label>
+											<div class="col-sm-10">
+												<span class="help-inline col-xs-12 col-sm-7">
+													<label class="middle">
+														<input type="checkbox" id="show_children" class="ace ace-checkbox-2 fieldEditable fieldEditable" disabled="disabled" name="data[clmn_show_children]" >
+														<span class="lbl"> Active </span>
+													</label>
+												</span>
+											</div>
+										</div>
+										
 										<div class="form-group">
 											<label class="col-sm-2 control-label no-padding-right" for="inputBcMethod"> Content </label>
 											<div class="col-sm-10">
@@ -91,6 +104,7 @@
 												</span>
 											</div>
 										</div>
+
 										<div class="form-group {if $_admin.id_admin_group neq 1}hid{/if}">
 											<label class="col-sm-2 control-label no-padding-right" for="inputBcMethod"> Module </label>
 											<div class="col-sm-10">
