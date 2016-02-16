@@ -309,6 +309,9 @@ class Globals
 			}
 			//print_r($this->_getChildren($curr_page['id_page']));exit;
 			$this->CI->template->assign('_children', $this->_getChildren($curr_page['id_page']));
+			$this->CI->template->assign('_descendants', $this->_getDescendants($curr_page['id_page']));
+			//print_r('test');exit;
+			//print_r($this->_getDescendants($curr_page['id_page']));exit;
 			$this->CI->template->assign('_content', 'default' . '/modules/pages/_content.html');
 			$this->CI->template->assign('_page', $curr_page);
 			$this->CI->template->assign('_module', $this->module);
@@ -425,6 +428,46 @@ class Globals
 			return false;
 		}
 	}
+
+	function _getDescendants($id,$cycle=0)
+	{	
+		//print_r($id);exit;
+		$cycle = $cycle + 1;
+		$familyTree = array();
+		$temp = array();
+		$generation = $this->_getChildren($id);
+		
+		//print_r($generation);exit;
+		foreach($generation as $item){
+			$temp[$item['id_page']] = $item;
+			$temp[$item['id_page']]['nextGen'] =  $this->_getDescendants($item['id_page']);
+			//$nextGeneration = $this->_getChildren($item['id_page']);
+			//print_r($item);exit;
+			
+		}
+		$familyTree = $temp;
+		$result = $this->getDescendantsByDepth($familyTree);
+
+		return $result;
+	}
+
+	function getDescendantsByDepth($descendants){
+		$result = array();
+		foreach($descendants as $item){
+			//print_r('hello');print_r($item);
+			 foreach($item['nextGen'] as $nextGen){
+			 	$result[] = $nextGen;
+			 }
+			 $result[] = $item;
+		}
+		$ret = array();
+		foreach($result as $one){
+			if($one['depth'] == 3){
+				$ret[] = $one;
+			}
+		}
+		return $ret;
+	}	
 
 	function _getNav()
 	{
