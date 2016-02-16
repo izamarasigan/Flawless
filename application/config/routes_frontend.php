@@ -4,6 +4,7 @@ $route["products/individualproducts/individualproductstessst"] = "pages/index";
 $route["treatment/medical/testimagepage"] = "pages/index";
 $route["products/beautykits/beautykitstesssstttt"] = "pages/index";
 $route["products/beautykits/testteejaypage"] = "pages/index";
+$route["products/individualproducts/individualproductstessstsssssss"] = "pages/index";
 $route["products/individualproducts"] = "pages/index";
 $route["products/beautykits"] = "pages/index";
 $route["treatment/facials"] = "pages/index";
