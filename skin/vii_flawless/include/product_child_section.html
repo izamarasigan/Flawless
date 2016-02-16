@@ -288,3 +288,20 @@
 
 
 
+<div class="services-item margin-top-20">
+
+		 <!-- ------- -->
+		{foreach from=$_descendants key=key item=item}
+		<div class="col-md-4 margin-bottom-30 wow flipInY animation-visible animated"> 
+			<!-- <img class="img-responsive" src="upload/images/banner/{$item.image_src}" alt=""> -->
+			<img src="{$base_url}upload/images/banner/{$item.image_src}" class="img-responsive">		
+			<div class="carousel-caption">
+				<!-- <h2>{$item.title}</h2> -->
+				<!-- <p>{$item.content|truncate:120}</p> -->
+				<a href="{$item.page_link}" class="find-more">VIEW ALL &gt;</a>
+			</div>
+		</div>
+		{/foreach}
+
+</div>
+<p class="margin-bottom-0" style="visibility:hidden;">-</p>
