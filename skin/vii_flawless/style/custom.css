@@ -4,7 +4,13 @@ section.slider {
 }
 }
 
-h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: #ED3C95;font-weight: 300;}
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: #ED3C95!important;font-weight: 300;}
+
+p {
+    margin-bottom: 5px!important;
+}
+
+body {font-size: 16px;}
 
 #topNav button.btn-mobile {
     color: #E7E7E7!important;}

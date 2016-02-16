@@ -35,34 +35,33 @@
 		
 		
 		<!-- ------------ Start Product Item Beauty kits ------------ -->
-		
+		{foreach from=$_descendants key=key item=item}
+		{if $item.id_parent eq '198'}
 		<div class="col-md-12 col-xs-6 div_products_list  wow flipInY animation-visible animated" id="282">
 		
 			<div class="item cst-page-bg-color margin-bottom-20 widget-quicklink">
 												
 				<!-- Item image -->
-				<a href="#" class="quickview">
-						<img src="../../upload/images/cms/q-view.png">
+				<a href="{$item.page_link}" class="quickview">
+						<img src="../../upload/images/cms/q-view.png" class="img-responsive">	
 				</a>  
 			
 				<div class="item-image img-cont" style="background: #fff;padding: 102px;">
-						<img src="../../upload/images/gallery/sample-product.png" alt="" class="img-responsive float" style="width: 316px;"> 
+						<img src="{$base_url}upload/images/banner/{$item.image_src}" alt="" class="img-responsive float" style="width: 316px;"> 
 				</div>
 															
 				<!-- Item details -->
 				<div class="item-details">
 					<!-- Name -->
 					<h4 class="margin-bottom-0">
-						<a title="#" href="#" class="cst-page-font-color">
-							Acne Control Kit
+						<a title="{$item.title}" href="{$item.page_link}" class="cst-page-font-color">
+							{$item.title}
 						</a>
 					</h4>
 					<div class="clearfix"></div>
-					
+
 					<!-- Content -->
-					<p class="margin-bottom-10 size-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<!-- Price -->
-					<p class="margin-bottom-10 item-page-font-color">In Stock <br> ₱ 4,295.00</p>
+					<p class="margin-bottom-10 item-page-font-color">{$item.content}</p>
 																							
 				
 				</div>
@@ -70,52 +69,12 @@
 			</div>
 
 		</div>
-		
-		<!-- ------------ End Product Item Beauty kits ------------ -->
-		
-		<!-- ------------ Start Product Item Beauty kits ------------ -->
-		
-		<div class="col-md-12 col-xs-6 div_products_list  wow flipInY animation-visible animated" id="282">
-		
-			<div class="item cst-page-bg-color margin-bottom-20 widget-quicklink">
-												
-				<!-- Item image -->
-				<a href="#" class="quickview">
-						<img src="../../upload/images/cms/q-view.png">
-				</a>  
-			
-				<div class="item-image img-cont" style="background: #fff;padding: 102px;">
-						<img src="../../upload/images/gallery/sample-product.png" alt="" class="img-responsive float" style="width: 316px;"> 
-				</div>
-															
-				<!-- Item details -->
-				<div class="item-details">
-					<!-- Name -->
-					<h4 class="margin-bottom-0">
-						<a title="#" href="#" class="cst-page-font-color">
-							Acne Control Kit
-						</a>
-					</h4>
-					<div class="clearfix"></div>
-					
-					<!-- Content -->
-					<p class="margin-bottom-10 size-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<!-- Price -->
-					<p class="margin-bottom-10 item-page-font-color">In Stock <br> ₱ 4,295.00</p>
-																							
-				
-				</div>
-			
-			</div>
-
-		</div>
-		
-		<!-- ------------ End Product Item Beauty kits ------------ -->
-		
-		
-		
-			
+			{/if}
+		{/foreach}
 	
+		
+		<!-- ------------ End Product Item Beauty kits ------------ -->
+
 	<div class="clearfix"></div>
 </div>
 
@@ -135,8 +94,19 @@
 		
 		
 		<!-- ------------ Start Product Item Individual Products------------ -->
+		
+		
 
+
+		 <!-- ------- -->
+		
+	
+
+		{foreach from=$_descendants key=key item=item}
+		{if $item.id_parent eq '104'}
 		<div class="col-md-6 col-xs-6 div_products_list  wow flipInY animation-visible animated" id="282">
+		
+
 		
 			<div class="item cst-page-bg-color margin-bottom-20 widget-quicklink">
 												
@@ -146,140 +116,30 @@
 				</a>  
 			
 				<div class="item-image img-cont" style="background: #E7E3DE;">
-						<img src="../../upload/images/gallery/sample-product.png" alt="" class="img-responsive float" style="width: 316px;"> 
+						<img src="{$base_url}upload/images/banner/{$item.image_src}" class="img-responsive"  style="width: 316px;">
 				</div>
 															
 				<!-- Item details -->
 				<div class="item-details">
-														<!-- Name -->
+					<!-- Name -->
 					<h4 class="margin-bottom-0">
-						<a title="#" href="#" class="cst-page-font-color">
-							Acne Control Kit
+						<a title="{$base_url}upload/images/banner/{$item.image_src}" href="#" class="cst-page-font-color">
+							{$item.title}
 						</a>
 					</h4>
 					<div class="clearfix"></div>
-														<!-- Price -->
-				<!-- Content -->
-					<p class="margin-bottom-10 size-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<!-- Price -->
-					<p class="margin-bottom-10 item-page-font-color">In Stock <br> ₱ 4,295.00</p>
-																							
+					
+					<!-- Content -->
+					<p class="margin-bottom-10 item-page-font-color">{$item.content|truncate:10}</p>																						
+				
 				</div>
 				
 		</div>
 		</div>
+		{/if}
+		{/foreach}
 		<!-- ------------ End  Product Item Individual Products------------ -->
-		
-		
-		<!-- ------------ Start Product Item Individual Products------------ -->
-
-		<div class="col-md-6 col-xs-6 div_products_list  wow flipInY animation-visible animated" id="282">
-		
-			<div class="item cst-page-bg-color margin-bottom-20 widget-quicklink">
-												
-				<!-- Item image -->
-				<a href="#" class="quickview">
-						<img src="../../upload/images/cms/q-view.png">
-				</a>  
-			
-				<div class="item-image img-cont" style="background: #E7E3DE;">
-						<img src="../../upload/images/gallery/sample-product.png" alt="" class="img-responsive float" style="width: 316px;"> 
-				</div>
-															
-				<!-- Item details -->
-				<div class="item-details">
-														<!-- Name -->
-					<h4 class="margin-bottom-0">
-						<a title="#" href="#" class="cst-page-font-color">
-							Acne Control Kit
-						</a>
-					</h4>
-					<div class="clearfix"></div>
-														<!-- Price -->
-				<!-- Content -->
-					<p class="margin-bottom-10 size-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<!-- Price -->
-					<p class="margin-bottom-10 item-page-font-color">In Stock <br> ₱ 4,295.00</p>
-																							
-				</div>
-				
-		</div>
-		</div>
-		<!-- ------------ End  Product Item Individual Products------------ -->
-		
-		
-		<!-- ------------ Start Product Item Individual Products------------ -->
-
-		<div class="col-md-6 col-xs-6 div_products_list  wow flipInY animation-visible animated" id="282">
-		
-			<div class="item cst-page-bg-color margin-bottom-20 widget-quicklink">
-												
-				<!-- Item image -->
-				<a href="#" class="quickview">
-						<img src="../../upload/images/cms/q-view.png">
-				</a>  
-			
-				<div class="item-image img-cont" style="background: #E7E3DE;">
-						<img src="../../upload/images/gallery/sample-product.png" alt="" class="img-responsive float" style="width: 316px;"> 
-				</div>
-															
-				<!-- Item details -->
-				<div class="item-details">
-														<!-- Name -->
-					<h4 class="margin-bottom-0">
-						<a title="#" href="#" class="cst-page-font-color">
-							Acne Control Kit
-						</a>
-					</h4>
-					<div class="clearfix"></div>
-														<!-- Price -->
-				<!-- Content -->
-					<p class="margin-bottom-10 size-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<!-- Price -->
-					<p class="margin-bottom-10 item-page-font-color">In Stock <br> ₱ 4,295.00</p>
-																							
-				</div>
-				
-		</div>
-		</div>
-		<!-- ------------ End  Product Item Individual Products------------ -->
-		
-		<!-- ------------ Start Product Item Individual Products------------ -->
-
-		<div class="col-md-6 col-xs-6 div_products_list  wow flipInY animation-visible animated" id="282">
-		
-			<div class="item cst-page-bg-color margin-bottom-20 widget-quicklink">
-												
-				<!-- Item image -->
-				<a href="#" class="quickview">
-						<img src="../../upload/images/cms/q-view.png">
-				</a>  
-			
-				<div class="item-image img-cont" style="background: #E7E3DE;">
-						<img src="../../upload/images/gallery/sample-product.png" alt="" class="img-responsive float" style="width: 316px;"> 
-				</div>
-															
-				<!-- Item details -->
-				<div class="item-details">
-														<!-- Name -->
-					<h4 class="margin-bottom-0">
-						<a title="#" href="#" class="cst-page-font-color">
-							Acne Control Kit
-						</a>
-					</h4>
-					<div class="clearfix"></div>
-														<!-- Price -->
-				<!-- Content -->
-					<p class="margin-bottom-10 size-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<!-- Price -->
-					<p class="margin-bottom-10 item-page-font-color">In Stock <br> ₱ 4,295.00</p>
-																							
-				</div>
-				
-		</div>
-		</div>
-		<!-- ------------ End  Product Item Individual Products------------ -->
-		
+	
 		
 			
 	
@@ -288,42 +148,3 @@
 
 
 
-<div class="services-item margin-top-20">
-
-		 <!-- ------- -->
-		{foreach from=$_descendants key=key item=item}
-		{if $item.id_parent eq '104'}
-		<div class="col-md-4 margin-bottom-30 wow flipInY animation-visible animated"> 
-			<!-- <img class="img-responsive" src="upload/images/banner/{$item.image_src}" alt=""> -->
-			<img src="{$base_url}upload/images/banner/{$item.image_src}" class="img-responsive">		
-			<div class="carousel-caption">
-				<h2>{$item.title}</h2> 
-				<!-- <p>{$item.content|truncate:120}</p> -->
-				<a href="{$item.page_link}" class="find-more">VIEW ALL &gt;</a>
-			</div>
-		</div>
-		{/if}
-		{/foreach}
-
-</div>
-<p class="margin-bottom-0" style="visibility:hidden;">-</p>
-
-<div class="services-item margin-top-20">
-
-		 <!-- ------- -->
-		{foreach from=$_descendants key=key item=item}
-		{if $item.id_parent eq '198'}
-		<div class="col-md-4 margin-bottom-30 wow flipInY animation-visible animated"> 
-			<!-- <img class="img-responsive" src="upload/images/banner/{$item.image_src}" alt=""> -->
-			<img src="{$base_url}upload/images/banner/{$item.image_src}" class="img-responsive">		
-			<div class="carousel-caption">
-				<!-- <h2>{$item.title}</h2> -->
-				<!-- <p>{$item.content|truncate:120}</p> -->
-				<a href="{$item.page_link}" class="find-more">VIEW ALL &gt;</a>
-			</div>
-		</div>
-		{/if}
-		{/foreach}
-
-</div>
-<p class="margin-bottom-0" style="visibility:hidden;">-</p>

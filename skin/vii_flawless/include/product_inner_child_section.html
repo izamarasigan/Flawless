@@ -1,0 +1,65 @@
+<!-- <div class="services-item margin-top-20">
+
+	
+		{if $_page}
+		{foreach from=$_children key=key item=item}
+		<div class="col-md-4 margin-bottom-30 wow flipInY animation-visible animated"> 
+
+			<img src="{$base_url}upload/images/banner/{$item.image_src}" class="img-responsive">		
+			<div class="carousel-caption">
+
+				<a href="{$item.page_link}" class="find-more">VIEW ALL &gt;</a>
+			</div>
+		</div>
+		{/foreach}
+		{/if}
+
+</div>
+<p class="margin-bottom-0" style="visibility:hidden;">-</p> -->
+
+<div class="col-lg-12 col-md-12 col-sm-12 margin-top-60 margin-bottom-50">
+
+							<div class="row">
+							
+								<!-- IMAGE -->
+								<div class="col-lg-6 col-sm-6">
+									
+							<img src="{$_page.image_src}" class="img-responsive pull-right"/>
+
+									<!-- Thumbnails (required height:100px) -->
+									
+									<!-- /Thumbnails -->
+
+								</div>
+								<!-- /IMAGE -->
+
+								<!-- ITEM DESC -->
+								<div class="col-lg-6 col-sm-6">
+
+	
+									<div class="clearfix margin-bottom-0">
+										<h3 class="margin-bottom-10">{$_page_title}</h3>
+									</div>
+									
+									{if $_content}{include file=$_content}{/if}
+									<p class="size-20">{$_page.caption}</p>
+									<!-- short description -->
+									
+									
+									
+									
+									<!-- /rating -->
+
+								</div>
+								<!-- /ITEM DESC -->
+
+							</div>
+
+	<div class="clearfix"></div>
+
+						</div>
+
+
+
+
+
