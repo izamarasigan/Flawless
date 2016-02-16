@@ -78,8 +78,14 @@
 		height:40px !important;
 		line-height:40px !important;
 		padding-top:0;
+		background: #ED3C96;
 	}
-
+	
+	#topNav {background: #ED3C96;}
+	
+	ul#topMain a:hover {
+    background: #E63A91!important;
+	}
 
 	#topMain>li {
 		border-bottom:rgba(0,0,0,0.1) 1px solid;
@@ -98,3 +104,5 @@
 			border-top:rgba(0,0,0,0.1) 1px solid;
 		}
 }
+
+
