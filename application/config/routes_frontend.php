@@ -1,9 +1,11 @@
 <?php  if (!defined("BASEPATH")) exit("No direct script access allowed");
 
-$route["products/beautykits/flawlesswhiteningkit"] = "pages/index";
-
-$route["products/beautykits"] = "pages/index";
+$route["products/individualproducts/individualproductstessst"] = "pages/index";
+$route["treatment/medical/testimagepage"] = "pages/index";
+$route["products/beautykits/beautykitstesssstttt"] = "pages/index";
+$route["products/beautykits/testteejaypage"] = "pages/index";
 $route["products/individualproducts"] = "pages/index";
+$route["products/beautykits"] = "pages/index";
 $route["treatment/facials"] = "pages/index";
 $route["treatment/microdermabrasion"] = "pages/index";
 $route["treatment/peels"] = "pages/index";
@@ -77,6 +79,12 @@ $route["expertiseyoucantrust"] = "pages/index";
 $route["certifedtested"] = "pages/index";
 $route["blog"] = "blog/index";
 $route["blog/(.*)"] = "blog/$1";
+
+$route["shapesculptcream"] = "pages/index";
+$route["nanorf"] = "pages/index";
+$route["refine "] = "pages/index";
+$route["ultratreatments"] = "pages/index";
+$route["topnavigation"] = "pages/index";
 
 
 ?>

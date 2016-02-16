@@ -4,7 +4,7 @@ section.slider {
 }
 }
 
-h1, h2, h3, h4, h5, h6 {color: #ED3C95;font-weight: 300;}
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: #ED3C95;font-weight: 300;}
 
 footer, footer a {
   margin-bottom: -27px !important;
@@ -34,7 +34,7 @@ section.featured-grid div.row>div .ribbon:before, .modal-content {
 .main-bestsellers .header-title, .flawless-lifestyle  .header-title {color:#FF3998;margin-bottom:0px;font-weight:bold;}
 
 .main-bestsellers h3, .flawless-lifestyle  h3 {
-    font-size: 16px;
+    font-size: 20px;
     color: #FF3998;
 }
 
@@ -506,6 +506,42 @@ section.dark .pagination > li.active>a:hover, .pagination > li.active>a:hover { 
 	border: 1px solid #ED3C95;
 }
 
+.table-responsive thead tr:hover {
+    background: #ED3C95!important;
+}
+
 .table-responsive .table>thead>tr>th {
     border-bottom: none!important;
+}
+
+.table-responsive tr:hover {
+    background: #eee;
+}
+
+
+.quickview {
+    right: 30px;
+    position: absolute;
+    top: 155px;
+    z-index: 1;
+}
+
+
+.div_products_list .pull-right a {
+    font-size: 12px;
+}
+
+.div_products_list p.item-page-font-color {
+    color: #ED3C95;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.quickview img:hover {
+    opacity: 1!important;
+}
+
+.quickview img {
+    opacity: .7!important;
 }
