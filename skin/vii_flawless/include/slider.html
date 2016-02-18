@@ -1,11 +1,11 @@
  
- <div id="main-slider" class="carousel slide carousel-fade margin-bottom-50" data-ride="carousel"  data-interval="7000">
+ <div id="main-slider" class="carousel slide carousel-fade margin-bottom-50" data-ride="carousel"  data-interval="7000"  style="box-shadow: rgba(184, 184, 184, 0.6) 0px 5px 25px 1px;">
 
 
   <div class="carousel-inner">
   {foreach from=$_banner key=key item=item}
     <div class="item {if $key eq 0} active{/if}" style="background-image: url({$item.image_src})">
-      <img src="{$item.image_src}" alt="...">
+      <img src="{$item.image_src}" alt="Banner" class="center-block">
 
     </div>
 	

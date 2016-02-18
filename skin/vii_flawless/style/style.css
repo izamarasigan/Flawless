@@ -1,0 +1,12 @@
+.gmap {
+    border: 1px solid #ddd;
+    box-shadow: 0 0 4px #bbb inset;
+}
+
+#map_wrapper {
+    height: 400px;
+}
+#map_canvas {
+    height: 100%;
+    width: 100%;
+}

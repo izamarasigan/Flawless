@@ -14,7 +14,7 @@
 		<div>{$item.category_title}</div>
 		<div>{$item.category_caption}</div>
 		<div>{$item.category_desc}</div>
-		<div><a  href="{$item.catagory_link}">{$item.image_title|ucwords}</a></div>
+		<div><a  href="{$item.catagory_link}">{$item.category_title|ucwords}</a></div>
 		<div>{if $item.category_image_src}<img src="{$item.category_image_src}" style="max-height: 150px; max-width: 150px;"/>{/if}</div>
 	{/foreach}
 {/if}

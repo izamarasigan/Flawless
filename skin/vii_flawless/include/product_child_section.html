@@ -1,22 +1,3 @@
-<!-- <div class="services-item margin-top-20">
-
-	
-		{if $_page}
-		{foreach from=$_children key=key item=item}
-		<div class="col-md-4 margin-bottom-30 wow flipInY animation-visible animated"> 
-
-			<img src="{$base_url}upload/images/banner/{$item.image_src}" class="img-responsive">		
-			<div class="carousel-caption">
-
-				<a href="{$item.page_link}" class="find-more">VIEW ALL &gt;</a>
-			</div>
-		</div>
-		{/foreach}
-		{/if}
-
-</div>
-<p class="margin-bottom-0" style="visibility:hidden;">-</p> -->
-
 
 
 
@@ -27,7 +8,7 @@
 		
 			<h3 class="margin-top-10 margin-bottom-10">Beauty kits
 			<span class="pull-right">
-			<a href="#">VIEW ALL ></a>
+			<a href="{$base_url}products/beautykits">VIEW ALL ></a>
 			</span>
 			</h3>
 			
@@ -47,7 +28,7 @@
 				</a>  
 			
 				<div class="item-image img-cont" style="background: #fff;padding: 102px;">
-						<img src="{$base_url}upload/images/banner/{$item.image_src}" alt="" class="img-responsive float" style="width: 316px;"> 
+						<img src="{$base_url}upload/images/banner/{$item.image_src}" alt="" class="img-responsive float" style="width: 600px;"> 
 				</div>
 															
 				<!-- Item details -->
@@ -69,8 +50,11 @@
 			</div>
 
 		</div>
-			{/if}
+		
+			{/if}   {if $key eq 8}{break}{/if} 
 		{/foreach}
+		
+		
 	
 		
 		<!-- ------------ End Product Item Beauty kits ------------ -->
@@ -86,7 +70,7 @@
 		
 			<h3 class="margin-top-10 margin-bottom-10">Individual Products
 			<span class="pull-right">
-			<a href="#">VIEW ALL ></a>
+			<a href="{$base_url}products/individualproducts">VIEW ALL ></a>
 			</span>
 			</h3>
 			
@@ -106,37 +90,38 @@
 		{if $item.id_parent eq '104'}
 		<div class="col-md-6 col-xs-6 div_products_list  wow flipInY animation-visible animated" id="282">
 		
-
-		
 			<div class="item cst-page-bg-color margin-bottom-20 widget-quicklink">
 												
 				<!-- Item image -->
-				<a href="#" class="quickview">
-						<img src="../../upload/images/cms/q-view.png">
+				<a href="{$item.page_link}" class="quickview">
+						<img src="../../upload/images/cms/q-view.png" class="img-responsive">	
 				</a>  
 			
 				<div class="item-image img-cont" style="background: #E7E3DE;">
-						<img src="{$base_url}upload/images/banner/{$item.image_src}" class="img-responsive"  style="width: 316px;">
+						<img src="{$base_url}upload/images/banner/{$item.image_src}" alt="" class="img-responsive float" style="width: 600px;border: 1px solid #E7E3DE;"> 
 				</div>
 															
 				<!-- Item details -->
 				<div class="item-details">
 					<!-- Name -->
 					<h4 class="margin-bottom-0">
-						<a title="{$base_url}upload/images/banner/{$item.image_src}" href="#" class="cst-page-font-color">
+						<a title="{$item.title}" href="{$item.page_link}" class="cst-page-font-color">
 							{$item.title}
 						</a>
 					</h4>
 					<div class="clearfix"></div>
-					
+
 					<!-- Content -->
-					<p class="margin-bottom-10 item-page-font-color">{$item.content|truncate:10}</p>																						
+					<p class="margin-bottom-10 item-page-font-color">{$item.content}</p>
+																							
 				
 				</div>
-				
+			
+			</div>
+		
+
 		</div>
-		</div>
-		{/if}
+			{/if}   {if $key eq 5}{break}{/if} 
 		{/foreach}
 		<!-- ------------ End  Product Item Individual Products------------ -->
 	
@@ -145,6 +130,7 @@
 	
 	<div class="clearfix"></div>
 </div>
+
 
 
 

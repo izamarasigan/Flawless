@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<!-- ========================= MAIN TEMPLATE ========================= -->
+<!-- ========================= MAIN TEMPLATE ========================= -->
+<!-- ========================= MAIN TEMPLATE ========================= -->
+	<head>
+		<meta charset="utf-8" />
+		<title>{$_site_title}</title>
+		<link rel="shortcut icon" href="{$_favicon}">
+		<base href="{$base_theme_url}" />
+
+		<!-- SEO META TAGS -->
+		<meta name="title" content="{$_meta_title}">
+		<meta name="description" content="{$_meta_description}">
+		<meta name="keywords" content="{$_meta_keywords}">
+		<meta name="author" content="{$_meta_author}">
+		<meta name="robots" content="{$_meta_robots}">
+
+		<!-- FACEBOOK META TAGS -->
+		<meta property="og:title" content="{$_meta_title}" />
+		<meta property="og:url" content="{$base_url}" />
+		<meta property="og:description" content="{$_meta_description}" />
+		<meta property="og:image" content="{$_meta_image}" />
+		<meta property="og:type" content="website" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+		
+		<link href="assets/css/preloader.css" rel="stylesheet" type="text/css" />
+		
+	</head>
+	<body class="smoothscroll enable-animation">
+		<div id="wrapper" style="background: #F7E9E1;">
+			<!-- HEADER -->
+			{include file="$_theme/include/header.html"}
+			
+			
+			<!-- PAGE - id_page, title, content, caption, image_src, link_rewrite, absolute_link -->
+			{include file="$_theme/include/page-data-product.html"}
+			
+			<!-- MODULE/PAGE CONTENT -->
+			<div class="content container" id="content_include">
+			
+			
+			
+
+				<div class="col-md-12 col-sm-12 padding-10 padding-top-60 padding-bottom-50 div_products_list">
+
+
+						
+						<!-- ------------ Start Product Item Beauty kits ------------ -->
+						{foreach from=$_descendants key=key item=item}
+						{if $item.id_parent eq '198'}
+						<div class="col-md-4 col-xs-4 div_products_list  wow flipInY animation-visible animated" id="282">
+						
+							<div class="item cst-page-bg-color margin-bottom-20 widget-quicklink">
+																
+								<!-- Item image -->
+								<a href="{$item.page_link}" class="quickview">
+										<img src="../../upload/images/cms/q-view.png" class="img-responsive">	
+								</a>  
+							
+								<div class="item-image img-cont" style="background: #fff;">
+										<img src="{$base_url}upload/images/banner/{$item.image_src}" alt="" class="img-responsive float" style="width: 600px;"> 
+								</div>
+																			
+								<!-- Item details -->
+								<div class="item-details">
+									<!-- Name -->
+									<h4 class="margin-bottom-0">
+										<a title="{$item.title}" href="{$item.page_link}" class="cst-page-font-color">
+											{$item.title}
+										</a>
+									</h4>
+									<div class="clearfix"></div>
+
+									<!-- Content -->
+									<p class="margin-bottom-10 item-page-font-color">{$item.content}</p>
+																											
+								
+								</div>
+							
+							</div>
+
+						</div>
+							{/if}
+						{/foreach}
+					
+						
+						<!-- ------------ End Product Item Beauty kits ------------ -->
+
+					<div class="clearfix"></div>
+				</div>			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</div>
+			
+			<!-- OTHERS -->
+			<div class="others" id="others_include" >{include file="$_theme/include/others.html"}</div>
+		</div>
+		
+		
+		
+
+				<!-- =========================================================== -->	
+						
+				<div class="col-md-6 padding-0"> 
+				 <a href="{$base_url}products" class="btn btn-lg btn-primary fullwidth nomargin bopadding noradius size-20" style="color: #fff!Important;">
+				 <span class="size-30">Back To Products</span>
+
+				 </a>
+				</div>  
+
+				 
+				<div class="col-md-6 padding-0"> 
+				 <a href="{$base_url}products/individualproducts" class="btn btn-lg  fullwidth nomargin bopadding noradius size-20 btn-bg1" style="color: #fff!Important;">
+				 <span class="size-30">See Individual Products</span>
+
+				 </a>
+				</div>  
+				<div class="clearfix">
+				</div> 
+
+				<!-- =========================================================== -->		
+
+
+				<!-- <div class="container">
+				<div class="row flawless-lifestyle">
+					<center>
+					<p class="size-25 header-title margin-bottom-10">{$item.section_title}</p>
+					<p class="size-16  header-title margin-bottom-20">{$item.section_subtitle} </p>
+					<br/>
+					</center>
+
+
+
+					{foreach from=$_news key=key item=item}
+					
+					<div class="col-md-4 margin-bottom-30">
+						<span>
+							<h3 class="margin-top-10 margin-bottom-10">{$item.image_title|truncate:35}</h3>			
+							<span class="img-cont">
+							<a href="{$item.image_link}/"><img src="{$item.image_src}" class="img-responsive"></a>
+							</span>
+
+					
+							<a href="{$item.image_link}/" class="find-more">FIND OUT MORE &gt;</a>
+						</span>
+					</div>	
+					
+
+						{if $key eq 2}{break}{/if} {/foreach}
+
+					
+					
+				</div>
+				<br>
+
+
+				</div>
+				 -->
+
+
+
+ 
+		
+		
+		<!------------------------------ Footer ------------------------------>
+			<footer id="footer-include">{include file="$_theme/include/footer.html"}</footer>
+		<!------------------------------ END ------------------------------>
+		
+		<!-- STYLES -->
+		{include file="$_theme/include/inner_styles.html"}
+		
+		<!-- JS -->
+		{include file="$_theme/include/inner_js.html"}
+
+	</body>
+</html>

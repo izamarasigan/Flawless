@@ -22,6 +22,17 @@ footer, footer a {
 .btn.btn-primary, .btn-primary {
     background: #ED3C95!important;
 	    border-color: #ED3C95!important;
+	color:#fff!important;	
+}
+
+.inline-search form button {
+    background: rgb(237, 60, 149);
+    border-left: #ED3C95 1px solid;
+    color: #fff;
+}
+
+body #wrapper {
+    min-height: initial!important;
 }
 
 
@@ -55,6 +66,102 @@ section.featured-grid div.row>div .ribbon:before, .modal-content {
 
 .main-bestsellers p, .flawless-lifestyle p {
     font-size: 18px;
+}
+
+.mobile-main-bestsellers.toggle.toggle-transparent-body label {
+    background: rgb(237, 60, 149);
+    color: #fff;
+}
+
+.mobile-main-bestsellers.toggle.toggle-transparent-body label:hover {
+    background: #F55EA9;
+}
+
+.mobile-main-bestsellers div.toggle.active > label:before {
+    border: 10px solid transparent;
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    right: 14px;
+    margin-top: -17px;
+}
+
+.mobile-main-bestsellers div.toggle > label:before {
+    content: '';
+    border: 10px solid transparent;
+    border-top-color: inherit;
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    margin-top: -6px;
+}
+
+
+@media (max-width:767px) {
+
+.mobile-main-bestsellers {display:block!important;}
+.desk-main-bestsellers {display:none!important;}
+
+#main_section_include .col-md-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+#slider_include div#main-slider {
+    margin-bottom: 0px!important;
+}
+
+.div_products_list .col-xs-4, .div_products_list .col-xs-6  {
+    width: 100%!important;
+}
+.div_products_list .img-cont {
+    padding: 60% 0 0!important;
+}
+
+.quickview {
+
+    position: absolute;
+    top: initial!important;
+    z-index: 1!important;
+    bottom: 145px!important;
+}
+
+}
+
+
+
+@media (min-width:768px) {
+
+.mobile-main-bestsellers {display:none!important;}
+
+
+}
+
+@media (max-width:530px) {
+#footer .col-xs-2, #footer .col-xs-3, #footer .col-xs-5 {
+    width: 100%;
+	margin-bottom:20px;
+}
+
+#footer .col-xs-2{
+    margin-bottom: 0px!important;
+    margin-top: 20px!important;
+}
+
+#footer .container {
+    padding-top: 0px!important;
+    margin-bottom: 0px!important;
+}
+
+#footer h4 {margin-top: 20px!important;}
+
+}
+
+
+
+/* -------- */
+
+.btn-bg1 {  
+background: #b4a595!Important;
+    color: #fff!important;
+    border-color: #b4a595!Important;
 }
 
 .footer-callout .col-sm-6 {
@@ -555,6 +662,10 @@ section.dark .pagination > li.active>a:hover, .pagination > li.active>a:hover { 
     opacity: .7!important;
 }
 
+.btn:hover {
+    opacity: .8!important;
+}
+
 /* ------- */
 
 /*
@@ -611,4 +722,28 @@ now override the 3.3 new styles for modern browsers & apply opacity
     }
 }
 
+/* ================== */
 
+.tp-bgimg.defaultimg {
+    background-size: initial!important;
+}
+
+#main-slider .item.active {
+    background: #999999!important;
+}
+
+
+/* start google map css lists */
+.gmap {
+    border: 1px solid #ddd;
+    box-shadow: 0 0 4px #bbb inset;
+}
+
+#map_wrapper {
+    height: 400px;
+}
+#map_canvas {
+    height: 100%;
+    width: 100%;
+}
+/* end google map css lists */

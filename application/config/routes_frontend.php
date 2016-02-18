@@ -1,10 +1,18 @@
 <?php  if (!defined("BASEPATH")) exit("No direct script access allowed");
 
-$route["products/individualproducts/individualproductstessst"] = "pages/index";
+$route["products/individualproducts/agedefycream"] = "pages/index";
 $route["treatment/medical/testimagepage"] = "pages/index";
-$route["products/beautykits/beautykitstesssstttt"] = "pages/index";
-$route["products/individualproducts/individualproductstessstsssssss"] = "pages/index";
-$route["products/beautykits/beautykitstesssstttt22222"] = "pages/index";
+$route["products/beautykits/skinlitecream"] = "pages/index";
+$route["products/beautykits/agedefycream"] = "pages/index";
+$route["products/individualproducts/nanowhitenessglutathioneplus"] = "pages/index";
+$route["products/beautykits/skinwhiteningsoap"] = "pages/index";
+$route["products/beautykits/skinwhitetherapy"] = "pages/index";
+$route["products/beautykits/whiteningtoner"] = "pages/index";
+$route["products/beautykits/whitepluscream"] = "pages/index";
+$route["products/individualproducts/sassoap"] = "pages/index";
+$route["products/individualproducts/novexpertantiagingcream"] = "pages/index";
+$route["products/individualproducts/skinrenewcream"] = "pages/index";
+$route["products/individualproducts/skinwhiteningsoap"] = "pages/index";
 $route["products/individualproducts"] = "pages/index";
 $route["products/beautykits"] = "pages/index";
 $route["treatment/facials"] = "pages/index";
@@ -76,16 +84,18 @@ $route["expertiseyoucantrust"] = "pages/index";
 $route["certifedtested"] = "pages/index";
 $route["footerlinks"] = "pages/index";
 $route["treatment"] = "pages/index";
-$route["expertiseyoucantrust"] = "pages/index";
 $route["certifedtested"] = "pages/index";
-$route["blog"] = "blog/index";
-$route["blog/(.*)"] = "blog/$1";
-
 $route["shapesculptcream"] = "pages/index";
 $route["nanorf"] = "pages/index";
 $route["refine "] = "pages/index";
 $route["ultratreatments"] = "pages/index";
 $route["topnavigation"] = "pages/index";
+$route["search"] = "search/index";
+$route["search/(.*)"] = "search/$1";
+
+$route["flawlessmedia"] = "blog/index";
+$route["flawlessmedia/(.*)"] = "blog/$1";
+
 
 
 ?>

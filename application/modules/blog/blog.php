@@ -83,8 +83,8 @@ class Blog extends MX_Controller
 			if ($item['id_blog_item'] == $id) {
 				$prev_item = $list[$key - 1];
 				$next_item = $list[$key + 1];
-				$prev_image_link = base_url() . 'blog/article/' . $prev_item['id_blog_item'] . '/' . $prev_item['link_rewrite'];
-				$next_image_link = base_url() . 'blog/article/' . $next_item['id_blog_item'] . '/' . $next_item['link_rewrite'];
+				$prev_image_link = base_url() . 'flawlessmedia/article/' . $prev_item['id_blog_item'] . '/' . $prev_item['link_rewrite'];
+				$next_image_link = base_url() . 'flawlessmedia/article/' . $next_item['id_blog_item'] . '/' . $next_item['link_rewrite'];
 				break;
 			}
 		}
@@ -130,7 +130,7 @@ class Blog extends MX_Controller
 	{
 		$id_blog_category = $this->uri->segment(4);
 		if ($int_page <= 1) {
-			redirect(base_url() . 'blog/category/' . $id_blog_category);
+			redirect(base_url() . 'flawlessmedia/category/' . $id_blog_category);
 		}
 		$this->load->library('encrypt');
 		$per_page = 5;

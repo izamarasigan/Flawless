@@ -43,7 +43,7 @@ class Blog_model extends CI_Model
 				$item['date'] = date('F d, Y', strtotime($item['date']));
 				$item['month'] = date('F', strtotime($item['date']));
 				$item['year'] = date('Y', strtotime($item['date']));
-				$item['image_link'] = base_url() . 'blog/article/' . $item['id_blog_item'] . '/' . $item['link_rewrite'];
+				$item['image_link'] = base_url() . 'flawlessmedia/article/' . $item['id_blog_item'] . '/' . $item['link_rewrite'];
 				if ($item['image_src']) {
 					$item['image_src_thumb'] = base_url() . 'upload/images/blog/thumb/' . $item['image_src'];
 					$item['image_src'] = base_url() . 'upload/images/blog/' . $item['image_src'];
@@ -73,7 +73,7 @@ class Blog_model extends CI_Model
 				if(!$item['item_lists']){
 					$item['total_items'] = 0;
 				}
-				$item['catagory_link'] = base_url() . 'blog/category/' . $item['id_blog_category'] . '/' . $item['category_link_rewrite'];
+				$item['catagory_link'] = base_url() . 'flawlessmedia/category/' . $item['id_blog_category'] . '/' . $item['category_link_rewrite'];
 				if ($item['category_image_src']) {
 					$item['category_image_src_thumb'] = base_url() . 'upload/images/blog/thumb/' . $item['category_image_src'];
 					$item['category_image_src'] = base_url() . 'upload/images/blog/' . $item['category_image_src'];
@@ -109,7 +109,7 @@ class Blog_model extends CI_Model
 				$item['date'] = date('F d, Y', strtotime($item['date']));
 				$item['month'] = date('F', strtotime($item['date']));
 				$item['year'] = date('Y', strtotime($item['date']));
-				$item['image_link'] = base_url() . 'blog/article/' . $item['id_blog_item'] . '/' . $item['link_rewrite'];
+				$item['image_link'] = base_url() . 'flawlessmedia/article/' . $item['id_blog_item'] . '/' . $item['link_rewrite'];
 				if ($item['image_src']) {
 					$item['image_src_thumb'] = base_url() . 'upload/images/blog/thumb/' . $item['image_src'];
 					$item['image_src'] = base_url() . 'upload/images/blog/' . $item['image_src'];

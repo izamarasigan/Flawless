@@ -13,11 +13,38 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 class Contactus_model extends CI_Model
 
 {
+	var $image_dir = 'upload/images/branch/';
+	var $image_thumb_dir = 'upload/images/branch/thumb/';
 	function __construct()
 	{
 		parent::__construct();
 		$this->load->model('core/email_model', 'email_model');
 		$this->load->model('core/config_model', 'config_model');
+	}
+	function _getItems()
+	{
+		$this->db->select('*');
+		$this->db->from('branch_item');
+		$this->db->order_by('branch_name',ASC);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0) {
+			$result = $query->result_array();
+			$return = array();
+			foreach($result as $item) {
+				$item['date'] = date('F d, Y', strtotime($item['date']));
+				$item['month'] = date('F', strtotime($item['date']));
+				$item['year'] = date('Y', strtotime($item['date']));
+				
+				if ($item['image_src']) {
+					$item['image_src_thumb_link'] = base_url() . $this->image_thumb_dir . $item['image_src'];
+					$item['image_src_link'] = base_url() . $this->image_dir . $item['image_src'];
+				}
+				$item['json'] = htmlentities(json_encode($item) , ENT_QUOTES);
+				$return[] = $item;
+			}
+			return $return;
+		}
+		return false;
 	}
 	function addContact()
 	{

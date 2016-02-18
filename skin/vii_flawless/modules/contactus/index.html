@@ -29,11 +29,12 @@ Search: &nbsp;
             <!-- Google Maps. Replace the below iframe with your Google Maps embed code -->
 	        <div id="map_wrapper">
 			
-			<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d61787.13848799029!2d120.9900427785227!3d14.559360167750174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sflawless+philippines!5e0!3m2!1sen!2sph!4v1454556461316" width="550" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-			
+			<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d61787.13848799029!2d120.9900427785227!3d14.559360167750174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sflawless+philippines!5e0!3m2!1sen!2sph!4v1454556461316" width="550" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+			 <div id="map_canvas" class="mapping"></div>
 			</div>
             
-        </div>		
+        </div>	
+		
 		</div>
 		
 		
@@ -43,55 +44,16 @@ Search: &nbsp;
 				<div class="add-main">
 				
 					<div class="address"> 
-									
+						{foreach from=$branches key=key item=item}
 						<address style="border-bottom: 1px dashed rgb(221, 221, 221); margin-bottom: 10px; padding-bottom: 10px; margin-top: 5px;">
 							  						
-								 <p style="margin-left:18px;" class="margin-bottom-0">Lorem ipsum dolor</p>
-								 <p style="margin-left:18px;" class="margin-bottom-0">Lower Ground Floor </p>
-								 <p style="margin-left:18px;" class="margin-bottom-0">(02) 928-8718 / 0917-5954439</p>
+								 <p style="margin-left:18px;" class="margin-bottom-0">{$item.branch_name}</p>
+								 <p style="margin-left:18px;" class="margin-bottom-0">{$item.branch_address} </p>
+								 <p style="margin-left:18px;" class="margin-bottom-0">{$item.branch_phone}</p>
 														
 						</address>
-						
-						
-						<address style="border-bottom: 1px dashed rgb(221, 221, 221); margin-bottom: 10px; padding-bottom: 10px; margin-top: 5px;">
-							  						
-								 <p style="margin-left:18px;" class="margin-bottom-0">Lorem ipsum dolor</p>
-								 <p style="margin-left:18px;" class="margin-bottom-0">Lower Ground Floor </p>
-								 <p style="margin-left:18px;" class="margin-bottom-0">(02) 000-000</p>
-														
-						</address>
-						
-						<address style="border-bottom: 1px dashed rgb(221, 221, 221); margin-bottom: 10px; padding-bottom: 10px; margin-top: 5px;">
-							  						
-								 <p style="margin-left:18px;" class="margin-bottom-0">Lorem ipsum dolor</p>
-								 <p style="margin-left:18px;" class="margin-bottom-0">Lower Ground Floor </p>
-								 <p style="margin-left:18px;" class="margin-bottom-0">(02) 000-000</p>
-														
-						</address>
-						
-						<address style="border-bottom: 1px dashed rgb(221, 221, 221); margin-bottom: 10px; padding-bottom: 10px; margin-top: 5px;">
-							  						
-								 <p style="margin-left:18px;" class="margin-bottom-0">Lorem ipsum dolor</p>
-								 <p style="margin-left:18px;" class="margin-bottom-0">Lower Ground Floor </p>
-								 <p style="margin-left:18px;" class="margin-bottom-0">(02) 000-000</p>
-														
-						</address>
-						
-						<address style="border-bottom: 1px dashed rgb(221, 221, 221); margin-bottom: 10px; padding-bottom: 10px; margin-top: 5px;">
-							  						
-								 <p style="margin-left:18px;" class="margin-bottom-0">Lorem ipsum dolor</p>
-								 <p style="margin-left:18px;" class="margin-bottom-0">Lower Ground Floor </p>
-								 <p style="margin-left:18px;" class="margin-bottom-0">(02) 000-000</p>
-														
-						</address>
-						
-						<address style="border-bottom: 1px dashed rgb(221, 221, 221); margin-bottom: 10px; padding-bottom: 10px; margin-top: 5px;">
-							  						
-								 <p style="margin-left:18px;" class="margin-bottom-0">Lorem ipsum dolor</p>
-								 <p style="margin-left:18px;" class="margin-bottom-0">Lower Ground Floor </p>
-								 <p style="margin-left:18px;" class="margin-bottom-0">(02) 000-000</p>
-														
-						</address>
+						<input type="hidden" class="gmap-desc" value="{$item.json}"/>
+						{/foreach}	
 					   
 					</div>
 

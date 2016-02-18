@@ -54,15 +54,46 @@
 	display:inline-block;
 }
 
+a.logo.pull-left {
+    background: url(.//images/BG-Logo-desk.jpg);
+	width:300px;
+}
+
 
 
 @media only screen and (max-width: 1215px) {
 	#topMain.nav-pills>li>a {
-		font-size:13px;
+		font-size:15px;
 	}
 }
 
+@media (max-width: 1215px) {
+	.div_products_list .img-cont {padding:105px!important}
+	
+}
+
+
+
+@media only screen and (max-width: 630px){
+#topBar ul.top-links {
+    float: none!important;
+    text-align: center!important;
+	    display: block;
+}
+}
+
+@media only screen and (max-width: 768px){
+#topBar ul.top-links {
+    float: left;
+}
+}
+
 @media only screen and (max-width: 992px) {
+
+a.logo.pull-left {
+    background: url(.//images/BG-Logo-mobile.jpg);
+	width:200px;
+}
 	/* Force 60px */
 	#header {
 		height:60px !important;
@@ -72,13 +103,15 @@
 		line-height:50px !important;
 	}
 	#header #topNav a.logo>img {
-		max-height:60px !important;
+		max-height: 35px !important;
+		margin-top: 5px;
 	}
 	#header #topNav #topMain>li>a {
-		height:40px !important;
-		line-height:40px !important;
-		padding-top:0;
-		background: #ED3C96;
+    height: 50px !important;
+    line-height: 50px !important;
+    padding-top: 0;
+    background: #ED3C96;
+    font-size: 15px;
 	}
 	
 	#topNav {background: #ED3C96;}

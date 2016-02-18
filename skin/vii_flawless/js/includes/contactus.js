@@ -26,3 +26,69 @@ function checkCaptcha() {
 		$('#alert_recaptcha').hide().text('');
 	}
 }
+jQuery(function($) {
+    // Asynchronously Load the map API 
+    var script = document.createElement('script');
+    script.src = "http://maps.googleapis.com/maps/api/js?sensor=false&callback=initialize";
+    document.body.appendChild(script);
+});
+
+
+function initialize() {
+    var map;
+    var bounds = new google.maps.LatLngBounds();
+    var mapOptions = {
+        mapTypeId: 'roadmap'
+    };
+                    
+    // Display a map on the page
+    map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+    map.setTilt(45);
+        
+    var markers = [];
+    // Info Window Content
+    var infoWindowContent = [];
+	$(".gmap-desc").each(function() {
+		var mark = $.parseJSON($(this).val());
+		if(mark['branch_lat'] && mark['branch_lon']){
+			var mark_push = [mark['branch_name'], parseFloat(mark['branch_lat']), parseFloat(mark['branch_lon'])];
+			if(mark['branch_image']){
+				var mark_info = ['<div class="info_content">' + '<h3> ' + mark['branch_name'] + '</h3><img src="'+base_url+'upload/images/branches/'+mark['branch_image']+'"/>' + '<p> ' + mark['branch_address'] + '</p></div>'];
+			}
+			else{
+				var mark_info = ['<div class="info_content">' + '<h3> ' + mark['branch_name'] + '</h3> <p> ' + mark['branch_address'] + '</p></div>'];
+			}
+			
+			markers.push(mark_push);
+			infoWindowContent.push(mark_info);
+		}
+	});
+    // Multiple Markers
+                        
+        
+    // Display multiple markers on a map
+    var infoWindow = new google.maps.InfoWindow(), marker, i;
+    
+    // Loop through our array of markers & place each one on the map  
+    for( i = 0; i < markers.length; i++ ) {
+        var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+        bounds.extend(position);
+        marker = new google.maps.Marker({
+            position: position,
+            map: map,
+            title: markers[i][0]
+        });
+        
+        // Allow each marker to have an info window    
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+                infoWindow.setContent(infoWindowContent[i][0]);
+                infoWindow.open(map, marker);
+            }
+        })(marker, i));
+
+        // Automatically center the map fitting all markers on the screen
+        map.fitBounds(bounds);
+    }
+    
+}
