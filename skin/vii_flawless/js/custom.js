@@ -27,7 +27,7 @@ s0.parentNode.insertBefore(s1,s0);
 
 /* Notification alert */
 var CMS = {};
-CMS.showNotification = function(type, message = false) {
+CMS.showNotification = function(type, message) {
 	if (type == 'success') {
 		notif_boostrap_type = 'success';
 		if (!message) {
