@@ -13,6 +13,18 @@ var google_ua = $('span#google_ua').html();
 ga('create', google_ua, 'auto');
 ga('send', 'pageview');
 
+
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/56c66722f26a9a725340ba9f/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+
+
 /* Notification alert */
 var CMS = {};
 CMS.showNotification = function(type, message = false) {
