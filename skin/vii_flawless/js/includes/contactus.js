@@ -26,6 +26,24 @@ function checkCaptcha() {
 		$('#alert_recaptcha').hide().text('');
 	}
 }
+
+$('#selectProvince').on("change", function(e) {
+	var selected_province = $(this).val();
+	if(selected_province == 'All'){
+		$('.gmap-desc').addClass( "active" ); //show all gmap
+		$('.address-branch').show(); //show all branch
+	}
+	else{
+		$('.gmap-desc').removeClass( "active" ); //remove all active gmap
+		$('.gmap-desc').addClass( "inactive" ); //hide all gmap
+		$('.address-branch').hide(); //hide all branch
+		$('.'+selected_province).show(); //show selected city
+		$('.gmap-desc.hid-'+selected_province).addClass( "active" ); //show selected gmap
+		$('.gmap-desc.hid-'+selected_province).removeClass( "inactive" ); //show selected gmap	
+	}
+	initialize();
+});
+
 jQuery(function($) {
     // Asynchronously Load the map API 
     var script = document.createElement('script');
@@ -48,7 +66,7 @@ function initialize() {
     var markers = [];
     // Info Window Content
     var infoWindowContent = [];
-	$(".gmap-desc").each(function() {
+	$(".gmap-desc.active").each(function() {
 		var mark = $.parseJSON($(this).val());
 		if(mark['branch_lat'] && mark['branch_lon']){
 			var mark_push = [mark['branch_name'], parseFloat(mark['branch_lat']), parseFloat(mark['branch_lon'])];

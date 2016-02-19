@@ -19,8 +19,16 @@ class Appointmentmanager_model extends CI_Model
 	}
 	function _getContacts()
 	{
-		$this->db->order_by('date_add', 'desc');
-		$query = $this->db->get('appointment', $where);
+		
+		$this->db->select('a.*,b.*,c.*');
+		$this->db->from('appointment a');
+		$this->db->join('branch_item b', 'a.id_branch = b.id_branch_item', 'left');
+		$this->db->join('treatments c', 'a.treatment = c.id_treatment', 'left');
+		$this->db->order_by('a.date_add', 'desc');
+		$query = $this->db->get();
+		
+		/* $this->db->order_by('date_add', 'desc');
+		$query = $this->db->get('appointment', $where); */
 		if ($query->num_rows() > 0) {
 			$result = $query->result_array();
 			$return = array();

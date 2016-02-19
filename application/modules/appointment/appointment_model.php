@@ -35,7 +35,12 @@ class Appointment_model extends CI_Model
 	}
 	function addContact()
 	{
+		
 		$data = $this->input->post('data');
+		$arr_app = explode(" ",$data['time_appointment']);
+		$arr_app[3] = ' ';
+		$data['time_appointment'] = implode("",$arr_app);
+		$data['time_appointment'] = date("G:i", strtotime($data['time_appointment']));
 		$data['date_add'] = date('Y-m-d H:i:s');
 		if ($this->db->insert('appointment', $data)) {
 			$this->notifyStaff($data);

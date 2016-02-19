@@ -36,6 +36,11 @@ CMS.initPage = function() {
 					} else {
 						$('input#show_children').prop('checked', false);
 					}
+					if (dataJ.page.chat == 1) {
+						$('input#chat').prop('checked', true);
+					} else {
+						$('input#chat').prop('checked', false);
+					}
 					if (dataJ.page.content_active == 1) {
 						$('input#content_active').prop('checked', true);
 					} else {

@@ -34,12 +34,6 @@
 											</div>
 										</div>
 										<div class="form-group divNotEdit">
-											<label class="col-sm-2 control-label" for="form-field-1">Message:</label>
-											<div class="col-sm-10">
-												<div id="contactMessage" class="itemValue col-xs-10 col-sm-5"></div>
-											</div>
-										</div>
-										<div class="form-group divNotEdit">
 											<label class="col-sm-2 control-label" for="form-field-1">Email:</label>
 											<div class="col-sm-10">
 												<div id="contactEmail" class="itemValue col-xs-10 col-sm-5"></div>
@@ -47,8 +41,44 @@
 										</div>
 										<div class="form-group divNotEdit">
 											<label class="col-sm-2 control-label" for="form-field-1">Phone:</label>
-											<div class="col-sm-10 divNotEdit">
+											<div class="col-sm-10">
 												<div id="contactPhone" class="itemValue col-xs-10 col-sm-5"></div>
+											</div>
+										</div>
+										<div class="form-group divNotEdit">
+											<label class="col-sm-2 control-label" for="form-field-1">Treatment:</label>
+											<div class="col-sm-10">
+												<div id="contactTreatment" class="itemValue col-xs-10 col-sm-5"></div>
+											</div>
+										</div>
+										<div class="form-group divNotEdit">
+											<label class="col-sm-2 control-label" for="form-field-1">Date Appointment:</label>
+											<div class="col-sm-10">
+												<div id="contactDateAppointment" class="itemValue col-xs-10 col-sm-5"></div>
+											</div>
+										</div>
+										<div class="form-group divNotEdit">
+											<label class="col-sm-2 control-label" for="form-field-1">Time Appointment:</label>
+											<div class="col-sm-10">
+												<div id="contactTimeAppointment" class="itemValue col-xs-10 col-sm-5"></div>
+											</div>
+										</div>
+										<div class="form-group divNotEdit">
+											<label class="col-sm-2 control-label" for="form-field-1">Branch:</label>
+											<div class="col-sm-10">
+												<div id="contactBranch" class="itemValue col-xs-10 col-sm-5"></div>
+											</div>
+										</div>
+										<div class="form-group divNotEdit">
+											<label class="col-sm-2 control-label" for="form-field-1">Medical Information:</label>
+											<div class="col-sm-10">
+												<div id="contactMedicalInformation" class="itemValue col-xs-10 col-sm-5"></div>
+											</div>
+										</div>
+										<div class="form-group divNotEdit">
+											<label class="col-sm-2 control-label" for="form-field-1">Comment:</label>
+											<div class="col-sm-10">
+												<div id="contactComment" class="itemValue col-xs-10 col-sm-5"></div>
 											</div>
 										</div>
 									</div>
@@ -75,8 +105,14 @@
 							<thead>
 								<tr>
 									<th>Name</th>
-									<th>Message</th>
 									<th>Email</th>
+									<th>Phone</th>
+									<th>Treatment</th>
+									<th>Date Appointment</th>
+									<th>Time Appointment</th>
+									<th>Branch</th>
+									<th>Medical Information</th>
+									<th>Comments</th>
 									<th>Date</th>
 									<th></th>
 								</tr>
@@ -84,8 +120,14 @@
 							<tfoot>
 								<tr>
 									<th>Name</th>
-									<th>Message</th>
 									<th>Email</th>
+									<th>Phone</th>
+									<th>Treatment</th>
+									<th>Date Appointment</th>
+									<th>Time Appointment</th>
+									<th>Branch</th>
+									<th>Medical Information</th>
+									<th>Comments</th>
 									<th>Date</th>
 									<th></th>
 								</tr>
@@ -93,8 +135,14 @@
 							<tbody> {foreach from=$contacts item=item}
 								<tr>
 									<td>{$item.name}</td>
-									<td>{$item.message|truncate:100}</td>
 									<td>{$item.email}</td>
+									<td>{$item.phone}</td>
+									<td>{$item.treatment_name}</td>
+									<td>{$item.date_appointment|date_format:"F j, Y"}</td>
+									<td>{$item.time_appointment}</td>
+									<td>{$item.branch_name}</td>
+									<td>{$item.medical_info}</td>
+									<td>{$item.comment}</td>
 									<td>{$item.date_add|date_format:"F j, Y"}</td>
 									<td class="td-actions" id="jdata{$item.id_contact_us}" data-var="modules">
 										<div class="hid" id="jd{$item.id_contact_us}">{$item.json}</div>

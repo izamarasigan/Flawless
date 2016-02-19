@@ -3,17 +3,16 @@
 <div class="contact-main">
 
 
-<h2 style="line-height: 40px;"> Find Clinic  
+<h2 style="line-height: 40px;" class="size-20"> Find Clinic  
 
 <span class="pull-right">
 
 Search: &nbsp;
 
-<select class="form-control select2">
-	<option value="">Metro Manila</option>
-	<option value="1">Option 1</option>
-	<option value="2">option 2</option>
-	<option value="3">option 3</option>
+<select id="selectProvince" class="form-control select2">
+	<option selected value="All">All</option>
+	<option value="Metro-Manila">Metro Manila</option>
+	<option value="Province">Province</option>
 </select>
 
 
@@ -22,8 +21,8 @@ Search: &nbsp;
 
 </h2>
 
-
-		<div class="col-md-6  col-sm-6 col-xm-6">
+		<div class="row">
+		<div class="col-md-6 col-xs-12 ">
 				
 		<div class="gmap">
             <!-- Google Maps. Replace the below iframe with your Google Maps embed code -->
@@ -38,21 +37,21 @@ Search: &nbsp;
 		</div>
 		
 		
-        <div class="col-md-6  col-sm-6 col-xm-6">
+        <div class=" col-md-6 col-xs-12 ">
             <div style=" margin-top: 0px;" class="cwell-contact">
        
 				<div class="add-main">
 				
 					<div class="address"> 
 						{foreach from=$branches key=key item=item}
-						<address style="border-bottom: 1px dashed rgb(221, 221, 221); margin-bottom: 10px; padding-bottom: 10px; margin-top: 5px;">
+						<address class="address-branch {$item.branch_city|replace:' ':'-'}" style="border-bottom: 1px dashed rgb(221, 221, 221); margin-bottom: 10px; padding-bottom: 10px; margin-top: 5px;">
 							  						
-								 <p style="margin-left:18px;" class="margin-bottom-0">{$item.branch_name}</p>
+								 <p style="margin-left:18px;" class="margin-bottom-0 size-18">{$item.branch_name}</p>
 								 <p style="margin-left:18px;" class="margin-bottom-0">{$item.branch_address} </p>
 								 <p style="margin-left:18px;" class="margin-bottom-0">{$item.branch_phone}</p>
 														
 						</address>
-						<input type="hidden" class="gmap-desc" value="{$item.json}"/>
+						<input type="hidden" class="gmap-desc hid-{$item.branch_city|replace:' ':'-'} active" value="{$item.json}"/>
 						{/foreach}	
 					   
 					</div>
@@ -61,6 +60,7 @@ Search: &nbsp;
 				
             </div>
         </div>
+		</div>
 
 </div>
 <div class="clearfix margin-bottom-50"></div>	

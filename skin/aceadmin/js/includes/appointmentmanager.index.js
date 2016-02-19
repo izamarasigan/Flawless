@@ -18,19 +18,31 @@ CMS.initPage = function() {
 			(+dateArray[1]), (+dateArray[2]) - 1, // Careful, month starts at 0!
 			(+dateArray[3]), (+dateArray[4]), (+dateArray[5]), (+dateArray[6]));
 		dateString = dateObject.toLocaleDateString() + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + dateObject.toLocaleTimeString();
+		var dateString2 = data.date_appointment;
+		var reggie2 = /(\d{4})-(\d{2})-(\d{2})/;
+		var dateArray2 = reggie2.exec(dateString2);
+		var dateObject2 = new Date(
+			(+dateArray2[1]), (+dateArray2[2]) - 1, // Careful, month starts at 0!
+			(+dateArray2[3]));
+		dateString2 = dateObject2.toLocaleDateString();
+		
+		
+		var dateString3 = data.time_appointment;
+		var H = +dateString3.substr(0, 2);
+		var h = H % 12 || 12;
+		var ampm = H < 12 ? "AM" : "PM";
+		dateString3 = h + dateString3.substr(2, 3) + ' '+ampm;
+		
 		$('div#contactDate').html(dateString);
 		$('div#contactName').html(data.name);
-		$('div#contactMessage').html(data.message);
 		$('div#contactEmail').html(data.email);
 		$('div#contactPhone').html(data.phone);
-		$('input#inputName').val(data.name);
-		$('input#inputEmail').val(data.email);
-		if ($('input#inputSubject').val() != '') {
-			$('input#inputSubject').val('');
-		}
-		if ($('textarea#inputMessage').val() != '') {
-			$('textarea#inputMessage').val('');
-		}
+		$('div#contactTreatment').html(data.treatment_name);
+		$('div#contactDateAppointment').html(dateString2);
+		$('div#contactTimeAppointment').html(dateString3);
+		$('div#contactBranch').html(data.branch_name);
+		$('div#contactMedicalInformation').html(data.medical_info);
+		$('div#contactComment').html(data.comment);
 		if (!$(this).hasClass('editItem')) {
 			$('div#formActions').addClass('hid');
 		}

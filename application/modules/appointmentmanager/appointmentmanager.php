@@ -62,7 +62,6 @@ class Appointmentmanager extends MX_Controller
 				header('Location: ' . _BASE_URL_);
 			}
 			break;
-
 		case 'delete-message':
 			$deleteid = $this->input->post('id_contact_us');
 			if ($deleteid) {
