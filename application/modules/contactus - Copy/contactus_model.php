@@ -1,6 +1,6 @@
-<?php  if (!defined("BASEPATH")) exit("No direct script access allowed");
-
-/**49.144.15.14
+<?php
+if (!defined('BASEPATH')) exit('No direct script access allowed');
+/**
  * Vii Framework
  *
  * @package			ViiFramework (libraries from CodeIgniter)
@@ -9,9 +9,8 @@
  * @website url 	http://www.viiworks.com/
  * @filesource
  *
-
  */
-class Franchising_model extends CI_Model
+class Contactus_model extends CI_Model
 
 {
 	var $image_dir = 'upload/images/branch/';
@@ -86,3 +85,4 @@ class Franchising_model extends CI_Model
 }
 /* End of file pages_model.php */
 /* Location: ./application/modules/Pages/Pages_model.php */
+?>

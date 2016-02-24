@@ -10,13 +10,13 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 * @filesource
 *
 */
-class Franchising extends MX_Controller
+class Contactus extends MX_Controller
 
 {
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->model('franchising_model', 'franchising');
+		$this->load->model('contactus_model', 'contactus');
 		$this->load->model('core/config_model', 'config_model');
 		$this->load->helper('recaptcha');
 	}
@@ -25,7 +25,7 @@ class Franchising extends MX_Controller
 		$this->template->assign('RECAPTCHA_PUBLIC_KEY', $this->config_model->get('RECAPTCHA_PUBLIC_KEY'));
 		$this->template->assign('RECAPTCHA_PRIVATE_KEY', $this->config_model->get('RECAPTCHA_PRIVATE_KEY'));
 		$this->template->assign('google_map', $this->config_model->get('GOOGLE_MAP'));
-		$items = $this->franchising->_getItems();
+		$items = $this->contactus->_getItems();
 		$this->template->assign('branches', $items);
 	}
 	function process()
@@ -33,7 +33,7 @@ class Franchising extends MX_Controller
 		$action = $this->uri->segment(3);
 		switch ($action) {
 		case 'add-contact':
-			$result = $this->franchising->addContact();
+			$result = $this->contactus->addContact();
 			break;
 
 		default:
@@ -59,3 +59,4 @@ class Franchising extends MX_Controller
 }
 /* End of file Pages.php */
 /* Location: application/modules/Pages/Pages.php */
+?>

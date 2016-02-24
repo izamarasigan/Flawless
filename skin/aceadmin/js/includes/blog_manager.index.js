@@ -181,3 +181,16 @@ $("#dtDeleteRows").on(ace.click_event, function() {
 		}
 	});
 });
+
+function runSummernote(textedit) {
+	$.each(textedit, function(index, value) {
+		$('#' + value).summernote({
+			onblur: function(e) {
+				$("#" + value).val($('#' + value).code());
+			},
+			onImageUpload: function(files, editor, $editable) {
+				sendFile(files[0], editor, $editable);
+			}
+		});
+	});
+}
