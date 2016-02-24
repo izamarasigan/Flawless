@@ -54,6 +54,9 @@ $route["administrator/branch_manager/(.*)"] = "branch_manager/$1";
 $route["administrator/appointmentmanager"] = "appointmentmanager";
 $route["administrator/appointmentmanager/(.*)"] = "appointmentmanager/$1";
 
+$route["administrator/franchisingmanager"] = "franchisingmanager";
+$route["administrator/franchisingmanager/(.*)"] = "franchisingmanager/$1";
+
 
 
 ?>

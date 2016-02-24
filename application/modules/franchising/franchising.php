@@ -59,4 +59,3 @@ class Franchising extends MX_Controller
 }
 /* End of file Pages.php */
 /* Location: application/modules/Pages/Pages.php */
-?>

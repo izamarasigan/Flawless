@@ -488,7 +488,7 @@ class Blog_manager_model extends CI_Model
 	function _uploadCMSImage()
 	{
 		$this->load->model('core/uploader_model', 'uploader');
-		$this->uploader->_uploadCMSImage();
+		$this->uploader->_uploadCMSImage(2000000);
 	}
 }
 ?>

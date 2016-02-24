@@ -94,22 +94,22 @@ img.img-responsive.section-sample-layout{
 	border-radius: 10px;
 }
 .layout-templates{ 
-	border: 2px solid #999;  
-	border-radius: 14px;    
+    border: 1px solid #E2E2E2;
+    border-radius: 2px;  
 	width: 91% !important; 
 	margin-top: -28px;
 	margin-left: 29px;
 }
-.section-templates{  
-	 border: 2px solid #999;
-    border-radius: 14px;
+.section-templates {
+    border: 1px solid #E2E2E2;
+    border-radius: 2px;
     width: 61% !important;
     margin-left: -42px;
     margin-top: -20px;
- }
+}
 .section-templates2{
-	border: 2px solid #999;
-    border-radius: 14px;
+    border: 1px solid #E2E2E2;
+    border-radius: 2px;
     width: 61% !important;
 	margin-left: 10px;
 } 

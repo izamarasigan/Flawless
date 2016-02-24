@@ -1,6 +1,5 @@
 <div class="row media">
             <!-- LEFT -->
-            <!-- LEFT -->
             <div class="col-md-3 col-sm-3">
 
                 <!-- INLINE SEARCH -->
@@ -15,8 +14,34 @@
                 </div>
                 <!-- /INLINE SEARCH -->
 
-            <!-- JUSTIFIED TAB -->
-                <div class="tabs nomargin-top hidden-xs margin-bottom-0">
+ 
+
+               <!-- JUSTIFIED TAB -->
+			   	<hr/>
+				
+				<div class="side-nav margin-bottom-60 margin-top-30">
+
+								 <ul class="nav nav-tabs nav-bottom-border nav-justified">
+									<li class="active">
+										<a data-toggle="tab" href="#tab_1">
+														Categories
+													</a>
+									</li>
+								</ul>
+								<br>
+								<ul class="list-group list-group-bordered list-group-noicon uppercase">
+								{foreach from=$category_list key=key item=item}
+									<li class="list-group-item"><a href="{$item.catagory_link}"><span class="size-15 text-muted pull-right">({$item.total_items})</span> {$item.category_title}</a></li>
+								{/foreach}
+								</ul>
+								<!-- /side navigation -->
+
+							
+				</div>
+				
+				<hr/>
+							
+                <div class="tabs nomargin-top margin-bottom-0">
 
                     <!-- tabs -->
                     <ul class="nav nav-tabs nav-bottom-border nav-justified">
@@ -34,12 +59,12 @@
                             {foreach from=$recent_blog key=key item=item}
                             <div class="row tab-post">
                                 <!-- post -->
-                                <div class="col-md-5 thumbnail">
+                                <div class="col-md-5 col-xs-5 thumbnail">
                                     <a href="{$item.image_link}">
                                          <img src="{$item.image_src_thumb}" class="recent-news-image img-responsive" alt="" />
                                     </a>
                                 </div>
-                                <div class="col-md-7">
+                                <div class="col-md-7 col-xs-7">
                                     <a href="{$item.image_link}" class="tab-post-link montserrat-font">{$item.image_title|ucwords}</a>
                                     <small>{if $year neq $item.year}{assign var="year" value=$item.year} {$item.year} {/if} {if $month neq $item.month}{assign var="month" value=$item.month} {$item.month} {/if}</small>
                                 </div>
@@ -60,33 +85,13 @@
 
                 </div>
                 <!-- JUSTIFIED TAB -->
-				<hr/>
-				
-				<div class="side-nav margin-bottom-60 margin-top-30">
 
-								 <ul class="nav nav-tabs nav-bottom-border nav-justified">
-									<li class="active">
-										<a data-toggle="tab" href="#tab_1">
-														Categories
-													</a>
-									</li>
-								</ul>
-								<br>
-								<ul class="list-group list-group-bordered list-group-noicon uppercase">
-								{foreach from=$category_list key=key item=item}
-									<li class="list-group-item"><a href="{$item.catagory_link}"><span class="size-15 text-muted pull-right">({$item.total_items})</span> {$item.category_title}</a></li>
-								{/foreach}
-								</ul>
-								<!-- /side navigation -->
-
-							
-							</div>
 			<br/><br/>
 
             </div>
 			
     <!-- news Post Content Column -->
-    <div class="col-md-9 col-sm-9" style="margin-top: -15px;">
+    <div class="col-md-9 col-sm-9">
 
         <!-- news Post -->
 

@@ -1,18 +1,5 @@
-<form id='franchising-form' onsubmit="return false;">
-	<p><input type="text" id="contactName" placeholder="Enter Name" name="data[name]" required></p>
-	<p><input type="email" id="contactEmail" placeholder="Enter email" name="data[email]" required></p>
-	<p><input type="text" id="contactPhone" placeholder="Enter Contact No." name="data[phone]" ></p>
-	<p><input type="text" id="contactLandline" placeholder="Enter Website" name="data[landline]" ></p>
-	<p><input type="text" id="contactAddress" placeholder="Enter Address" name="data[address]" ></p>
-	<p><input type="text" id="contactExistingFranchise" placeholder="Enter Subject" name="data[existing_franchise]" ></p>
-	<p><textarea id="contactComment" rows="3" name="data[message]" required></textarea></p>
-	<p><img src="img/loading.gif" id="contactLoading" style="display:none;"></p>
-	<p><div id="contactNotif" style='display:none;' ></div></p>
-	<div id="franchisingFormBtns">
-		<p><button type="submit">Submit</button></p>
-		<p><button type="reset">Reset</button></p>
-	</div>
-</form>
+<div class="others" id="others_include" >{include file="$_theme/include/franchising-form.html"}</div>
+
 
 <!-- CODES FOR RECAPTCHA -->
 <!-- <script type="text/javascript">

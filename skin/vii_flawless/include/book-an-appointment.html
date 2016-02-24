@@ -16,10 +16,10 @@
 <span class="size-18 weight-300 margin-top-10">{$_page.content}</span>
 
 
-<ul class="nav nav-tabs nav-top-border">
+<!-- <ul class="nav nav-tabs nav-top-border">
 <li class="active"><a href="#new" data-toggle="tab">New Customer</a></li>
-<li class="hidden"><a href="#existing" data-toggle="tab">Existing  Customer</a></li>
-</ul>
+
+</ul> -->
 <div class="tab-content">
 
 <form id='contactusForm' onsubmit="return false;" class="appointment-form" action="php/contact.php" method="post" enctype="multipart/form-data" onsubmit="return false;">
@@ -31,7 +31,7 @@
 <div class="form-group has-feedback">
 <label class="col-xs-3 control-label">YOUR NAME (REQUIRED)</label>
 <div class="col-xs-9">
-<input required type="text" class="form-control" name="data[name]" data-fv-field="test"><i class="form-control-feedback" data-fv-icon-for="name" style="display: none;"></i>
+<input required type="text" class="form-control textOnly" required name="data[name]" data-fv-field="test"><i class="form-control-feedback" data-fv-icon-for="name" style="display: none;"></i>
 
 <!-- -- notification -->
 <small class="help-block" data-fv-validator="notEmpty" data-fv-for="test" data-fv-result="NOT_VALIDATED" style="display: none;">The full name is required</small></div>
@@ -44,7 +44,7 @@
 <div class="form-group has-feedback">
 <label class="col-xs-3 control-label">YOUR EMAIL (REQUIRED)</label>
 <div class="col-xs-9">
-<input required type="text" class="form-control" name="data[email]" data-fv-field="test"><i class="form-control-feedback" data-fv-icon-for="email" style="display: none;"></i>
+<input  type="email" class="form-control "  name="data[email]" data-fv-field="test" required><i class="form-control-feedback" data-fv-icon-for="email" style="display: none;"></i>
 <!-- -- notification -->
 <small class="help-block" data-fv-validator="notEmpty" data-fv-for="test" data-fv-result="NOT_VALIDATED" style="display: none;">The full name is required</small></div>
 </div>
@@ -58,7 +58,7 @@
 
 <div class="col-xs-9">
 
-<input required type="text" class="form-control" name="data[phone]" data-fv-field="test"><i class="form-control-feedback" data-fv-icon-for="fullName" style="display: none;"></i>
+<input required type="text" class="form-control numbersOnly"required name="data[phone]" data-fv-field="test"><i class="form-control-feedback" data-fv-icon-for="fullName" style="display: none;"></i>
 
 <!-- -- notification -->
 <small class="help-block" data-fv-validator="notEmpty" data-fv-for="test" data-fv-result="NOT_VALIDATED" style="display: none;">The full name is required</small></div>
@@ -90,7 +90,8 @@
 					<div class="col-xs-9">
 						
 								<!-- date picker -->
-								<input type="text" name="data[date_appointment]" class="form-control datepicker" value="2015-01-01 - 2016-12-31" data-format="yyyy-mm-dd" data-from="2015-01-01" data-to="2016-12-31" data-lang="en" data-RTL="false">
+								<input type="text" required name="data[date_appointment]" class="form-control datepicker" value='{$smarty.now|date_format:"%Y-%m-%e"}' data-format="yyyy-mm-dd" data-lang="en" data-RTL="false">
+								<!-- <input type="text" name="data[date_appointment]" class="form-control datepicker" value="2015-01-01 - 2016-12-31" data-format="yyyy-mm-dd" data-from="2015-01-01" data-to="2016-12-31" data-lang="en" data-RTL="false"> -->
 								<!-- range picker -->
 								<!-- <input type="text" class="form-control datepicker" value="2015-01-01 - 2016-12-31" data-format="yyyy-mm-dd" data-from="2015-01-01" data-to="2016-12-31" data-lang="en" data-RTL="false"> -->
 					</div>
@@ -104,7 +105,7 @@
 <label required class="col-xs-3 control-label"  >TIME OF APPOINTMENT</label>
 <div class="col-xs-9">
 <!-- date timepicker -->
-<input type="text" class="form-control timepicker" name="data[time_appointment]" value="00 : 00 : PM">
+<input type="text" class="form-control timepicker" name="data[time_appointment]" required>
 </div>
 
 </div>
@@ -157,7 +158,7 @@
 <!-- -------------------- -->
 
 <div class="col-md-12 ">
-<button type="submit" id="#" class="btn btn-primary center-block btn-lg"><strong>SUBMIT BOOKING</strong></button>											
+<button type="submit" id="contactusSectionBtns" class="btn btn-primary center-block btn-lg"><strong>SUBMIT BOOKING</strong></button>											
 </div>
 
 <!-- -------------------- -->
@@ -170,12 +171,7 @@
 
 <!-- -------------End------------------ -->
 
-<div class="tab-pane fade" id="existing">
-<p>------</p>
 
-<div class="clearfix"></div> 
-<br/>
-</div>
 
 </div>
 

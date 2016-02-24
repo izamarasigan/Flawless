@@ -17,25 +17,39 @@ class Email_model extends CI_Model
 	Link Gmail to webmail:
 	http://www.inmotionhosting.com/support/email/email-client-setup/setting-up-gmail-for-pop3-and-smtp
 	*/
-	function sendEmail($to, $subject, $message, $attachment = false, $template = false, $data = false, $replyTo = false, $fromName = false ,$cc = false)
+	function sendEmail($to, $subject, $message, $attachment = false, $template = false, $data = false, $replyTo = false, $fromName = false)
 	{
 		$this->load->library('email');
 		$this->load->library('encrypt');
 		$siteName = $this->config_model->get('SITE_NAME');
-		$config = Array(
-			'protocol' => "mail",
-			'charset' => "utf-8",
-			'mailtype' => "html",
-			'newline' => "\r\n",
-			'newline' => "\r\n"
-		);
+		$noreply = true;
+		if ($noreply) {
+			$fromEmail = 'noreply@viiworksdemo.com';
+			$config = Array(
+				'protocol' => "smtp",
+				'smtp_host' => 'mail.viiworksdemo.com',
+				'smtp_port' => '26',
+				'smtp_user' => $fromEmail,
+				'smtp_pass' => 'w9XTT0wC$MWA',
+				'charset' => "utf-8",
+				'mailtype' => "html",
+				'newline' => "\r\n"
+			);
+		}
+		else {
+			$fromEmail = $replyTo;
+			$config = Array(
+				'protocol' => "mail",
+				'charset' => "utf-8",
+				'mailtype' => "html",
+				'newline' => "\r\n",
+				'newline' => "\r\n"
+			);
+		}
 		$this->email->initialize($config);
-		$this->email->from($replyTo, $fromName);
+		$this->email->from($fromEmail, $fromName);
 		$this->email->reply_to($replyTo, $fromName);
 		$this->email->to($to);
-		if($cc){
-			$this->email->cc($cc);
-		}
 		$this->email->subject($subject);
 		if ($attachment) {
 			$this->email->attach($attachment);

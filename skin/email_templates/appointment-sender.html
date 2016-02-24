@@ -1,13 +1,14 @@
 
-<p>hi,</p>
-<p>Thank you for contacting us {$data|@print_r}  <strong>{$data.name}</strong> sent a Contact Us Message on {$data.date_add|date_format}.</p>
- {if $data.name}{$data.name}{/if}
- {if $data.email}{$data.email}{/if}
- {if $data.phone}{$data.phone}{/if}
- {if $data.date_appointment}{$data.date_appointment}{/if}
- {if $data.time_appointment}{$data.time_appointment}{/if}
- {if $data.medical_info}{$data.medical_info}{/if}
- {if $data.comment}{$data.comment}{/if}
- {if $data.date_add}{$data.date_add|date_format}{/if}
- {if $data.treatment_name}{$data.treatment_name}{/if}
- {if $data.branch_name}{$data.branch_name}{/if}
+<p>Hi {$data.name},</p>
+<p>Thank you for contacting us{$data|@print_r} <strong>{$data.name}</strong>. Here are your message details sent.</p>
+ {if $data.name}{$data.name}{/if}__________
+ {if $data.email}{$data.email}{/if}__________
+ {if $data.phone}{$data.phone}{/if}__________
+ {if $data.date_appointment}{$data.date_appointment|date_format:"%b %e, %Y"}{/if}__________
+ {if $data.time_appointment}{$data.time_appointment}{/if}__________
+ {if $data.medical_info}{$data.medical_info}{/if}__________
+ {if $data.comment}{$data.comment}{/if}__________
+ {if $data.date_add}{$data.date_add|date_format}{/if}__________
+ {if $data.treatment_name}{$data.treatment_name}{/if}__________
+ {if $data.branch_name}{$data.branch_name}{/if}__________
+ 

@@ -149,7 +149,31 @@
 			</ul>
 		</li>
 		{/if}
-		{if $bcContactIndex}
+
+		{if $bcFranchisingIndex}
+		<li id = "bcFranchising">
+			<a href="javascript:;"  class="dropdown-toggle">
+				<i class="menu-icon fa fa-sitemap"></i>
+				<span class="menu-text"> Frachising Inquiries </span>
+				<b class="arrow fa fa-angle-down"></b>
+			</a>
+			<ul class="submenu">
+				<li id = "bcFranchisingIndex">
+					<a href="{$admin_base}franchisingmanager">
+						<i class="fa fa-double-angle-right"></i>
+						Lists
+					</a>
+				</li>
+				<li id = "bcFranchisingSettings">
+					<a href="{$admin_base}franchisingmanager/settings">
+						<i class="fa fa-double-angle-right"></i>
+						Settings
+					</a>
+				</li>
+			</ul>
+		</li>
+		{/if}
+		<!-- {if $bcContactIndex}
 		<li id = "bcContact">
 			<a href="javascript:;"  class="dropdown-toggle">
 				<i class="menu-icon fa fa-envelope-o"></i>
@@ -171,7 +195,7 @@
 				</li>
 			</ul>
 		</li>
-		{/if}
+		{/if} -->
 		<!-- {if $bcEventsItems}
 		<li id = "bcEventsItems">
 			<a href="{$admin_base}events_manager">
@@ -215,12 +239,12 @@
 						Items
 					</a>
 				</li>
-				<li id = "bcFAQCategories">
+				<!-- <li id = "bcFAQCategories">
 					<a href="{$admin_base}faqmanager/category">
 						<i class="fa fa-double-angle-right"></i>
 						Categories
 					</a>
-				</li>
+				</li> -->
 			</ul>
 		</li>
 		{/if}
@@ -248,13 +272,13 @@
 		</li>
 		{/if} -->
 		
-		{if $bcNewsItems}
+		<!-- {if $bcNewsItems}
 		<li id = "bcNewsItems">
 			<a href="{$admin_base}news_manager">
 				<i class="menu-icon fa fa-bullhorn"></i>
 				<span class="menu-text"> News Manager </span>
 			</a>
-		</li>
+		</li> -->
 		<!-- <li id="bcNews">
 			<a href="javascript:;" class="dropdown-toggle">	
 				<i class="menu-icon fa fa-bullhorn"></i>		

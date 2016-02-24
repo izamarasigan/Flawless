@@ -194,8 +194,9 @@ class Uploader_model extends CI_Model
 			return $details['file_name'];
 		}
 	}
-	function _uploadCMSImage()
+	function _uploadCMSImage($value=1000000)
 	{
+		
 		$allowed = array(
 			'jpeg',
 			'jpg',
@@ -209,7 +210,7 @@ class Uploader_model extends CI_Model
 				$result['error'][] = "Invalid file type. '.jpg' and '.png' are allowed.";
 				return $result;
 			}
-			if ($_FILES['file']['size'] > 1000000) {
+			if ($_FILES['file']['size'] > $value) {
 				$result['error'] = array();
 				$result['error'][] = "File size should not exceed to 50KB.";
 				return $result;
@@ -221,7 +222,7 @@ class Uploader_model extends CI_Model
 			}
 		}
 		else {
-			echo 'false';
+			echo $result;
 			exit(0);	
 		}
 	}

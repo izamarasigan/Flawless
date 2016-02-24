@@ -1,6 +1,6 @@
-<?php
-if (!defined('BASEPATH')) exit('No direct script access allowed');
-/**
+<?php  if (!defined("BASEPATH")) exit("No direct script access allowed");
+
+/**49.144.15.14
  * Vii Framework
  *
  * @package			ViiFramework (libraries from CodeIgniter)
@@ -9,6 +9,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  * @website url 	http://www.viiworks.com/
  * @filesource
  *
+
  */
 class Franchising_model extends CI_Model
 
@@ -50,7 +51,7 @@ class Franchising_model extends CI_Model
 	{
 		$data = $this->input->post('data');
 		$data['date_add'] = date('Y-m-d H:i:s');
-		if ($this->db->insert('contact_us', $data)) {
+		if ($this->db->insert('franchising', $data)) {
 			$this->notifyStaff($data);
 			if ($data['email']) {
 				$this->notifySender($data);
@@ -63,8 +64,8 @@ class Franchising_model extends CI_Model
 	}
 	function notifyStaff($data)
 	{
-		$to = $this->config_model->get('CONTACT_EMAIL');
-		$cc = $this->config_model->get('CONTACT_EMAIL_CC');
+		$to = $this->config_model->get('FRANCHISING_EMAIL');
+		$cc = $this->config_model->get('franchising_email_cc');
 		$replyTo = $data['email'];
 		$fromName = $data['name'];
 		if ($data['subject']) {
@@ -85,4 +86,3 @@ class Franchising_model extends CI_Model
 }
 /* End of file pages_model.php */
 /* Location: ./application/modules/Pages/Pages_model.php */
-?>
