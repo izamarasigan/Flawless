@@ -15,7 +15,7 @@ $(".appointment-form").submit(function(event) {
 			$('#' + id_form)[0].reset();
 			$('#' + id_form + " #contactusSectionLoading").attr("style", "display:none");
 			$('#' + id_form + " #contactusSectionBtns").show();
-			CMS.showNotification("success", "Thank you for contacting us!", "contactusSectionNotif");
+			CMS.showNotification("success", "Thank you for booking us!", "contactusSectionNotif");
 			return false;
 		} else {
 			$('#' + id_form + " #contactusSectionLoading").attr("style", "display:none");

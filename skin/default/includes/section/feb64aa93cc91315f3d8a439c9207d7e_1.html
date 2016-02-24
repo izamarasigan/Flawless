@@ -1,5 +1,5 @@
 
-<div class="container">
+<div class="container desk-main-lifestyle">
 <div class="row flawless-lifestyle">
 	<center>
 	<p class="size-25 header-title margin-bottom-10">{$item.section_title}</p>
@@ -12,7 +12,7 @@
 
 	{foreach from=$_blog key=key item=item}
 	
-	<div class="col-md-4 margin-bottom-30">
+	<div class="col-md-4 margin-bottom-30 media-home">
 		<span>
 			<span class="img-cont">
 			<a href="{$item.image_link}/"><img src="{$item.image_src}" class="img-responsive"></a>
@@ -37,7 +37,72 @@
 
 <div class="line-br margin-bottom-30" style=" background: url(assets/images/line-br.png);"></div>
 
+
+
 </div>
+
+
+<div class="clearfix"></div>
+
+
+<!-- =====Mobile toggle view======= -->
+
+
+<div class="toggle toggle-transparent-body mobile-main-lifestyle">
+	
+	
+	<div class="toggle active">
+		<label>
+
+				<p class="size-25 header-title">The Flawless Lifestyle<!-- {$item.section_title} --></p>
+		</label>
+		
+
+		<div class="toggle-content">
+		
+		
+<div class="row main-bestsellers">
+
+
+	<p class="size-16  header-title margin-bottom-20">{$item.section_subtitle} </p>
+	<br/>
+
+<!-- news_version_1 -->
+
+	{foreach from=$_blog key=key item=item}
+	
+	<div class="col-md-4 margin-bottom-30">
+		<span>
+			<span class="img-cont">
+			<a href="{$item.image_link}/"><img src="{$item.image_src}" class="img-responsive"></a>
+			</span>
+			<h3 class="margin-top-10 margin-bottom-10">{$item.image_title|truncate:50}</h3>
+			<p class="feature-desc margin-bottom-10">{$item.image_desc|truncate:150}</p>
+			
+			<a href="{$item.image_link}/" class="find-more">FIND OUT MORE &gt;</a>
+		</span>
+	</div>	
+	
+
+	    {if $key eq 2}{break}{/if} {/foreach}
+
+		
+</div>
+<br/>
+			
+	
+			
+		</div>
+	</div>
+<div class="line-br margin-bottom-30" style=" background: url(assets/images/line-br.png);"></div>	
+
+
+</div>
+
+<div class="clearfix"></div>
+
+
+ 
 
 
 

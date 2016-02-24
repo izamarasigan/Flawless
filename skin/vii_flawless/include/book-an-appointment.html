@@ -16,10 +16,10 @@
 <span class="size-18 weight-300 margin-top-10">{$_page.content}</span>
 
 
-<ul class="nav nav-tabs nav-top-border">
+<!-- <ul class="nav nav-tabs nav-top-border">
 <li class="active"><a href="#new" data-toggle="tab">New Customer</a></li>
-<li class="hidden"><a href="#existing" data-toggle="tab">Existing  Customer</a></li>
-</ul>
+
+</ul> -->
 <div class="tab-content">
 
 <form id='contactusForm' onsubmit="return false;" class="appointment-form" action="php/contact.php" method="post" enctype="multipart/form-data" onsubmit="return false;">
@@ -104,7 +104,7 @@
 <label required class="col-xs-3 control-label"  >TIME OF APPOINTMENT</label>
 <div class="col-xs-9">
 <!-- date timepicker -->
-<input type="text" class="form-control timepicker" name="data[time_appointment]" value="00 : 00 : PM">
+<input type="text" class="form-control timepicker" name="data[time_appointment]" required>
 </div>
 
 </div>
@@ -157,7 +157,7 @@
 <!-- -------------------- -->
 
 <div class="col-md-12 ">
-<button type="submit" id="#" class="btn btn-primary center-block btn-lg"><strong>SUBMIT BOOKING</strong></button>											
+<button type="submit" id="contactusSectionBtns" class="btn btn-primary center-block btn-lg"><strong>SUBMIT BOOKING</strong></button>											
 </div>
 
 <!-- -------------------- -->
@@ -170,12 +170,7 @@
 
 <!-- -------------End------------------ -->
 
-<div class="tab-pane fade" id="existing">
-<p>------</p>
 
-<div class="clearfix"></div> 
-<br/>
-</div>
 
 </div>
 

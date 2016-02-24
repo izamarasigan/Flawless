@@ -68,23 +68,23 @@ section.featured-grid div.row>div .ribbon:before, .modal-content {
     font-size: 18px;
 }
 
-.mobile-main-bestsellers.toggle.toggle-transparent-body label {
+.mobile-main-bestsellers.toggle.toggle-transparent-body label, .mobile-main-lifestyle.toggle.toggle-transparent-body label, .mobile-side-nav.toggle.toggle-transparent-body label, .mobile-main-lifestyle.toggle.toggle-transparent-body label {
     background: rgb(237, 60, 149);
     color: #fff;
 }
 
-.mobile-main-bestsellers.toggle.toggle-transparent-body label:hover {
+.mobile-main-bestsellers.toggle.toggle-transparent-body label:hover, .mobile-main-lifestyle.toggle.toggle-transparent-body label:hover, .mobile-side-nav.toggle.toggle-transparent-body label:hover,.mobile-side-nav.toggle.toggle-transparent-body label:hover {
     background: #F55EA9;
 }
 
-.mobile-main-bestsellers div.toggle.active > label:before {
+.mobile-main-bestsellers div.toggle.active > label:before, .mobile-main-lifestyle div.toggle.active > label:before {
     border: 10px solid transparent;
     border-bottom-color: rgba(255, 255, 255, 0.5);
     right: 14px;
     margin-top: -17px;
 }
 
-.mobile-main-bestsellers div.toggle > label:before {
+.mobile-main-bestsellers div.toggle > label:before, .mobile-main-lifestyle div.toggle > label:before {
     content: '';
     border: 10px solid transparent;
     border-top-color: inherit;
@@ -95,14 +95,60 @@ section.featured-grid div.row>div .ribbon:before, .modal-content {
 }
 
 
+.book-appointment span.select2.select2-container.select2-container--default {
+    width: 100%!important;
+}
+
+@media (max-width:600px) {
+.page-v2 .col-md-3.col-xs-3.inner-img-banner {
+    width: 100%;
+    text-align: center!important;
+}
+.page-v2 .col-md-9.col-xs-9.inner-content-banner {
+    width: 100%;
+    margin-top: 10px;
+	text-align: center!important;
+}
+
+}
+
+@media (max-width:400px) {
+.findstore span.pull-right {
+    float: none!important;
+    display: block;
+    margin-top: 10px;
+}
+}
+
+
+
+
 @media (max-width:767px) {
+
+div.toggle {
+    margin: 0px 0 0!important;}
+	
+.book-appointment label.col-xs-3.control-label {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+.book-appointment .col-xs-9 {
+    width: 100%;
+}
+
+.book-appointment span.select2.select2-container.select2-container--default {
+    width: 100%;
+}
 
 .contact-main .cwell-contact {
     margin-top: 20px!important;
 }
+.table-responsive{border: none!important;}
 
-.mobile-main-bestsellers {display:block!important;}
-.desk-main-bestsellers {display:none!important;}
+.mobile-main-bestsellers .mobile-main-lifestyle {display:block!important;}
+.desk-main-bestsellers, .desk-main-lifestyle {display:none!important;}
 
 #main_section_include .col-md-12 {
     padding-left: 0;
@@ -129,13 +175,34 @@ section.featured-grid div.row>div .ribbon:before, .modal-content {
 
 }
 
+@media (max-width:768px) {
+.news-item-small-image.margin-bottom-20 {
+    float: none!important;
+    width: 100%!important;
+}
 
+
+
+.media .img-cont img {
+    max-width: 100%!important;
+}
+.media .col-sm-3 {
+    width: 100%;
+}
+
+.media  .col-sm-9 {
+    width: 100%;
+}
+
+.media .side-nav ul {
+    display: block;}
+
+
+}
 
 @media (min-width:768px) {
 
-.mobile-main-bestsellers {display:none!important;}
-
-
+.mobile-main-bestsellers, .mobile-main-lifestyle {display:none!important;}
 }
 
 @media (max-width:530px) {
@@ -531,7 +598,8 @@ section.dark .pagination > li.active>a:hover, .pagination > li.active>a:hover { 
 
 .news-item-small-image.margin-bottom-20 {
     float: left;
-    width: 350px;
+    width: 330px;
+    margin-right: 15px;
 }
 
 .media hr { background: #ECE5E0!important;}
@@ -566,7 +634,7 @@ section.dark .pagination > li.active>a:hover, .pagination > li.active>a:hover { 
     left: 0 !important;
     margin: auto !important;
     max-height: 100% !important;
-    max-width: 90%!important;
+    max-width: 100%!important;
     position: absolute !important;
     right: 0 !important;
     top: 0 !important;
@@ -613,17 +681,17 @@ section.dark .pagination > li.active>a:hover, .pagination > li.active>a:hover { 
 }
 
 .table-responsive table.table.table-vertical-middle {
-    border: 1px solid #DDDDDD;
+    border: none;
 }
 
 .table-responsive thead {
-    background: #ED3C95;
-    color: #fff;
-	border: 1px solid #ED3C95;
+    background:none;
+    color: #ED3C95;
+	border: none;
 }
 
 .table-responsive thead tr:hover {
-    background: #ED3C95!important;
+    background: none!important;
 }
 
 .table-responsive .table>thead>tr>th {
@@ -666,6 +734,18 @@ section.dark .pagination > li.active>a:hover, .pagination > li.active>a:hover { 
     opacity: .8!important;
 }
 
+.toast-top-right {
+    bottom: 0!important;
+    right: 12px;
+    top: initial!important;
+}
+
+div.side-nav ul > li::before {
+    display: none;
+}
+
+
+.datepicker table tr td.active.active {background-color:#ED3C95!important;}
 /* ------- */
 
 /*
@@ -724,10 +804,10 @@ now override the 3.3 new styles for modern browsers & apply opacity
 
 /* ================== */
 
-.tp-bgimg.defaultimg {
+/* .tp-bgimg.defaultimg {
     background-size: initial!important;
 }
-
+ */
 #main-slider .item.active {
     background: #999999!important;
 }

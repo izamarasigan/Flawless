@@ -637,7 +637,7 @@ class Globals
 			$result = $query->result_array();
 			$return = array();
 			foreach($result as $item) {
-				$item['image_link'] = base_url() . 'blog/article/' . $item['id_blog_item'] . '/' . $item['link_rewrite'];
+				$item['image_link'] = base_url() . 'flawlessmedia/article/' . $item['id_blog_item'] . '/' . $item['link_rewrite'];
 				if ($item['image_src']) {
 					$item['image_src_thumb'] = $this->upload_images . 'blog/thumb/' . $item['image_src'];
 					$item['image_src'] = $this->upload_images . 'blog/' . $item['image_src'];
