@@ -1,0 +1,421 @@
+[22-Feb-2016 15:29:01 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('test', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_model->notifySen in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:29:07 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('test', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_model->notifySen in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:29:29 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('zeir.fontanilla...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:29:31 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('zeir.fontanilla...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:29:41 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('zeir.fontanilla...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:29:53 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('dasd', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_model->notifySen in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:30:00 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('dasd', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_model->notifySen in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:30:03 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('dasd', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_model->notifySen in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:30:04 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('dasd', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_model->notifySen in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:30:05 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('dasd', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_model->notifySen in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:30:05 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('dasd', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_model->notifySen in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:30:06 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('dasd', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_model->notifySen in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:30:12 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('dasd', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_model->notifySen in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:30:33 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('test@gmail.com', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_model- in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:30:34 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('test@gmail.com', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_model- in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:30:36 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('test@gmail.com', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_model- in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:30:37 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('test@gmail.com', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_model- in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:30:37 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('test@gmail.com', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_model- in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:30:37 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('test@gmail.com', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_model- in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:32:13 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('zeir.fontanilla...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:32:14 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('zeir.fontanilla...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:32:14 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('zeir.fontanilla...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:32:15 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('zeir.fontanilla...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:32:15 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('zeir.fontanilla...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[22-Feb-2016 15:32:16 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('zeir.fontanilla...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'testviiworks@gm...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 16:34:53 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(47): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('bbb', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_model->notifySend in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 16:55:36 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(69): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('bbb', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_model->notifySend in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 17:01:35 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('bb', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_model->notifySende in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 17:09:03 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('bb', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_model->notifySende in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 17:09:59 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 17:16:16 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 17:18:21 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 17:19:35 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 17:26:24 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 17:31:19 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 17:31:39 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 17:34:06 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 17:37:41 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 17:48:13 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 17:48:24 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 17:51:12 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 18:04:04 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 18:05:07 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 18:05:13 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 18:06:00 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 18:10:42 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 18:15:13 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 18:23:06 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('zeir.fontanilla...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 18:23:42 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('zeir.fontanilla...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 18:23:53 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(75): Email_model->sendEmail('zeir.fontanilla...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(48): Appointment_mo in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 18:29:41 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(104): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(77): Appointment_m in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[23-Feb-2016 18:44:12 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(70): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(104): Email_model->sendEmail('zeir.fontanilla...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(77): Appointment_m in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[24-Feb-2016 11:06:33 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(67): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(104): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(77): Appointment_m in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[24-Feb-2016 11:13:06 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(67): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(104): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(77): Appointment_m in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[24-Feb-2016 11:14:15 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(67): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(104): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(77): Appointment_m in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[24-Feb-2016 11:17:27 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(66): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(104): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(77): Appointment_m in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[24-Feb-2016 11:17:35 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(66): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(104): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(77): Appointment_m in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[24-Feb-2016 11:18:03 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(66): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(104): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(77): Appointment_m in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[24-Feb-2016 11:18:33 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(66): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(104): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(77): Appointment_m in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[24-Feb-2016 11:20:25 Asia/Manila] PHP Fatal error:  Uncaught exception 'SmartyException' with message 'Unable to load template file 'email_templates/appointment-sender.html'' in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php:163
+Stack trace:
+#0 /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php(541): Smarty_Internal_Template->isExisting(true)
+#1 /home/viidemo/public_html/flawless/application/libraries/smarty/Smarty.class.php(337): Smarty_Internal_Template->getRenderedTemplate()
+#2 /home/viidemo/public_html/flawless/application/modules/core/email_model.php(66): Smarty->fetch('email_templates...')
+#3 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(104): Email_model->sendEmail('kirby.lagunda@v...', 'Flawless :: Tha...', 'Message', false, 'appointment-sen...', Array, 'kirby.lagunda@v...', 'Flawless', false)
+#4 /home/viidemo/public_html/flawless/application/modules/appointment/appointment_model.php(77): Appointment_m in /home/viidemo/public_html/flawless/application/libraries/smarty/sysplugins/smarty_internal_template.php on line 163
+[24-Feb-2016 11:27:09 Asia/Manila] PHP Fatal error:  Class 'Appointment_model' not found in /home/viidemo/public_html/flawless/application/third_party/MX/Loader.php on line 191
