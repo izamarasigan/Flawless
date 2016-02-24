@@ -39,6 +39,30 @@ class Testimonial_model extends CI_Model
 		}
 		return false;
 	}
+
+
+	function _getInternalItems($limit = false, $offset = false)
+	{
+		$this->db->select('*');
+		$this->db->from('testimonial_internal gi');
+		$this->db->where('gi.status', 1);
+		$this->db->order_by('gi.sort ASC');
+		$this->db->order_by('gi.date_add DESC');
+		if ($limit && !$offset) $this->db->limit($limit);
+		if ($limit && $offset) $this->db->limit($limit, $offset);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0) {
+			$result = $query->result_array();
+			$return = array();
+			foreach($result as $item) {
+				$item['date'] = date('F d, Y', strtotime($item['date']));
+				$item['json'] = htmlentities(json_encode($item) , ENT_QUOTES);
+				$return[] = $item;
+			}
+			return $return;
+		}
+		return false;
+	}
 	function addItem()
 	{
 		$data = $this->input->post('data');

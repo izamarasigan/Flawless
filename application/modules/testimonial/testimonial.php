@@ -19,10 +19,10 @@ class Testimonial extends MX_Controller
 		parent::__construct();
 		$this->load->model('testimonial_model', 'testimonial');
 		}
-	function index()
+	function indexDefault()
 		{
 		$per_page = 5;
-		$testimonial = $this->testimonial->_getItems();
+		$testimonial = $this->testimonial->_getItems($per_page);
 		$length = count($testimonial);
 		$testimonial = $this->testimonial->_getItems($per_page);
 		$num_pages = (int)($length / $per_page) + (($length % $per_page) > 0 ? 1 : 0);
@@ -31,19 +31,33 @@ class Testimonial extends MX_Controller
 		$this->template->assign('int_page', 1);
 		$this->template->assign('images_path', 'upload/images/testimonial/');
 		}
+	function index(){
+		$per_page = 5;
+		$testimonial = $this->testimonial->_getInternalItems();
+		$length = count($testimonial);
+		//print_r($testimonial);exit;
+		$testimonial = $this->testimonial->_getInternalItems($per_page);
+		$num_pages = (int)($length / $per_page) + (($length % $per_page) > 0 ? 1 : 0);
+		$this->template->assign('testimonial', $testimonial);
+		$this->template->assign('num_pages', $num_pages);
+		$this->template->assign('int_page', 1);
+		$this->template->assign('images_path', 'upload/images/testimonial/');
+	}
 	function page($int_page)
 		{
-		if ($int_page <= 1) redirect(base_url() . 'testimonial/');
+		if ($int_page <= 1) redirect(base_url() . 'testimonials/');
 		$per_page = 5;
-		$testimonial = $this->testimonial->_getItems();
+		$testimonial = $this->testimonial->_getInternalItems();
 		$length = count($testimonial);
-		$testimonial = $this->testimonial->_getItems($per_page, (($int_page - 1) * $per_page));
+		$testimonial = $this->testimonial->_getInternalItems($per_page, (($int_page - 1) * $per_page));
 		$num_pages = (int)($length / $per_page) + (($length % $per_page) > 0 ? 1 : 0);
 		$this->template->assign('testimonial', $testimonial);
 		$this->template->assign('num_pages', $num_pages);
 		$this->template->assign('int_page', $int_page);
 		$this->template->assign('images_path', 'upload/images/testimonial/');
 		}
+
+
 	function process()
 		{
 		$action = $this->uri->segment(3);
