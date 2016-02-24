@@ -175,13 +175,21 @@ div.toggle {
 
 }
 
+@media (max-width:1024px) {
+.flawless-lifestyle span div {
+    height: auto!Important;
+}
+}
+
 @media (max-width:768px) {
 .news-item-small-image.margin-bottom-20 {
     float: none!important;
     width: 100%!important;
 }
 
-
+.media .tabs.nomargin-top.margin-bottom-0 {
+    display: none;
+}
 
 .media .img-cont img {
     max-width: 100%!important;
@@ -348,7 +356,7 @@ a:hover {color: #F757A7!important;}
     overflow-y: auto;
 }
 
-.book-appointment .row {
+.book-appointment .row, .franchising-cont  .row {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
@@ -384,13 +392,13 @@ a:hover {color: #F757A7!important;}
 	margin-left:20px;
 }
 
-.book-appointment .tab-content {
+.book-appointment .tab-content, .franchising-cont .tab-content {
     border: 1px solid;
     border-radius: 5px;
     border-color: #ED3C95;
 }
 
-.book-appointment .tab-content {
+.book-appointment .tab-content , .franchising-cont .tab-content{
     padding: 30px 20px;
 }
 
@@ -409,6 +417,9 @@ a:hover {color: #F757A7!important;}
 	
 }
 
+#franchising-form .has-feedback {
+    margin-bottom: 10px!important;}
+
  .book-appointment  textarea{
     margin-bottom: 30px!important;
     padding-bottom: 15px;
@@ -418,7 +429,7 @@ a:hover {color: #F757A7!important;}
  .book-appointment  .fancy-form{margin-bottom: 10px!important;}
 
 
-.book-appointment input.form-control, .book-appointment span.select2-selection.select2-selection--single, .book-appointment span.select2-search.select2-search--dropdown, .book-appointment textarea.form-control {
+.book-appointment input.form-control, .book-appointment span.select2-selection.select2-selection--single, .book-appointment span.select2-search.select2-search--dropdown, .book-appointment textarea.form-control, .franchising-cont input{
     background: #F7E9E1;
 	border:none!important;
 }
@@ -746,6 +757,12 @@ div.side-nav ul > li::before {
 
 
 .datepicker table tr td.active.active {background-color:#ED3C95!important;}
+
+.life-cont div {
+    height: 70px;
+}
+
+
 /* ------- */
 
 /*

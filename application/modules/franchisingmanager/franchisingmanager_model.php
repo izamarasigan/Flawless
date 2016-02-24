@@ -10,7 +10,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  * @filesource
  *
  */
-class Appointmentmanager_model extends CI_Model
+class Franchisingmanager_model extends CI_Model
 
 {
 	function __construct()
@@ -20,11 +20,11 @@ class Appointmentmanager_model extends CI_Model
 	function _getContacts()
 	{
 		
-		$this->db->select('a.*,b.*,c.*');
-		$this->db->from('appointment a');
-		$this->db->join('branch_item b', 'a.id_branch = b.id_branch_item', 'left');
-		$this->db->join('treatments c', 'a.treatment = c.id_treatment', 'left');
-		$this->db->order_by('a.date_add', 'desc');
+		$this->db->select('*');
+		$this->db->from('franchising');
+		//$this->db->join('branch_item b', 'a.id_branch = b.id_branch_item', 'left');
+		//$this->db->join('treatments c', 'a.treatment = c.id_treatment', 'left');
+		$this->db->order_by('date_add', 'desc');
 		$query = $this->db->get();
 		
 		/* $this->db->order_by('date_add', 'desc');

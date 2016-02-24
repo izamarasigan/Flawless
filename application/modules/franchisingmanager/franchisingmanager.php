@@ -10,18 +10,18 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 * @filesource
 *
 */
-class Appointmentmanager extends MX_Controller
+class Franchisingmanager extends MX_Controller
 
 {
 	var $error = array();
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->model('appointmentmanager_model', 'appointment');
+		$this->load->model('franchisingmanager_model', 'franchising');
 	}
 	function index()
 	{
-		$contacts = $this->appointment->_getContacts();
+		$contacts = $this->franchising->_getContacts();
 		if ($contacts) {
 			$this->template->assign('contacts', $contacts);
 		}
@@ -32,8 +32,8 @@ class Appointmentmanager extends MX_Controller
 		$this->load->library('encrypt');
 		$this->load->model('settings/settings_model', 'settings');
 		$fields = array(
-			'appointment_email',
-			'appointment_email_cc'
+			'franchising_email',
+			'franchising_email_cc'
 		);
 		foreach($fields as $value) {
 			$item = $this->settings->get(strtoupper($value));
@@ -50,7 +50,7 @@ class Appointmentmanager extends MX_Controller
 		case 'reply':
 			$data = $this->input->post('data');
 			if ($data) {
-				if ($this->appointment->_reply()) {
+				if ($this->franchising->_reply()) {
 					$result = true;
 				}
 				else {
@@ -66,7 +66,7 @@ class Appointmentmanager extends MX_Controller
 			$deleteid = $this->input->post('id_contact_us');
 			if ($deleteid) {
 				$this->load->model('core/dbtm_model', 'dbtm');
-				if ($this->dbtm->deleteItem('id_appointment', $deleteid, 'appointment')) {
+				if ($this->dbtm->deleteItem('id_contact_us', $deleteid, 'franchising')) {
 					$result = true;
 				}
 				else $this->error[] = "Failed to delete subscriber.";

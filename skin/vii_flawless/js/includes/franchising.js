@@ -7,19 +7,19 @@ $("#franchising-form").submit(function(event) {
 		CMS.showNotification("error", "Please fill out the required fields.", "contactusSectionNotif");
 		return false;
 	}
-	$('#' + id_form + " #contactusSectionBtns").hide();
+	$('#' + id_form + " #franchisingFormBtns").hide();
 	$('#' + id_form + " #contactusSectionLoading").removeAttr("style");
 	event.preventDefault();
 	$.post(base_url + "franchising/process/add-contact", $('#' + id_form).serialize(), function(data) {
 		if (data != 'false') {
 			$('#' + id_form)[0].reset();
 			$('#' + id_form + " #contactusSectionLoading").attr("style", "display:none");
-			$('#' + id_form + " #contactusSectionBtns").show();
+			$('#' + id_form + " #franchisingFormBtns").show();
 			CMS.showNotification("success", "Thank you for contacting us!", "contactusSectionNotif");
 			return false;
 		} else {
 			$('#' + id_form + " #contactusSectionLoading").attr("style", "display:none");
-			$('#' + id_form + " #contactusSectionBtns").show();
+			$('#' + id_form + " #franchisingFormBtns").show();
 			CMS.showNotification("error", "Network system error. Please try again.", "contactusSectionNotif");
 			return false;
 		}

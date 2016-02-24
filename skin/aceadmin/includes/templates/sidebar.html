@@ -149,6 +149,30 @@
 			</ul>
 		</li>
 		{/if}
+
+		{if $bcFranchisingIndex}
+		<li id = "bcFranchising">
+			<a href="javascript:;"  class="dropdown-toggle">
+				<i class="menu-icon fa fa-sitemap"></i>
+				<span class="menu-text"> Frachising Inquiries </span>
+				<b class="arrow fa fa-angle-down"></b>
+			</a>
+			<ul class="submenu">
+				<li id = "bcFranchisingIndex">
+					<a href="{$admin_base}franchisingmanager">
+						<i class="fa fa-double-angle-right"></i>
+						Lists
+					</a>
+				</li>
+				<li id = "bcFranchisingSettings">
+					<a href="{$admin_base}franchisingmanager/settings">
+						<i class="fa fa-double-angle-right"></i>
+						Settings
+					</a>
+				</li>
+			</ul>
+		</li>
+		{/if}
 		<!-- {if $bcContactIndex}
 		<li id = "bcContact">
 			<a href="javascript:;"  class="dropdown-toggle">

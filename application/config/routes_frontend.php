@@ -52,29 +52,14 @@ $route["testimonials/(.*)"] = "testimonial/$1";
 $route["products"] = "pages/index";
 $route["about"] = "pages/index";
 $route["flawlessbestsellers"] = "pages/index";
-$route["laserrfandothers"] = "pages/index";
+$route["newsletter"] = "newsletter/index";
+$route["newsletter/(.*)"] = "newsletter/$1";
+
 $route["laserhairremoval"] = "pages/index";
-$route["skinfusion"] = "pages/index";
-$route["smartpl"] = "pages/index";
-$route["powerfacial "] = "pages/index";
-$route["nanopowerpeel "] = "pages/index";
-$route["platinumpeel"] = "pages/index";
-$route["sclerotherapy"] = "pages/index";
-$route["sweatox"] = "pages/index";
-$route["mesotherapy"] = "pages/index";
-$route["scartherapy"] = "pages/index";
-$route["medical"] = "pages/index";
-$route["shapesculpta"] = "pages/index";
-$route["oilcontrolfacial"] = "pages/index";
-$route["realgentlemanfacial "] = "pages/index";
-$route["realgentlemanadvancedfacial"] = "pages/index";
-$route["oilcontroladvanced facial"] = "pages/index";
-$route["medicalinjectables"] = "pages/index";
-$route["regularfacials"] = "pages/index";
 $route["news"] = "news/index";
 $route["news/(.*)"] = "news/$1";
 
-$route["microdermabrasion"] = "pages/index";
+$route["shapesculptcream"] = "pages/index";
 $route["bookanappointment"] = "appointment/index";
 $route["bookanappointment/(.*)"] = "appointment/$1";
 
@@ -88,9 +73,7 @@ $route["treatment"] = "pages/index";
 $route["franchising"] = "franchising/index";
 $route["franchising/(.*)"] = "franchising/$1";
 
-$route["shapesculptcream"] = "pages/index";
-$route["nanorf"] = "pages/index";
-$route["refine "] = "pages/index";
+$route["nanopowerpeel"] = "pages/index";
 $route["ultratreatments"] = "pages/index";
 $route["topnavigation"] = "pages/index";
 $route["search"] = "search/index";

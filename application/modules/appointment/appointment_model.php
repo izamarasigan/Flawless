@@ -65,6 +65,7 @@ class Appointment_model extends CI_Model
 		$data['time_appointment'] = date("G:i", strtotime($data['time_appointment']));
 		$data['date_add'] = date('Y-m-d H:i:s');
 		if ($this->db->insert('appointment', $data)) {
+			$data['time_appointment'] = date("g:i a", strtotime($data['time_appointment']));
 			
 			$treatment = $this->getTreatments($data['treatment']);
 			$data['treatment_name'] = $treatment['treatment_name'];
@@ -72,7 +73,6 @@ class Appointment_model extends CI_Model
 			$branch = $this->getBranch($data['id_branch']);
 			$data['branch_name'] = $branch['branch_name'];
 			$this->notifyStaff($data);
-			
 			if ($data['email']) {
 				$this->notifySender($data);
 				return true;

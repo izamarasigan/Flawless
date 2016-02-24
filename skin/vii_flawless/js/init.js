@@ -130,7 +130,7 @@ $(".newsletter-section-form").submit(function(event) {
 			$('#' + id_form)[0].reset();
 			$('#' + id_form + " #newsletterSectionLoading").attr("style", "display:none");
 			$('#' + id_form + " #newsletterSectionSubmit").show();
-			CMS.showNotification("success", "Thank you for contacting us!", "subscribeSectionNotif");
+			CMS.showNotification("success", "Thank You for Subscribing to our Newsletter!", "subscribeSectionNotif");
 		} else {
 			$('#' + id_form + " #newsletterSectionLoading").attr("style", "display:none");
 			$('#' + id_form + " #newsletterSectionSubmit").show();
