@@ -70,11 +70,11 @@ function initialize() {
 		var mark = $.parseJSON($(this).val());
 		if(mark['branch_lat'] && mark['branch_lon']){
 			var mark_push = [mark['branch_name'], parseFloat(mark['branch_lat']), parseFloat(mark['branch_lon'])];
-			if(mark['branch_image']){
-				var mark_info = ['<div class="info_content">' + '<h3> ' + mark['branch_name'] + '</h3><img src="'+base_url+'upload/images/branches/'+mark['branch_image']+'"/>' + '<p> ' + mark['branch_address'] + '</p></div>'];
+			if(mark['image_src']){
+				var mark_info = ['<div class="info_content">' + '<h3> ' + mark['branch_name'] + '</h3><img src="'+base_url+'upload/images/branch/'+mark['image_src']+'" style="width: 100%;"/>' + '<p> ' + mark['branch_address'] + '</p><p> ' + mark['branch_phone'] + '</p></div>'];
 			}
 			else{
-				var mark_info = ['<div class="info_content">' + '<h3> ' + mark['branch_name'] + '</h3> <p> ' + mark['branch_address'] + '</p></div>'];
+				var mark_info = ['<div class="info_content">' + '<h3> ' + mark['branch_name'] + '</h3> <p> ' + mark['branch_address'] + '</p> <p> ' + mark['branch_phone'] + '</p></div>'];
 			}
 			
 			markers.push(mark_push);

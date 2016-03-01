@@ -4,6 +4,8 @@ section.slider {
 }
 }
 
+
+
 h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: #ED3C95!important;font-weight: 300;}
 
 p {
@@ -187,6 +189,11 @@ div.toggle {
     width: 100%!important;
 }
 
+
+.testimonial-cont .col-md-9 {
+    border-right: none!important;
+}
+
 .media .tabs.nomargin-top.margin-bottom-0 {
     display: none;
 }
@@ -209,6 +216,7 @@ div.toggle {
 }
 
 @media (min-width:768px) {
+
 
 .mobile-main-bestsellers, .mobile-main-lifestyle {display:none!important;}
 }
@@ -297,6 +305,10 @@ background: #b4a595!Important;
     margin-bottom: 10px !important;
     text-transform: uppercase !important;
     font-family: Melbourneregular;
+    font-weight: bold;
+}
+
+#footer h4 a {
     font-weight: bold;
 }
 
@@ -657,6 +669,10 @@ section.dark .pagination > li.active>a:hover, .pagination > li.active>a:hover { 
 
 /* -------- */
 
+a, a:focus:not(.btn), section.dark a, #slidetop a:hover, h1 > span, h2 > span, h3 > span, h4 > span, h5 > span, h6 > span, .pagination>li>a, .pagination>li>a:hover, .pagination>li>span, ul.list-links>li>a:hover, #sidepanel ul li a[data-toggle="collapse"], #sidepanel ul li a[data-toggle="collapse"]:hover, #sidepanel ul li a:hover, .menu-list ul li a:hover, .menu-list ul li.active a, #menu_overlay_close:hover, #topMain.nav-pills>li.active>a>span.topMain-icon, #page-menu.page-menu-light ul>li:hover>a>i, #page-menu.page-menu-dark ul>li:hover>a>i, #page-menu.page-menu-transparent ul>li:hover>a>i, #page-menu.page-menu-light ul>li.active>a>i, #page-menu.page-menu-dark ul>li.active>a>i, #page-menu.page-menu-transparent ul>li.active>a>i, .tp-caption.block_white, section span.theme-color, section em.theme-color, section i.theme-color, section b.theme-color, section div.theme-color, section p.theme-color, .owl-carousel.featured a.figure>span>i, .owl-carousel.featured a:hover, figure.zoom>a.lightbox:hover, #portfolio h2>a:hover, #portfolio h3>a:hover, #portfolio h4>a:hover, #portfolio h5>a:hover, #portfolio h6>a:hover, .tab-post a:hover, .tag:hover>span.txt, section.dark .tag:hover>span.txt, ul.widget-twitter li>small>a:hover, .blog-post-item h2>a:hover, .blog-post-item h3>a:hover, .blog-post-item h4>a:hover, .blog-post-item h5>a:hover, .item-box .item-hover .inner .ico-rounded:hover>span, ul.side-nav>li:hover>a, ul.side-nav>li a:hover, ul.side-nav>li.active>a, a.href-reset:hover, a.href-reset.active, .href-reset a.active, .href-reset a:hover, .href-reset a.active, .price-clean-popular h4, .box-icon.box-icon-color i, .switch-primary.switch-round > input:checked + .switch-label:after, section.dark .nav-tabs.nav-clean>li.active>a {
+    color: #ED3C95;
+}
+
 
 #topBar .vertical-alignment-helper {
     display:table;
@@ -685,6 +701,19 @@ section.dark .pagination > li.active>a:hover, .pagination > li.active>a:hover { 
     margin-top: -25px;
 }
 
+
+.product .col-md-12, .testimonial .col-md-12 {
+    padding-top: 50px;
+    box-shadow: rgba(184, 184, 184, 0.6) 0px -10px 25px -10px;
+}
+
+div.heading-title.heading-border-bottom {
+    border-bottom: none;}
+
+.cwell-contact address.address-branch:hover {
+    background: #FBFBFB;
+    cursor: pointer;
+}	
 /* -------- */
 
 .table-responsive table .list-inline>li {
@@ -745,10 +774,8 @@ section.dark .pagination > li.active>a:hover, .pagination > li.active>a:hover { 
     opacity: .8!important;
 }
 
-.toast-top-right {
-    bottom: 0!important;
-    right: 12px;
-    top: initial!important;
+span.select2-search.select2-search--dropdown {
+    display: none;
 }
 
 div.side-nav ul > li::before {
@@ -762,7 +789,27 @@ div.side-nav ul > li::before {
     height: 70px;
 }
 
+.pagination>li:last-child>a, .pagination>li:last-child>span {color:#333;}
 
+a.find-more {
+    color: #ED3C95;
+}
+
+.testimonial-cont .col-md-9 {
+    border-right: 2px solid #f8b1d4;
+}
+
+.toggle.toggle-bordered-full div.toggle.active>label {
+    font-weight: bold;
+    color: #ED3C95!important;
+}
+
+.faq .toggle.toggle-bordered-full .toggle-content {
+    border-bottom: #ccc 1px solid !important;}
+	
+.faq .toggle.toggle-transparent.toggle-bordered-full.margin-bottom-10 {
+    margin-bottom: 10px!important;
+}
 /* ------- */
 
 /*

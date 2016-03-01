@@ -1,8 +1,43 @@
 
-{if $testimonial} {foreach from=$testimonial key=key item=item}
-<p> {$item.image_desc}</p>
-<p>{$item.image_title}</p>
-{/foreach} {/if} {if $testimonial}
+  <div class="row testimonial-cont padding-top-50">
+  
+    <div class="col-md-9">
+	<div class="col-md-12 margin-bottom-0"><h2>Testimonials</h2></div>
+	
+  {if $testimonial}
+  {foreach from=$testimonial key=key item=item}
+  
+
+      <div class="margin-bottom-40">
+	  
+	  <div class="col-md-3 margin-bottom-10">
+	  
+	  <img src="{$base_url}{$images_path}{$item.image_src}" class="img-responsive"/>
+	  </div>
+	  
+	  <div class="col-md-8">
+	  
+        <h4 class="margin-bottom-0">{$item.image_title}</h4>
+		
+        <div> {$item.image_desc}</div>
+		
+		{if $item.image_sub_title}
+		<a href="{$item.image_sub_title}" class="btn btn-primary noradius" target="_blank"> WATCH VIDEO</a>
+		{else}	
+		{/if}
+		
+	</div>
+
+        <div class="clearfix"></div>
+      </div>
+
+
+  {/foreach}
+  {/if}
+  
+
+<div class="col-md-12">
+{if $testimonial}
 <ul class="pagination">
     {if $int_page gt 1}
     <li><a href="{$base_url}{$thisModule}s/page/{$int_page - 1}" rel="prev">Prev</a></li>{/if} {for $page=1 to $num_pages} {if $int_page eq $page}
@@ -13,3 +48,36 @@
     <li><a href="{$base_url}{$thisModule}s/page/{$int_page + 1}" rel="next" >Next</a></li>{/if}
 </ul>
 {/if}
+
+  </div>
+
+  
+    </div>
+	
+  	<div class="side col-md-3 hidden-xs">
+	
+				<a href="{$base_url}bookanappointment" class="btn btn-lg btn-primary fullwidth nomargin bopadding noradius size-20;" style="color: #fff!Important;padding:40px;border: none;">
+				 <span class="size-30">Book An <br/> Appointment</span>
+
+				 </a>
+				 
+					 
+				 <a href="{$base_url}contactus" class="btn btn-lg btn-default fullwidth margin-top-10 bopadding noradius size-20" style="color: #fff!Important;padding:60px;background: #b4a595!important;border: none;">
+				 <span class="size-30">Find a clinic</span>
+
+				 </a>
+				 
+				 
+				{$_page_testimonialssidebar.content} 
+				 
+
+	</div>
+
+<div class="clearfix"></div>
+
+  
+  <div class="clearfix"></div>
+  
+
+  </div>  
+

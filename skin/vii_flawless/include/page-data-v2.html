@@ -1,16 +1,23 @@
 
-			{if $_page.image_src}
+
+		
 			<section class="page-header-area heading-title parallax parallax-2 margin-bottom-30">
 
 				
 
 				
-			{/if}
+		
 
 				<div class="container page-v2">
 					{if $_page.image_src}
 					<div class="col-md-3 col-xs-3  inner-img-banner" style="text-align: right;">
 					<img src="{$_page.image_src}" class="img-responsive"/>
+					</div>
+					
+					{else}
+					
+					<div class="col-md-3 col-xs-3  inner-img-banner" style="text-align: right;">
+					<p style="visibility: hidden;">.</>
 					</div>
 					{/if}
 					
@@ -20,5 +27,13 @@
 					</div>
 
 				</div>
+				
 			</section>
 			
+			<div class="clearfix"></div>
+			
+			
+			
+
+			
+		

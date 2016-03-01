@@ -1,50 +1,36 @@
-<!---------- RAW ALL FAQ LISTS ---------->
-<!-- 
-{if $faqs}  
-	{foreach from=$faqs key=key item=item}
-		<div>{$key}</div>
-		<div>{$item.category_title}</div>
-		<div>{$item.category_description}</div>
-		{foreach from=$item.items key=key2 item=item2}
-			<div>{$key2}</div>
-			<div>{$item2.faq_question}</div>
-			<div>{$item2.faq_answer}</div>
-		{/foreach}
-		___________________________________
-	{/foreach}
-{/if} 
--->
-<!---------- EEEEEEEEEND RAW ALL FAQ LISTS ---------->
 
+<div class="container faq margin-bottom-40">
 
-<div class="row margin-bottom-40">
-    <div class="col-md-12">
-        <br/>
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            {if $faqs} 
+{if $faqs} 
 			{foreach from=$faqs key=key item=item} 
 
 				{foreach from=$item.items key=key2 item=item2}
-				<div class="panel panel-default margin-bottom-10">
-					<div class="panel-heading" role="tab" id="heading{$key2}">
-						<h4 class="panel-title">
-				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{$key2}" aria-expanded="true" aria-controls="collapse{$key2}">
-				  {$item2.faq_question}
-				</a>
-			  </h4>
-					</div>
-					<div id="collapse{$key2}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{$key2}">
-						<div class="panel-body">
 
-							<div>
-								{$item2.faq_answer}
-							</div>
-						</div>
-					</div>
-				</div>
-				{/foreach} 
+<div class="toggle toggle-transparent toggle-bordered-full margin-bottom-10">
+
+				
+
+								<div class="toggle"><!-- toggle -->
+									<label>{$item2.faq_question}</label>
+									<div class="toggle-content">
+										<p class="clearfix">
+											
+											{$item2.faq_answer}
+										</p>
+
+									</div>
+								</div><!-- /toggle -->
+
+								<!-- /toggle -->
+
+								
+	
+		</div>						
+
+								
+	{/foreach} 
 			{/foreach} 
 			{/if}
-        </div>
-    </div>
+								
+
 </div>

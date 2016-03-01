@@ -32,8 +32,8 @@ class Faqs_model extends CI_Model
 			foreach($listCategory as $item) {
 				foreach($result as $item0) {
 					if ($item0['id_faq_category'] == $item['id_faq_category']) {
-						$item['json'] = htmlentities(json_encode($item) , ENT_QUOTES);
 						$item['items'][] = $item0;
+						/* $item['json'] = htmlentities(json_encode($item) , ENT_QUOTES); */
 					}
 				}
 				$return[] = $item;
@@ -46,7 +46,7 @@ class Faqs_model extends CI_Model
 	{
 		$this->db->select('c.*');
 		$this->db->from('faq_category c');
-		$this->db->where('c.status', 1);
+		$this->db->where('c.status', 0);
 		$this->db->order_by('c.id_faq_category ASC');
 		$query = $this->db->get();
 		if ($query->num_rows() > 0) {

@@ -336,13 +336,13 @@ class Globals
 						$this->CI->template->display((strlen($curr_page['custom_theme']) ? $curr_page['custom_theme'] : _THEME_) . '/' . (strlen($curr_page['custom_layout']) ? $curr_page['custom_layout'] : 'main.template.html'));
 					}
 					else if (!strlen($curr_page['custom_layout']) && $template) {
-						echo 'aaaaaaaaaa globals.php';
-						exit;
+						// echo 'aaaaaaaaaa globals.php';
+						// exit;
 						$this->CI->template->display(_THEME_ . '/' . $template);
 					}
 					else {
-						echo 'bbbbbbbbbb globals.php';
-						exit;
+						// echo 'bbbbbbbbbb globals.php';
+						// exit;
 						$this->CI->template->display(_THEME_ . '/main.template.html');
 					}
 				}

@@ -61,7 +61,7 @@ CMS.showNotification = function(type, message) {
 		}
 		notif_msg = '<strong>Default!</strong> ' + message;
 	}
-	_toastr(notif_msg,"top-right",type,false);
+	_toastr(notif_msg,"bottom-left",type,false);
 }
 
 

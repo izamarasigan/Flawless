@@ -55,6 +55,9 @@ $route["flawlessbestsellers"] = "pages/index";
 $route["newsletter"] = "newsletter/index";
 $route["newsletter/(.*)"] = "newsletter/$1";
 
+$route["careers"] = "pages/index";
+$route["corporateinformation"] = "pages/index";
+$route["testimonialssidebar"] = "pages/index";
 $route["laserhairremoval"] = "pages/index";
 $route["news"] = "news/index";
 $route["news/(.*)"] = "news/$1";

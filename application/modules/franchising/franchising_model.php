@@ -64,7 +64,7 @@ class Franchising_model extends CI_Model
 	}
 	function notifyStaff($data)
 	{
-		$to = $this->config_model->get('FRANCHISING_EMAIL');
+		$to = $this->config_model->get('franchising_email');
 		$cc = $this->config_model->get('franchising_email_cc');
 		$replyTo = $data['email'];
 		$fromName = $data['name'];
