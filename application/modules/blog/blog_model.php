@@ -59,7 +59,7 @@ class Blog_model extends CI_Model
 	{
 		$this->db->select('gc.*');
 		$this->db->from('blog_category gc');
-		/* $this->db->where('gc.status', 1); */
+		 $this->db->where('gc.status', 1);
 		if ($id_blog_category) $this->db->where('gc.id_blog_category ', $id_blog_category);
 		$this->db->order_by('gc.id_blog_category DESC');
 		$query = $this->db->get();

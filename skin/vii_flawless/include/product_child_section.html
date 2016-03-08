@@ -18,7 +18,7 @@
 		<!-- ------------ Start Product Item Beauty kits ------------ -->
 		{foreach from=$_descendants key=key item=item}
 		{if $item.id_parent eq '198'}
-		<div class="col-md-12 col-xs-6 div_products_list  wow flipInY animation-visible animated" id="282">
+		<div class="col-md-12 col-xs-6 div_products_list " id="282">
 		
 			<div class="item cst-page-bg-color margin-bottom-20 widget-quicklink">
 												
@@ -27,8 +27,8 @@
 						<img src="../../upload/images/cms/q-view.png" class="img-responsive">	
 				</a>  
 			
-				<div class="item-image img-cont" style="background: #fff;padding: 102px;">
-						<img src="{$base_url}upload/images/banner/{$item.image_src}" alt="" class="img-responsive float" style="width: 600px;"> 
+				<div class="item-image img-cont pulse " style="background: #fff;padding: 102px;">
+						<a href="{$item.page_link}" ><img src="{$base_url}upload/images/banner/{$item.image_src}" alt="" class="img-responsive" style="width: 600px;"></a>
 				</div>
 															
 				<!-- Item details -->
@@ -88,7 +88,7 @@
 
 		{foreach from=$_descendants key=key item=item}
 		{if $item.id_parent eq '104'}
-		<div class="col-md-6 col-xs-6 div_products_list  wow flipInY animation-visible animated" id="282">
+		<div class="col-md-6 col-xs-6 div_products_list" id="282">
 		
 			<div class="item cst-page-bg-color margin-bottom-20 widget-quicklink">
 												
@@ -97,8 +97,8 @@
 						<img src="../../upload/images/cms/q-view.png" class="img-responsive">	
 				</a>  
 			
-				<div class="item-image img-cont" style="background: #E7E3DE;">
-						<img src="{$base_url}upload/images/banner/{$item.image_src}" alt="" class="img-responsive float" style="width: 600px;border: 1px solid #E7E3DE;"> 
+				<div class="item-image img-cont pulse" style="background: #E7E3DE;">
+						<img src="{$base_url}upload/images/banner/{$item.image_src}" alt="" class="img-responsive" style="width: 600px;border: 1px solid #E7E3DE;"> 
 				</div>
 															
 				<!-- Item details -->

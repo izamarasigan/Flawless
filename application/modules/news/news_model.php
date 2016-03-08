@@ -22,6 +22,7 @@ class News_model extends CI_Model
 	{
 		$this->db->select('*, gc.category_title as category');
 		$this->db->from('news_item i');
+		 $this->db->where('gc.status', 1);
 		$this->db->join('news_category gc', 'gc.id_news_category = i.id_news_category');
 		if($id_news_category) $this->db->where('i.id_news_category', $id_news_category);
 		$this->db->where('i.status', 1);
@@ -59,7 +60,7 @@ class News_model extends CI_Model
 	{
 		$this->db->select('gc.*');
 		$this->db->from('news_category gc');
-		/* $this->db->where('gc.status', 1); */
+		 $this->db->where('gc.status', 1);
 		if ($id_news_category) $this->db->where('gc.id_news_category ', $id_news_category);
 		$this->db->order_by('gc.id_news_category DESC');
 		$query = $this->db->get();
