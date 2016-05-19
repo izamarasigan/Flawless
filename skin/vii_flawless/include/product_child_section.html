@@ -16,8 +16,11 @@
 		
 		
 		<!-- ------------ Start Product Item Beauty kits ------------ -->
+		
+		{assign var=counter value=0}
 		{foreach from=$_descendants key=key item=item}
 		{if $item.id_parent eq '198'}
+		{assign var=counter value=$counter+1}
 		<div class="col-md-12 col-xs-6 div_products_list " id="282">
 		
 			<div class="item cst-page-bg-color margin-bottom-20 widget-quicklink">
@@ -50,8 +53,8 @@
 			</div>
 
 		</div>
-		
-			{/if}   {if $key eq 7}{break}{/if} 
+		{if $counter eq 3}{break}{/if}
+			{/if}   
 		{/foreach}
 		
 		
@@ -85,9 +88,10 @@
 		 <!-- ------- -->
 		
 	
-
+		{assign var=counter value=0}
 		{foreach from=$_descendants key=key item=item}
 		{if $item.id_parent eq '104'}
+		{assign var=counter value=$counter+1}
 		<div class="col-md-6 col-xs-6 div_products_list" id="282">
 		
 			<div class="item cst-page-bg-color margin-bottom-20 widget-quicklink">
@@ -121,7 +125,8 @@
 		
 
 		</div>
-			{/if}   {if $key eq 5}{break}{/if} 
+		{if $counter eq 6}{break}{/if}
+			{/if}   
 		{/foreach}
 		<!-- ------------ End  Product Item Individual Products------------ -->
 	
