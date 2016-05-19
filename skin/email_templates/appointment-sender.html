@@ -19,10 +19,10 @@ __________
 
 <p>You have successfully booked  <b>{if $data.treatment_name}{$data.treatment_name}{/if}</b> on <b>{if $data.date_appointment}{$data.date_appointment|date_format:"%b %e, %Y"}{/if}</b> at <b>{if $data.branch_name}{$data.branch_name}{/if}.</b></p>
 
-<p>MEDICAL INFORMATION: <br/>
-{if $data.medical_info}{$data.medical_info}{/if}</p>
+<p>
+{if $data.medical_info}MEDICAL INFORMATION: <br/>{$data.medical_info}{/if}</p>
 
-<p>ADDITIONAL COMMENTS: <br/>{if $data.comment}{$data.comment}{/if}</p>
+<p>{if $data.comment}ADDITIONAL COMMENTS: <br/>{$data.comment}{/if}</p>
  
  
 <p>Thank you,<br/>
