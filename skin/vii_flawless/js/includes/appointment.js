@@ -15,7 +15,7 @@ $(".appointment-form").submit(function(event) {
 			$('#' + id_form)[0].reset();
 			$('#' + id_form + " #contactusSectionLoading").attr("style", "display:none");
 			$('#' + id_form + " #contactusSectionBtns").show();
-			CMS.showNotification("success", "Thank you for booking us!", "contactusSectionNotif");
+			CMS.showNotification("success", "Thank you for booking your treatment at Flawless. Please check your email to confirm your appointment.", "contactusSectionNotif");
 			/* if($('.toast-success').is(":visible")){
 				$('.toast-success').attr("style", "background:#ed3c95 none repeat scroll 0 0 !important");
 			} */
