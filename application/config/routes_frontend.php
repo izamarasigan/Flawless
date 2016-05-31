@@ -30,9 +30,35 @@ $route["products/beautykits/antiperspirantwhiteningdeo"] = "pages/index";
 $route["products/beautykits/flawlessskinprotectmist"] = "pages/index";
 $route["products/beautykits/whiteningsuperserum"] = "pages/index";
 $route["products/beautykits/agedefysuperserum"] = "pages/index";
+$route["products/individualproducts/rgsoap"] = "pages/index";
+$route["products/individualproducts/skinlighteninglotionwithsunblock"] = "pages/index";
+$route["products/individualproducts/sassoap"] = "pages/index";
+$route["products/individualproducts/rgtoner"] = "pages/index";
+$route["products/individualproducts/teatreesoap"] = "pages/index";
+$route["products/individualproducts/porerefiner"] = "pages/index";
+$route["products/individualproducts/oatmealsoap"] = "pages/index";
+$route["products/individualproducts/rgcream"] = "pages/index";
 $route["products/beautykits/nanowhitenessglutathioneplus"] = "pages/index";
 $route["products/beautykits/skinliftcollagen"] = "pages/index";
 $route["products/beautykits/shapesculptlcarnitine"] = "pages/index";
+$route["products/individualproducts/whiteningtoner"] = "pages/index";
+$route["products/individualproducts/whitepluscream"] = "pages/index";
+$route["products/individualproducts/skinrenewcream"] = "pages/index";
+$route["products/individualproducts/skinprotectgel"] = "pages/index";
+$route["products/individualproducts/pimpleclearastringent"] = "pages/index";
+$route["products/individualproducts/collagensoap"] = "pages/index";
+$route["products/individualproducts/skinprotectcream"] = "pages/index";
+$route["products/individualproducts/agedefytoner"] = "pages/index";
+$route["products/individualproducts/ahasoap"] = "pages/index";
+$route["products/individualproducts/flawlessskinprotectmist"] = "pages/index";
+$route["products/individualproducts/skinliftcollagen"] = "pages/index";
+$route["products/individualproducts/shapesculptlcarnitine"] = "pages/index";
+$route["products/beautykits/agedefykit"] = "pages/index";
+$route["products/beautykits/oilcontrolkit"] = "pages/index";
+$route["products/beautykits/flawlesswhiteningkit"] = "pages/index";
+$route["products/beautykits/bodybleachingkit"] = "pages/index";
+$route["products/beautykits/acnecontrolkit"] = "pages/index";
+$route["products/beautykits/realgentlemenkit"] = "pages/index";
 $route["products/individualproducts"] = "pages/index";
 $route["products/beautykits"] = "pages/index";
 $route["treatment/facials"] = "pages/index";
@@ -85,6 +111,7 @@ $route["search/(.*)"] = "search/$1";
 $route["flawlessmedia"] = "blog/index";
 $route["flawlessmedia/(.*)"] = "blog/$1";
 
-
+$route["acnecontrolkit"] = "pages/index";
+$route["flawlessskinprotectmist"] = "pages/index";
 
 ?>
