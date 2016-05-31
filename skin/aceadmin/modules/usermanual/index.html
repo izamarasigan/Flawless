@@ -1,0 +1,94 @@
+<div class="page-content-area">
+	<div class="page-header">
+		<h1>Table of Contents</h1> 
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="widget-box widget-color-blue hid" id="widge">
+				<div class="widget-header">
+					<div class="widget-toolbar no-border widgeToolRemSpace" id="widgetItemActions">
+						<button class="btn btn-xs btn-info closeWidge"> <i class="ace-icon fa fa-arrow-left"></i> Back </button>
+					</div>
+				</div>
+				<div class="widget-body">
+					<form id="genericForm" class="form-horizontal" role="form">
+						<div class="widget-main">
+							<!-- Widget Content / Editor Form -->
+							<div class="row">
+								<div class="col-xs-12">
+									<div>
+										<div class="step-pane" id="step1">
+										<input type="hidden" id="id_usermanual_maincat" name="where[id_usermanual_maincat]" value="" />
+										<div class="form-group">
+											<div class="col-sm10">
+												<h4><b><span class="col-xs-10 col-sm-50" id="item_name"></span></b></h4>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="col-sm10">
+												<span class="col-xs-10 col-sm-50 " id="item_description"></span>
+											</div>
+										</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Widget End -->
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- Content Ends Here -->
+		</div>
+		<div class="col-xs-12">
+			<!-- Content Starts Here -->
+			<div class="widget-box widget-color-blue" id="#">
+				<div class="widget-header">
+					{if $smarty.session.updates|escape eq 1}
+					<div class = "uploadpdf">
+						<button id = "generate_pdf" class="btn btn-info btn-small" ><i class="fa fa-cloud-download"></i> Generate To Update the Usermanual PDF</button>
+						<h5><div class="loader hid"><i class="fa fa-circle-o-notch fa-spin"></i>Generating PDF for usermanual! Please Wait Patiently! Thank you!</div></h5>
+					</div>
+					{else}
+						<a href="{$base_url}/upload/pdf/{$pdfName}.pdf" download target="_blank" class="ignore btn btn-info btn-small" onClick="viewPDF('{$pdfName}.pdf')"><i class="fa fa-cloud-download"></i>Download Usermanual PDF</a>
+					{/if}
+					
+
+				</div>
+				
+				<div class="widget-body">
+					<form id="#" class="form-horizontal" role="form">
+						<div class="widget-main">
+							<ul style="list-style: none;">
+							{foreach from=$main_cat key=key item=item}
+								<h3><li>{$item.maincat_name}</li></h3>
+								{foreach from=$allItem key=key item=item3}
+								<div id="jdata{$item3.id_usermanual_item_maincat}" data-var="modules">
+								<div class="hid" id="jd{$item3.id_usermanual_item_maincat}">{$item3.json}</div>
+								{if $item.id_usermanual_maincat eq $item3.id_usermanual_item_maincat}
+									<h5><li style="text-indent: 80px;"><a href="javascript:;" class="showWidge setViewValues tooltip-info ignore " style="color: #0000ff;">{$item3.item_name|upper}</a></li></h5>
+								{/if}
+								</div>
+								{/foreach}
+									{foreach from=$subcat_list key=key2 item=item2}
+										{if $item.id_usermanual_maincat eq $item2.id_usermanual_maincat}
+											<h4><li style="text-indent: 40px; color: #000080;">{$item2.subcat_name|upper}</li></h4>
+											{foreach from=$allItem key=key item=item}
+											<div id="jdata{$item.id_usermanual_items}" data-var="modules">
+											<div class="hid" id="jd{$item.id_usermanual_items}">{$item.json}</div>
+												{if $item2.id_usermanual_subcat eq $item.id_usermanual_subcat}
+												<h5><li style="text-indent: 80px;"><a href="javascript:;" class="showWidge setViewValues tooltip-info ignore " style="color: #0000ff;">{$item.item_name|upper}</a></li></h5>
+												{/if}
+											</div>
+											{/foreach}
+										{/if}
+									{/foreach}
+							{/foreach}
+							</ul>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- Content Ends Here -->
+		</div>
+	</div>
+</div>
