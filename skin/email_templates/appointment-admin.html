@@ -1,10 +1,10 @@
 
-<!-- <p>Dear Administrator,</p>
-<p>Please be advised that{$data|@print_r}  <strong>{$data.name}</strong> sent a Contact Us Message on {$data.date_add|date_format}.</p>
+<!-- <p>Hi {$data.name},</p>
+<p>Thank you for contacting us{$data|@print_r} <strong>{$data.name}</strong>. Here are your message details sent.</p>
  {if $data.name}{$data.name}{/if}__________
  {if $data.email}{$data.email}{/if}__________
  {if $data.phone}{$data.phone}{/if}__________
- {if $data.date_appointment}{$data.date_appointment|date_format:"%b %e, %Y"}{/if}__________
+__________
  {if $data.time_appointment}{$data.time_appointment}{/if}__________
  {if $data.medical_info}{$data.medical_info}{/if}__________
  {if $data.comment}{$data.comment}{/if}__________
@@ -13,8 +13,48 @@
  {if $data.branch_name}{$data.branch_name}{/if}__________
   -->
  
+<p>Hi Admin,</p>
  
-<p>Dear Administrator,</p>
-<p>Please be advised that <strong>{$data.name}</strong> sent a Contact Us Message on {$data.date_add|date_format}.</p>
+<p>Congratulations!</p>
+
+<p><b>{$data.name}</b> sent an appointment on <b>{if $data.date_appointment}{$data.date_appointment|date_format:"%b %e, %Y"}{/if}</b> at <b>{$data.time_appointment}</b>, with the following details:</p><br>
+
+
+ <table border="1">
+    {if $data.name}
+    <tr>
+        <td><strong>Name:</strong>
+        </td>
+        <td>{$data.name}</td>
+    </tr>
+    {/if}
+    {if $data.email}
+    <tr>
+        <td><strong>Email:</strong>
+        </td>
+        <td>{$data.email}</td>
+    </tr>
+    {/if}
+    {if $data.phone}
+    <tr>
+        <td><strong>Phone:</strong>
+        </td>
+        <td>{$data.phone}</td>
+    </tr>
+    {/if}
+     {if $data.medical_info}
+    <tr>
+        <td><strong>Medical Information:</strong>
+        </td>
+        <td>{$data.medical_info}</td>
+    </tr>
+    {/if}
+    {if $data.comment}
+    <tr>
+        <td><strong>Additional Comments:</strong>
+        </td>
+        <td>{$data.comment}</td>
+    </tr>
+    {/if}
+</table>
  
-<p>Thank you

@@ -29,3 +29,13 @@ $(".appointment-form").submit(function(event) {
 		}
 	});
 });
+jQuery("#agreement").click(function(){
+	if(jQuery(this).is(":checked")){
+		jQuery(".notification").css("display", "none");
+		jQuery('button[type="submit"]').prop('disabled', false);
+	}else{
+		jQuery('button[type="submit"]').prop('disabled', true);
+		CMS.showNotification("error", " You do not seem to agree with our agreement","contactusSectionNotification");
+		
+	}
+});
