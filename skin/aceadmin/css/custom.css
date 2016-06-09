@@ -601,3 +601,9 @@ body.modal-open {
 div#multiActions {
     margin-bottom: 10px;
 }
+
+#page_type #unsel-list {
+    height: 400px;
+    margin-bottom: 20px;
+    overflow-y: scroll;
+}

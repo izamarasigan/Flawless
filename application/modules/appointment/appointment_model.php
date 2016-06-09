@@ -84,8 +84,8 @@ class Appointment_model extends CI_Model
 	}
 	function notifyStaff($data)
 	{
-		$to = $this->config_model->get('CONTACT_EMAIL');
-		$cc = $this->config_model->get('CONTACT_EMAIL_CC');
+		$to = $this->config_model->get('APPOINTMENT_EMAIL');
+		$cc = $this->config_model->get('appointment_email_cc');
 		$replyTo = $data['email'];
 		$fromName = $data['name'];
 		if ($data['subject']) {
@@ -100,7 +100,7 @@ class Appointment_model extends CI_Model
 		$to = $data['email'];
 		$replyTo = $this->config_model->get('CONTACT_EMAIL');
 		$fromName = $this->config_model->get('SITE_NAME');
-		$subject = $this->config_model->get('SITE_NAME') . ' :: Thank you for your interest in out services';
+		$subject = $this->config_model->get('SITE_NAME') . ' :: Thank you for your interest in our services';
 		$this->email_model->sendEmail($to, $subject, 'Message', false, 'appointment-sender.html', $data, $replyTo, $fromName, false);
 	}
 }
