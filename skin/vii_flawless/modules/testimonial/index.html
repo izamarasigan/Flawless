@@ -52,7 +52,26 @@
 				 </a>
 				 
 				 
-				{$_page_testimonialssidebar.content} 
+				<!--  {$_page_testimonialssidebar.content} -->
+				<hr/>
+							
+							
+				{foreach from=$_blog key=key item=item}
+				
+                            <li style="list-style: outside none none !important;margin-bottom:20px;">
+      
+									<a href="{$item.image_link}">
+                                         <img src="{$item.image_src_thumb}" class="recent-news-image img-responsive" alt="{$item.image_title|ucwords}"  style="border:1px solid #e6e5e5"/>
+                                    </a>
+                                    <a href="{$item.image_link}" style="font-family: 'fertigo_proregular'; text-transform: uppercase;">{$item.image_title|ucwords}</a>
+                                    <small>{if $year neq $item.year}{assign var="year" value=$item.year} {$item.year} {/if} {if $month neq $item.month}{assign var="month" value=$item.month} {$item.month} {/if}</small>
+                                
+                            </li>
+                          
+							
+                {if $key eq 2}{break}{/if} {/foreach}		
+				
+				
 				 
 
 	</div>

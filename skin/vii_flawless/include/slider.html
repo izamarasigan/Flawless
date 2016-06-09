@@ -5,7 +5,8 @@
   <div class="carousel-inner">
   {foreach from=$_banner key=key item=item}
     <div class="item {if $key eq 0} active{/if}" style="background-image: url({$item.image_src})">
-      <img src="{$item.image_src}" alt="Banner" class="center-block">
+	
+       <a href="{$item.image_link}"><img src="{$item.image_src}" alt="Banner" class="center-block"></a>
 
     </div>
 	
