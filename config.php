@@ -35,9 +35,9 @@
 			// Change this to Live Configuration
 			define('_BASE_URL_','http://'.$_SERVER['HTTP_HOST'].'/');
 			define('_DB_HOST_','localhost');
-			define('_DB_USERNAME_','flaw_db');
-			define('_DB_PASSWORD_','flaw_admin');
-			define('_DB_DATABASE_','hNE0?nyTQ1HNN6ab');
+			define('_DB_USERNAME_','flaw_admin');
+			define('_DB_PASSWORD_','y*HK&@k-AW?TV8LFXN');
+			define('_DB_DATABASE_','flaw_db');
 		}
 	}
 	else {
