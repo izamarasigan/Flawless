@@ -1,3 +1,10 @@
+::selection {
+  background: #ED3C95; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ED3C95; /* Gecko Browsers */
+}
+
 @media (min-width:1199px){
 section.slider {
   margin-top: -40px!important;

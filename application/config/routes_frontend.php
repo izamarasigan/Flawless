@@ -1,24 +1,15 @@
 <?php  if (!defined("BASEPATH")) exit("No direct script access allowed");
 
 $route["products/individualproducts/agedefycream"] = "pages/index";
-$route["products/beautykits/rgsoap"] = "pages/index";
-$route["products/beautykits/skinlighteninglotionwithsunblock"] = "pages/index";
-$route["products/beautykits/sassoap"] = "pages/index";
-$route["products/beautykits/rgtoner"] = "pages/index";
-$route["products/beautykits/teatreesoap"] = "pages/index";
-$route["products/beautykits/porerefiner"] = "pages/index";
-$route["products/beautykits/oatmealsoap"] = "pages/index";
-$route["products/beautykits/rgdaynightcream"] = "pages/index";
-$route["products/beautykits/skinrenewcream"] = "pages/index";
-$route["products/beautykits/skinlitecream"] = "pages/index";
-$route["products/beautykits/agedefycream"] = "pages/index";
+$route["products/individualproducts/rgsoap"] = "pages/index";
+$route["products/individualproducts/skinlighteninglotionwithsunblock"] = "pages/index";
+$route["products/individualproducts/sassoap"] = "pages/index";
+$route["products/individualproducts/rgtoner"] = "pages/index";
+$route["products/individualproducts/teatreesoap"] = "pages/index";
+$route["products/individualproducts/porerefiner"] = "pages/index";
+$route["products/individualproducts/oatmealsoap"] = "pages/index";
+$route["products/individualproducts/rgcream"] = "pages/index";
 $route["products/individualproducts/nanowhitenessglutathioneplus"] = "pages/index";
-$route["products/beautykits/skinwhiteningsoap"] = "pages/index";
-$route["products/beautykits/skinwhitetherapy"] = "pages/index";
-$route["products/beautykits/whiteningtoner"] = "pages/index";
-$route["products/beautykits/whitepluscream"] = "pages/index";
-$route["products/individualproducts/novexpertantiagingcream"] = "pages/index";
-$route["products/individualproducts/skinrenewcream"] = "pages/index";
 $route["products/individualproducts/skinwhiteningsoap"] = "pages/index";
 $route["products/beautykits/skinprotectgel"] = "pages/index";
 $route["products/beautykits/pimpleclearastringent"] = "pages/index";
@@ -38,9 +29,8 @@ $route["products/individualproducts/teatreesoap"] = "pages/index";
 $route["products/individualproducts/porerefiner"] = "pages/index";
 $route["products/individualproducts/oatmealsoap"] = "pages/index";
 $route["products/individualproducts/rgcream"] = "pages/index";
-$route["products/beautykits/nanowhitenessglutathioneplus"] = "pages/index";
-$route["products/beautykits/skinliftcollagen"] = "pages/index";
-$route["products/beautykits/shapesculptlcarnitine"] = "pages/index";
+$route["products/individualproducts/nanowhitenessglutathioneplus"] = "pages/index";
+$route["products/individualproducts/skinwhiteningsoap"] = "pages/index";
 $route["products/individualproducts/whiteningtoner"] = "pages/index";
 $route["products/individualproducts/whitepluscream"] = "pages/index";
 $route["products/individualproducts/skinrenewcream"] = "pages/index";
@@ -69,8 +59,8 @@ $route["treatment/hairremoval"] = "pages/index";
 $route["treatment/medical"] = "pages/index";
 $route[""] = "pages/index";
 $route["error"] = "pages/error";
-$route["faqs"] = "faqs/index";
-$route["faqs/(.*)"] = "faqs/$1";
+$route["termsandconditions"] = "faqs/index";
+$route["termsandconditions/(.*)"] = "faqs/$1";
 
 $route["testimonials"] = "testimonial/index";
 $route["testimonials/(.*)"] = "testimonial/$1";
@@ -84,11 +74,10 @@ $route["newsletter/(.*)"] = "newsletter/$1";
 $route["careers"] = "pages/index";
 $route["corporateinformation"] = "pages/index";
 $route["testimonialssidebar"] = "pages/index";
-$route["laserhairremoval"] = "pages/index";
+$route["whiteningkit"] = "pages/index";
 $route["news"] = "news/index";
 $route["news/(.*)"] = "news/$1";
 
-$route["shapesculptcream"] = "pages/index";
 $route["bookanappointment"] = "appointment/index";
 $route["bookanappointment/(.*)"] = "appointment/$1";
 
@@ -97,12 +86,13 @@ $route["contactus/(.*)"] = "contactus/$1";
 
 $route["expertiseyoucantrust"] = "pages/index";
 $route["certifedtested"] = "pages/index";
-$route["footerlinks"] = "pages/index";
+$route["footerlinks"] = "faqs/index";
+$route["footerlinks/(.*)"] = "faqs/$1";
+
 $route["treatment"] = "pages/index";
 $route["franchising"] = "franchising/index";
 $route["franchising/(.*)"] = "franchising/$1";
 
-$route["nanopowerpeel"] = "pages/index";
 $route["ultratreatments"] = "pages/index";
 $route["topnavigation"] = "pages/index";
 $route["search"] = "search/index";
@@ -111,7 +101,9 @@ $route["search/(.*)"] = "search/$1";
 $route["flawlessmedia"] = "blog/index";
 $route["flawlessmedia/(.*)"] = "blog/$1";
 
+$route["allnaturalultimatewhitefacial"] = "pages/index";
 $route["acnecontrolkit"] = "pages/index";
 $route["flawlessskinprotectmist"] = "pages/index";
+
 
 ?>

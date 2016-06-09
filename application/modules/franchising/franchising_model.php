@@ -71,7 +71,7 @@ class Franchising_model extends CI_Model
 		if ($data['subject']) {
 			$data['subject'] = '[' . $data['subject'] . ']';
 		}
-		$subject = $this->config_model->get('SITE_NAME') . ' :: New Contact Us Message ' . $data['subject'];
+		$subject = $this->config_model->get('SITE_NAME') . ' :: New Registration Request ' . $data['subject'];
 		$this->email_model->sendEmail($to, $subject, 'Message', false, 'contact-us-admin.html', $data, $replyTo, $fromName, $cc);
 		// (to, subject, message, attachment, template, data, replyTo, fromName)
 	}
@@ -80,7 +80,7 @@ class Franchising_model extends CI_Model
 		$to = $data['email'];
 		$replyTo = $this->config_model->get('CONTACT_EMAIL');
 		$fromName = $this->config_model->get('SITE_NAME');
-		$subject = $this->config_model->get('SITE_NAME') . ' :: Thank you for contacting us';
+		$subject = $this->config_model->get('SITE_NAME') . ' :: Thank You for your Registration';
 		$this->email_model->sendEmail($to, $subject, 'Message', false, 'contact-us-sender.html', $data, $replyTo, $fromName, false);
 	}
 }

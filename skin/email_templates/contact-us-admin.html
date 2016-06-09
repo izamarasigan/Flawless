@@ -1,23 +1,4 @@
-USE SMARTY SYNTAX {literal}{/literal} - <!-- HERE'S A LINK PLEASE READ AND UNDERSTAND THE USE OF LITERAL http://www.smarty.net/docsv2/en/language.function.literal -->
-USE SMARTY SYNTAX {literal}{/literal} - <!-- HERE'S A LINK PLEASE READ AND UNDERSTAND THE USE OF LITERAL http://www.smarty.net/docsv2/en/language.function.literal -->
-
-TO CHECK YOUR EMAIL PLEASE TRY THIS:
-http://<BASE_URL>/contactus/check_template/?RECEIVER=<EMAIL>&TEMPLATE=<FILENAME>
-
-REPLACE THE FOLLOWING WITH YOUR DESIRED VALUES (including the <>):
-EX.
-<BASE_URL> = viiworks.com
-<EMAIL> = testviiworks@gmail.com
-<FILENAME> = contact-us-admin.html
-
-SAMPLE OUTPUT (this link below is just and example and to show what will be the output if you replace the <EMAIL/FILENAME> with your values):
-<!-- PLEASE DO NOT CLICK OR GO TO THIS LINK BECAUSE THIS IS JUST AN EXAMPLE -->
-http://viiworks.com/contactus/check_template/?RECEIVER=testviiworks@gmail.com&TEMPLATE=contact-us-admin.html
-*** THIS IS ONLY APPLICABLE IF THE FILES IS IN THE SERVER ALREADY
-*** THIS IS WILL NOT WORK IN LOCAL SETUP
-<!-- PLEASE DO NOT CLICK OR GO TO THIS LINK BECAUSE THIS IS JUST AN EXAMPLE -->
- 
-<p>Dear Administrator,</p>
+<!-- <p>Dear Administrator,</p>
 <p>Please be advised that <strong>{$data.name}</strong> sent a Contact Us Message on {$data.date_add|date_format}.</p>
 <table border="1">
     {if $data.name}
@@ -62,4 +43,239 @@ http://viiworks.com/contactus/check_template/?RECEIVER=testviiworks@gmail.com&TE
         <td>{$data.message|strip_tags}</td>
     </tr>
     {/if}
-</table>
+</table> -->
+
+
+<!-- <p>Dear Administrator,</p>
+<p>Please be advised that{$data|@print_r}  <strong>{$data.name}</strong> sent a Contact Us Message on {$data.date_add|date_format}.</p>
+ {if $data.name}{$data.name}{/if}__________
+ {if $data.email}{$data.email}{/if}__________
+ {if $data.phone}{$data.phone}{/if}__________
+ {if $data.date_appointment}{$data.date_appointment|date_format:"%b %e, %Y"}{/if}__________
+ {if $data.time_appointment}{$data.time_appointment}{/if}__________
+ {if $data.medical_info}{$data.medical_info}{/if}__________
+ {if $data.comment}{$data.comment}{/if}__________
+ {if $data.date_add}{$data.date_add|date_format}{/if}__________
+ {if $data.treatment_name}{$data.treatment_name}{/if}__________
+ {if $data.branch_name}{$data.branch_name}{/if}__________
+  -->
+ 
+ 
+<!-- <p>Dear Administrator,</p>
+<p>Please be advised that <strong>{$data.name}</strong> sent a Contact Us Message on {$data.date_add|date_format}.</p>
+ 
+<p>Thank you -->
+
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=320, target-densitydpi=device-dpi">
+<title>ViiCart</title>
+
+</head>
+
+<body>
+    <style media="screen" type="text/css">
+		body {
+		background-color: #dedede;
+		margin: 0;
+		padding: 0;
+		color: #464646;
+		}
+        a {
+            color: #E49B0E;
+            text-decoration: none;
+        }
+        .border-top {
+            background-color: #444;
+            height: 20px;
+        }
+        .date {
+            text-align: right;
+            padding-bottom: 30px;
+        }
+        .footer {
+            color: #FFFFFF;
+            font-size: 12px;
+            padding: 10px 0;
+        }
+        .footer a {
+            color: #82E40E;
+        }
+        .head-r {
+            text-transform: uppercase;
+            text-align: center;
+            background-color: #ccc;
+            font-weight: bold;
+            font-size: 13px;
+            padding: 5px 0;
+        }
+        .headline {
+            height: 40px;
+            text-align: center;
+            background-color: #f3f3f3;
+            color: #676767;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        .header-title {
+            font-weight: bold;
+            text-align: right;
+            font-size: 16px;
+        }
+        .hr {
+            border-bottom: 1px solid #000;
+        }
+        .login {
+            padding-top: 20px;
+            text-align: center;
+        }
+        .message {
+            padding-bottom: 20px;
+        }
+        .main-content {
+            table-layout: auto;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            color: #333 !important;
+            font-size: 13px;
+            max-width: 535px;
+        }
+        .name {
+            font-size: 15px;
+        }
+        .u-p {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .page {
+            padding: 10px;
+        }
+        .rate {
+            text-align: center;
+        }
+        .sincerely {
+            border-top: dashed 1px #222;
+            font-size: 12px;
+        }
+        .table-r {
+            text-align: center;
+        }
+        .t-content {
+            padding: 5px 0;
+        }
+        .title {
+            color: #19BDC4;
+            font-family: Helvetica;
+            text-transform: uppercase;
+            margin-top: 25px;
+            font-size: 25px;
+        }
+        @media (max-width: 392px) {
+            .title {
+                margin-top: 10px;
+            }
+        }
+		
+		.bg-line-white {
+			background: rgba(0, 0, 0, 0) url("viicart.com/skin/viicart/img/email-img/bg-line-white.png") repeat scroll 0 0;
+			height: 17px;
+			margin-top: 0px;
+			z-index: 20;
+		}		
+    </style>
+	
+	<br/><br/>
+    <table style="table-layout:auto; font-family:'Trebuchet MS',Helvetica,sans-serif; color:#333 !important; font-size:13px; max-width:535px;border:1px solid #EBEBEB;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+            <tr>
+                <td colspan="4" align="center" bgcolor="">
+                    <table style=" table-layout:auto" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" height="100%" width="99%">
+                        <tbody>
+                            <!-- Top color -->
+                            <tr style="background-color:#ED3C95; height:20px;">
+                                <td class="w640" valign="top" width="600" style="padding: 20px 0px 15px;">
+
+                                                <a style="color: rgb(255, 255, 255); display: block; word-break: break-all;text-align:center;" target="_blank" href="{literal}{tracking_link}{/literal}"> 
+												<img alt="FLAWLESS" id="customHeaderImage" label="Header Image" editable="true" src="{$base_url}upload/images/logo/a033e69e9a4174c320f7a8a4b435459b.png" style="display: inline;width: 150px;" align="top" border="0" width="130">
+												</a>
+                                 </td>
+                            </tr>
+							
+							
+                            <tr style="background-color:#fff;">
+                                <td align="center">
+                                   
+                                    <table style="table-layout:auto; padding: 20px;padding-top: 30px;padding-bottom: 25px;" bgcolor="#fff" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+									
+											
+                                            <tr>
+	
+                                                <td class="w470" style="color: rgb(51, 51, 51);border:1px dashed rgb(221, 221, 221);padding:10px 15px 20px;" width="470">
+												
+													<br>
+													 
+													<p>Dear Administrator,</p>
+													<p>Please be advised that <strong style="text-transform: capitalize;">{$data.name}</strong> sent a Contact Us Message on {$data.date_add|date_format}.</p>
+													 
+													<p>Thank you
+
+											
+													
+										</td>
+													
+                                            </tr>
+											
+									
+									
+										
+                                        </tbody>
+                                    </table>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                          
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+							
+
+						<td bgcolor="#ED3C95">
+                           <table width="600" cellspacing="0" cellpadding="0" border="0" class="w640">
+                                    <tbody>
+
+                                      <tr>
+									  
+                                            <td width="600" valign="top" class="w640" style="padding: 10px 15px 10px;">
+
+												 <span valign="middle" style="font-family: Helvetica,arial,sans-serif; color: rgb(255, 255, 255); text-align: center;text-decoration: none!important;" st-content="viewonline" align="center">
+															
+															<p style="font-size: 11px;color: rgb(255, 255, 255);line-height: 15px;margin-top: 10px ! important;font-family: Arial, sans-serif;">
+															
+															© 2015 Flawless Face & Body Clinic. All Rights Reserved. 
+															
+															</p>
+															
+												</span>
+                                            </td>
+                                        </tr>
+										
+
+
+
+
+                                    </tbody>
+                                </table>
+                            </td>
+							
+                        </tbody>
+                    </table>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
