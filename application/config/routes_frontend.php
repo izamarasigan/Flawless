@@ -11,6 +11,27 @@ $route["products/individualproducts/oatmealsoap"] = "pages/index";
 $route["products/individualproducts/rgcream"] = "pages/index";
 $route["products/individualproducts/nanowhitenessglutathioneplus"] = "pages/index";
 $route["products/individualproducts/skinwhiteningsoap"] = "pages/index";
+$route["products/beautykits/skinprotectgel"] = "pages/index";
+$route["products/beautykits/pimpleclearastringent"] = "pages/index";
+$route["products/beautykits/collagensoap"] = "pages/index";
+$route["products/beautykits/skinprotectcream"] = "pages/index";
+$route["products/beautykits/agedefytoner"] = "pages/index";
+$route["products/beautykits/ahasoap"] = "pages/index";
+$route["products/beautykits/antiperspirantwhiteningdeo"] = "pages/index";
+$route["products/beautykits/flawlessskinprotectmist"] = "pages/index";
+$route["products/beautykits/whiteningsuperserum"] = "pages/index";
+$route["products/beautykits/agedefysuperserum"] = "pages/index";
+$route["products/individualproducts/rgsoap"] = "pages/index";
+$route["products/individualproducts/skinlighteninglotionwithsunblock"] = "pages/index";
+$route["products/individualproducts/sassoap"] = "pages/index";
+$route["products/individualproducts/rgtoner"] = "pages/index";
+$route["products/individualproducts/teatreesoap"] = "pages/index";
+$route["products/individualproducts/porerefiner"] = "pages/index";
+$route["products/individualproducts/oatmealsoap"] = "pages/index";
+$route["products/individualproducts/rgcream"] = "pages/index";
+$route["products/beautykits/nanowhitenessglutathioneplus"] = "pages/index";
+$route["products/beautykits/skinliftcollagen"] = "pages/index";
+$route["products/beautykits/shapesculptlcarnitine"] = "pages/index";
 $route["products/individualproducts/whiteningtoner"] = "pages/index";
 $route["products/individualproducts/whitepluscream"] = "pages/index";
 $route["products/individualproducts/skinrenewcream"] = "pages/index";
@@ -82,7 +103,7 @@ $route["flawlessmedia"] = "blog/index";
 $route["flawlessmedia/(.*)"] = "blog/$1";
 
 $route["allnaturalultimatewhitefacial"] = "pages/index";
+$route["acnecontrolkit"] = "pages/index";
 $route["flawlessskinprotectmist"] = "pages/index";
-
 
 ?>

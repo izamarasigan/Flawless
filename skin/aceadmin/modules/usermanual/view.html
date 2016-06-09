@@ -1,0 +1,35 @@
+<div class="page-content-area">
+	<div class="page-header">
+		<h1>
+			Table of Contents
+			<small style="display: none;">
+				<i class="ace-icon fa fa-angle-double-right"></i>
+			</small>
+		</h1> </div>
+	<div class="row">
+		<div class="col-xs-12">
+			<!-- Content Starts Here -->
+			<div class="widget-box widget-color-blue" id="#">
+				<div class="widget-header">
+					<div class="#" id="#">
+					</div>
+				</div>
+				<div class="widget-body">
+					<form id="#" class="form-horizontal" role="form">
+						<div class="widget-main">
+							<ul style="list-style: none;">
+							<li><h2><b>{$subcatname}</b></h2></li>
+							{foreach $item_list key=key item=item}
+							<li>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</li>
+							<li><h5><b>{$item.item_name}</b></h5></li>
+							<li>{$item.item_description}</li>
+							{/foreach}
+							</ul>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- Content Ends Here -->
+		</div>
+	</div>
+</div>

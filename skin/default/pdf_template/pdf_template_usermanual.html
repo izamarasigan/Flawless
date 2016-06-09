@@ -1,0 +1,126 @@
+<head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> </head>
+ <style type="text/css">
+
+
+body {
+    color: #000000;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+
+.usermanualimage img{
+    display: inline-block;
+    margin: auto;
+    padding-left: 3.5em;
+    padding-right: 2em;
+    padding-top: 15em;
+    padding-bottom: 15em;
+    margin-bottom: 20em;
+    max-width: 200%;
+    height: auto;
+}
+
+.odd {
+	background-color: #ffffff;
+}
+}
+.undefined{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+#subcat{
+    text-indent: 20px;
+    font-size: 15px;
+    margin: auto;
+    padding: 3px;
+
+}
+
+#item{
+    text-indent: 40px;
+    font-size: 14px;
+    margin: auto;
+    padding: 3px;
+}
+.usermanualimage{
+    page-break-after: always;
+}
+#tableofcontents{
+    page-break-after: always;
+}
+/*#content{
+    page-break-before: initial;
+}
+#maincatItem{
+    page-break-after: auto;
+}*/
+ 
+.head h3{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 3px;
+}
+
+ </style>
+
+
+<div class="undefined">
+    <div class="usermanualimage"><img src="skin/default/images/usermanual/usermanualImage.png"></div>
+    <div id="tableofcontents">
+        <div class="head"><h3>TABLE OF CONTENTS</h3></div>
+        <ul>
+            {for $count=0 to $output|count-1}
+            <!-- <pre>{$output.$count|count}</pre> -->
+                <li>
+                    {$output.$count.maincat_name|upper}
+                </li>
+                {for $count3=0 to $output.$count.items|count-1}
+                <li id="item">
+                    {$output.$count.items.$count3.item_name|lower|ucwords}
+                </li>
+                {/for}
+                {for $count1=0 to $output.$count|count-1}
+                    <li id="subcat">
+                        {$output.$count.$count1.subcat_name|upper}
+                    </li>
+
+                    {for $count2=0 to $output.$count.$count1.items|count-1}
+                        <li id="item">
+                            {$output.$count.$count1.items.$count2.item_name|lower|ucwords}
+                        </li>
+                    {/for}
+
+                {/for}
+            {/for}
+        </ul>
+    </div>
+
+    <div id="content">
+        {for $count=0 to $output|count-1}
+            <div class="head"><h3>{$output.$count.maincat_name|upper}</h3></div>
+
+            {for $count3=0 to $output.$count.items|count-1}
+                <div id="maincatItem">
+                    {$output.$count.items.$count3.item_name|upper}
+                    {$output.$count.items.$count3.item_description|replace:"../../":$base_url}
+                </div>
+            {/for}
+            
+            {for $count1=0 to $output.$count|count-1}
+
+                <div class="head"><h3><b>{$output.$count.$count1.subcat_name|upper}</b></h3></div>
+
+                {for $count2=0 to $output.$count.$count1.items|count-1}
+                    <div id="Item">
+                        {$output.$count.$count1.items.$count2.item_name|lower|ucwords}
+                        {$output.$count.$count1.items.$count2.item_description|replace:"../../":$base_url}
+                    </div>
+                {/for}
+
+            {/for}
+        {/for}
+    </div>
+</div>

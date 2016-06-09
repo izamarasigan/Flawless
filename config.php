@@ -66,6 +66,7 @@
 	define('_SKIN_PATH_',FCPATH.'skin/');
 	define('_CACHE_FOLDER_',APPPATH.'cache/');
 	define('_UPLOAD_URL_',FCPATH.'upload/products/');
+	define('_PDF_LOCATION_', 'upload/pdf/');
 	define('_UPLOAD_LOGO_URL_',FCPATH.'upload/merchant/');
 	define('_COLUMN_IDENTIFIER_','clmn_');
 	define('_WHERE_IDENTIFIER_','whr_');

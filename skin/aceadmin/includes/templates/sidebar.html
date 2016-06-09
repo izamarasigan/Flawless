@@ -461,6 +461,44 @@
 			</ul>
 		</li>
 		{/if}
+		{if $bcUserManual}
+		<li id = "bcUserManual">
+			<a href="javascript:;" class="dropdown-toggle">
+				<i class="menu-icon fa fa-file-text-o"></i>
+				<span class="menu-text">User Manual</span>
+				<b class="arrow fa fa-angle-down"></b>
+			</a>
+
+			<ul class="submenu">
+				<li id = "bcUserManualCont">
+					<a href="{$admin_base}usermanual">
+						<i class="fa fa-double-angle-right"></i>
+						Table of Contents
+					</a>
+				</li>
+				{if $_admin.id_admin_group eq 1}
+				<li id = "bcUserManualMainCat">
+					<a href="{$admin_base}usermanual/main_categories">
+						<i class="fa fa-double-angle-right"></i>
+						Main Categories
+					</a>
+				</li>
+				<li id = "bcUserManualSubCat">
+					<a href="{$admin_base}usermanual/sub_categories">
+						<i class="fa fa-double-angle-right"></i>
+						Subcategories
+					</a>
+				</li>
+				<li id = "bcUserManualItems">
+					<a href="{$admin_base}usermanual/items">
+						<i class="fa fa-double-angle-right"></i>
+						Items
+					</a>
+				</li>
+				{/if}
+			</ul>
+		</li>
+		{/if}
 	</ul>
 
 	<div class="sidebar-collapse" id="sidebar-collapse">
