@@ -15,7 +15,7 @@ $("#franchising-form").submit(function(event) {
 			$('#' + id_form)[0].reset();
 			$('#' + id_form + " #contactusSectionLoading").attr("style", "display:none");
 			$('#' + id_form + " #franchisingFormBtns").show();
-			CMS.showNotification("success", "Thank you for contacting us!", "contactusSectionNotif");
+			CMS.showNotification("success", "You have successfully submitted your Franchise Registration Form. Please check your email for the registration updates.", "contactusSectionNotif");
 			return false;
 		} else {
 			$('#' + id_form + " #contactusSectionLoading").attr("style", "display:none");
