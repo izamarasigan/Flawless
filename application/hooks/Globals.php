@@ -301,7 +301,7 @@ class Globals
 				$curr_page['meta_image'] = "";
 			}
 			$this->CI->template->assign('_page_title', strlen($curr_page['title']) ? $curr_page['title'] : '');
-			if ($this->module != 'news' && $this->module != 'blog' && $this->module != 'promo' && $this->module != 'events' && $this->module != 'gallery') {
+			if ($this->module != 'news' && $this->module != 'blog' && $this->module != 'promo' && $this->module != 'events' && $this->module != 'gallery' && $this->module != 'flawlessmedia') {
 				$this->CI->template->assign('_meta_title', strlen($curr_page['meta_title']) ? $curr_page['meta_title'] : $this->getConfig('META_TITLE'));
 				$this->CI->template->assign('_meta_keywords', strlen($curr_page['meta_keywords']) ? $curr_page['meta_keywords'] : $this->getConfig('META_TAGS'));
 				$this->CI->template->assign('_meta_description', strlen($curr_page['meta_description']) ? $curr_page['meta_description'] : $this->getConfig('META_DESCRIPTION'));
