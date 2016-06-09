@@ -67,3 +67,13 @@ function checkCaptcha() {
 		$('#alert_recaptcha').hide().text('');
 	}
 }
+var date = new Date();
+date.setDate(date.getDate()+2);
+// var nowDate = new Date();
+// var today = new Date(nowDate.getFullYear(), nowDate.getMonth(), nowDate.getDate(), 0, 0, 0, 0);
+$('#date_appointment').datepicker({
+	format: "MM dd, yyyy",
+	autoclose: true,
+	startDate: date
+});
+// console.log(today);
