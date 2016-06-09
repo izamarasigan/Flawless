@@ -46,7 +46,7 @@ class Appointment extends MX_Controller
 	function verify_captcha()
 	{
 		$publickey = $this->config_model->get('RECAPTCHA_PUBLIC_KEY');
-		$privatekey = $this->config_model->get('RECAPTCHA_PRIVATE_KEY');
+		$privatekey = '6LfJKiITAAAAAHY90ttTY8slPE2wCh7BhMxbsbnx';
 		$resp = recaptcha_check_answer($privatekey, $_SERVER["REMOTE_ADDR"], $_POST["recaptcha_challenge_field"], $_POST["recaptcha_response_field"]);
 		if ($resp->is_valid) {
 			echo 'true';
