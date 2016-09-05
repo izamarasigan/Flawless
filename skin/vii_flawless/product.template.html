@@ -41,10 +41,15 @@
 			<!-- PAGE - id_page, title, content, caption, image_src, link_rewrite, absolute_link -->
 			{include file="$_theme/include/page-data-product.html"}
 			
-			<!-- MODULE/PAGE CONTENT -->
-			<div class="content container" id="content_include">{if $_content}{include file=$_content}{/if}{include file="$_theme/include/product_child_section.html"}</div>
+			<!-- Iframe -->
+			<div class="row">
 			
-			<div class="section product" id="main_section_include">{include file="$_theme/include/main_section.html"}</div>
+				<div style="width:100%!important; height:1300px;">
+				  <iframe  style="width:100%!important; height:1300px;" src="http://viicart.com/shop/flawless-online-shop"></iframe>
+				</div>
+				
+			</div>
+			
 			
 			<!-- OTHERS -->
 			<div class="others" id="others_include" >{include file="$_theme/include/others.html"}</div>
