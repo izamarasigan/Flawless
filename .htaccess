@@ -2,6 +2,7 @@ Options -Indexes
 DirectoryIndex index.php
 
 ErrorDocument 403 /errors/error_403.html
+RedirectMatch 404 /\.git
 
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
